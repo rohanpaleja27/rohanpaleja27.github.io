@@ -19,7 +19,8 @@
 
     <SCRIPT LANGUAGE="JavaScript">
 
-        <!-- Begin
+        <!--
+        Begin
         var theImages = new Array()
         var theCredits = new Array()
 
@@ -34,14 +35,15 @@
         var j = 0
         var p = theImages.length;
         var preBuffer = new Array()
-        for (i = 0; i < p; i++){
-           preBuffer[i] = new Image()
-           preBuffer[i].src = theImages[i]
+        for (i = 0; i < p; i++) {
+            preBuffer[i] = new Image()
+            preBuffer[i].src = theImages[i]
         }
-        var whichImage = Math.floor(Math.random()*(p));
-        function showImage(){
-        document.write('<img class="profile-img img-responsive" src="'+theImages[whichImage]+'" align="middle" height="230">');
-        document.write('<p><font color="gray" size="1">Photo credit: '+theCredits[whichImage]+'</font></p>');
+        var whichImage = Math.floor(Math.random() * (p));
+
+        function showImage() {
+            document.write('<img class="profile-img img-responsive" src="' + theImages[whichImage] + '" align="middle" height="230">');
+            document.write('<p><font color="gray" size="1">Photo credit: ' + theCredits[whichImage] + '</font></p>');
         }
 
         //  End -->
@@ -171,7 +173,13 @@
             </div>
 
             <p>
-                I am a Robotics Ph.D. candidate at the Georgia Institute of Technology, working with&nbsp;<a
+                I am a Technical Staff Researcher in the Artificial Intelligence Technology Group at MIT Lincoln
+                Laboratory, investigating new approaches to help operators understand, program, utilize, and team with
+                autonomous systems, ranging from large language models to symbolic agents.
+            </p>
+            <p>
+                Previously, I completed my Ph.D. in Robotics at the Georgia Institute of Technology, working
+                with&nbsp;<a
                     href="https://core-robotics.gatech.edu/people/matthew-gombolay/" target="_blank">Matthew
                 Gombolay</a> in the&nbsp;<a href="https://core-robotics.gatech.edu/" target="_blank">CORE Robotics
                 Lab</a>.
@@ -197,6 +205,31 @@
     <!-- News -->
     <div class="news mt-3 p-0">
         <h1 class="title mb-4 p-0">news</h1>
+
+
+        <div class="row p-0">
+            <div class="col-sm-2 p-0">
+        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
+          August 2023
+        </span>
+            </div>
+            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
+                <p> I started as a Technical Staff Researcher at MIT Lincoln Laboratory in the AI Technology Group!
+            </div>
+        </div>
+
+        <div class="row p-0">
+            <div class="col-sm-2 p-0">
+        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
+          August 2023
+        </span>
+            </div>
+            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
+                <p> I successfully defended my Ph.D. on "Interpretable Artificial Intelligence for Personalized
+                    Human-Robot Collaboration."
+            </div>
+        </div>
+
 
         <div class="row p-0">
             <div class="col-sm-2 p-0">
@@ -624,51 +657,57 @@
 
 <!-- Scrolling Progress Bar -->
 <script type="text/javascript">
-    $(document).ready(function() {
-      var navbarHeight = $('#navbar').outerHeight(true);
-      $('body').css({ 'padding-top': navbarHeight });
-      $('progress-container').css({ 'padding-top': navbarHeight });
-      var progressBar = $('#progress');
-      progressBar.css({ 'top': navbarHeight });
-      var getMax = function() { return $(document).height() - $(window).height(); }
-      var getValue = function() { return $(window).scrollTop(); }   
-      // Check if the browser supports the progress element.
-      if ('max' in document.createElement('progress')) {
-        // Set the 'max' attribute for the first time.
-        progressBar.attr({ max: getMax() });
-        progressBar.attr({ value: getValue() });
-    
-        $(document).on('scroll', function() {
-          // On scroll only the 'value' attribute needs to be calculated.
-          progressBar.attr({ value: getValue() });
-        });
-
-        $(window).resize(function() {
-          var navbarHeight = $('#navbar').outerHeight(true);
-          $('body').css({ 'padding-top': navbarHeight });
-          $('progress-container').css({ 'padding-top': navbarHeight });
-          progressBar.css({ 'top': navbarHeight });
-          // On resize, both the 'max' and 'value' attributes need to be calculated.
-          progressBar.attr({ max: getMax(), value: getValue() });
-        });
-      } else {
-        var max = getMax(), value, width;
-        var getWidth = function() {
-          // Calculate the window width as a percentage.
-          value = getValue();
-          width = (value/max) * 100;
-          width = width + '%';
-          return width;
+    $(document).ready(function () {
+        var navbarHeight = $('#navbar').outerHeight(true);
+        $('body').css({'padding-top': navbarHeight});
+        $('progress-container').css({'padding-top': navbarHeight});
+        var progressBar = $('#progress');
+        progressBar.css({'top': navbarHeight});
+        var getMax = function () {
+            return $(document).height() - $(window).height();
         }
-        var setWidth = function() { progressBar.css({ width: getWidth() }); };
-        setWidth();
-        $(document).on('scroll', setWidth);
-        $(window).on('resize', function() {
-          // Need to reset the 'max' attribute.
-          max = getMax();
-          setWidth();
-        });
-      }
+        var getValue = function () {
+            return $(window).scrollTop();
+        }
+        // Check if the browser supports the progress element.
+        if ('max' in document.createElement('progress')) {
+            // Set the 'max' attribute for the first time.
+            progressBar.attr({max: getMax()});
+            progressBar.attr({value: getValue()});
+
+            $(document).on('scroll', function () {
+                // On scroll only the 'value' attribute needs to be calculated.
+                progressBar.attr({value: getValue()});
+            });
+
+            $(window).resize(function () {
+                var navbarHeight = $('#navbar').outerHeight(true);
+                $('body').css({'padding-top': navbarHeight});
+                $('progress-container').css({'padding-top': navbarHeight});
+                progressBar.css({'top': navbarHeight});
+                // On resize, both the 'max' and 'value' attributes need to be calculated.
+                progressBar.attr({max: getMax(), value: getValue()});
+            });
+        } else {
+            var max = getMax(), value, width;
+            var getWidth = function () {
+                // Calculate the window width as a percentage.
+                value = getValue();
+                width = (value / max) * 100;
+                width = width + '%';
+                return width;
+            }
+            var setWidth = function () {
+                progressBar.css({width: getWidth()});
+            };
+            setWidth();
+            $(document).on('scroll', setWidth);
+            $(window).on('resize', function () {
+                // Need to reset the 'max' attribute.
+                max = getMax();
+                setWidth();
+            });
+        }
     });
 
 
@@ -705,9 +744,9 @@
     // $grid.masonry('layout');
 
     // Trigger after images load.
-    $grid.imagesLoaded().progress(function() {
-      $grid.masonry({ percentPosition: true });
-      $grid.masonry('layout');
+    $grid.imagesLoaded().progress(function () {
+        $grid.masonry({percentPosition: true});
+        $grid.masonry('layout');
     });
 
 
@@ -716,7 +755,7 @@
 <!-- Enable Tooltips -->
 <script type="text/javascript">
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip()
     })
 
 
@@ -724,10 +763,17 @@
 
 <!-- Google Analytics -->
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', '', 'auto');
     ga('send', 'pageview');
 
