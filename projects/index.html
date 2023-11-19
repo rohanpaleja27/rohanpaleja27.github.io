@@ -57,20 +57,20 @@
                     </a>
                 </li>
 
-            <li class="nav-item ">
-                <a class="nav-link" href="/projects/">
-                  Projects
+                <li class="nav-item ">
+                    <a class="nav-link" href="/projects/">
+                        Projects
 
-                </a>
-            </li>
+                    </a>
+                </li>
 
 
-              <li class="nav-item ">
-                  <a class="nav-link" href="/publications/">
-                    Publications
+                <li class="nav-item ">
+                    <a class="nav-link" href="/publications/">
+                        Publications
 
-                  </a>
-              </li>
+                    </a>
+                </li>
 
                 <!--              <li class="nav-item ">-->
                 <!--                  <a class="nav-link" href="/teaching/">-->
@@ -116,10 +116,10 @@
                     <img class="card-img-top" src="/assets/img/Full_CommGraph_Final.PNG" alt="project thumbnail"/>
                     <div class="card-body">
                         <h5 class="card-title">Multi-Agent Coordination</h5>
-                        <p class="card-text">It is difficult and cumbersome to design decentralized multi-agent
-                            coordination algorithms that allow agents to perform tasks such as search-and-rescue. We
-                            instead use multi-agent reinforcement learning to allow decentralized robots to collectively
-                            share knowledge and develop collaboration plans. </p>
+                        <p class="card-text">It is challenging to design decentralized multi-agent
+                            coordination algorithms that allow agents to perform collaboration in tasks such as
+                            search-and-rescue. We instead use multi-agent reinforcement learning (MARL) to allow
+                            decentralized robots to collectively share knowledge and develop collaboration plans. </p>
                         <div class="row ml-1 mr-1 p-0">
 
 
@@ -137,11 +137,11 @@
                     <img class="card-img-top" src="/assets/img/OODA.png" alt="project thumbnail"/>
                     <div class="card-body">
                         <h5 class="card-title">Explainable AI</h5>
-                        <p class="card-text">Recent advances in machine learning have led to growing interest in xAI to
-                            enable humans to gain insight
-                            into the decision-making of machine learning models. However, 1) interpretable reinforcement
-                            learning remains an open challenge, and 2) the utility of interpretable models in
-                            human-machine teaming has not yet been characterized.</p>
+                        <p class="card-text">Recent advances in machine learning have led to growing interest in
+                            Explainable AI to
+                            enable humans to gain insight into the decision-making of machine learning models. However,
+                            1) generating interpretable agents via reinforcement learning remains an open challenge, and
+                            2) it is difficult to characterize the utility of interpretable models in human-machine teaming.</p>
                         <div class="row ml-1 mr-1 p-0">
 
 
@@ -199,51 +199,57 @@
 
 <!-- Scrolling Progress Bar -->
 <script type="text/javascript">
-    $(document).ready(function() {
-      var navbarHeight = $('#navbar').outerHeight(true);
-      $('body').css({ 'padding-top': navbarHeight });
-      $('progress-container').css({ 'padding-top': navbarHeight });
-      var progressBar = $('#progress');
-      progressBar.css({ 'top': navbarHeight });
-      var getMax = function() { return $(document).height() - $(window).height(); }
-      var getValue = function() { return $(window).scrollTop(); }   
-      // Check if the browser supports the progress element.
-      if ('max' in document.createElement('progress')) {
-        // Set the 'max' attribute for the first time.
-        progressBar.attr({ max: getMax() });
-        progressBar.attr({ value: getValue() });
-    
-        $(document).on('scroll', function() {
-          // On scroll only the 'value' attribute needs to be calculated.
-          progressBar.attr({ value: getValue() });
-        });
-
-        $(window).resize(function() {
-          var navbarHeight = $('#navbar').outerHeight(true);
-          $('body').css({ 'padding-top': navbarHeight });
-          $('progress-container').css({ 'padding-top': navbarHeight });
-          progressBar.css({ 'top': navbarHeight });
-          // On resize, both the 'max' and 'value' attributes need to be calculated.
-          progressBar.attr({ max: getMax(), value: getValue() });
-        });
-      } else {
-        var max = getMax(), value, width;
-        var getWidth = function() {
-          // Calculate the window width as a percentage.
-          value = getValue();
-          width = (value/max) * 100;
-          width = width + '%';
-          return width;
+    $(document).ready(function () {
+        var navbarHeight = $('#navbar').outerHeight(true);
+        $('body').css({'padding-top': navbarHeight});
+        $('progress-container').css({'padding-top': navbarHeight});
+        var progressBar = $('#progress');
+        progressBar.css({'top': navbarHeight});
+        var getMax = function () {
+            return $(document).height() - $(window).height();
         }
-        var setWidth = function() { progressBar.css({ width: getWidth() }); };
-        setWidth();
-        $(document).on('scroll', setWidth);
-        $(window).on('resize', function() {
-          // Need to reset the 'max' attribute.
-          max = getMax();
-          setWidth();
-        });
-      }
+        var getValue = function () {
+            return $(window).scrollTop();
+        }
+        // Check if the browser supports the progress element.
+        if ('max' in document.createElement('progress')) {
+            // Set the 'max' attribute for the first time.
+            progressBar.attr({max: getMax()});
+            progressBar.attr({value: getValue()});
+
+            $(document).on('scroll', function () {
+                // On scroll only the 'value' attribute needs to be calculated.
+                progressBar.attr({value: getValue()});
+            });
+
+            $(window).resize(function () {
+                var navbarHeight = $('#navbar').outerHeight(true);
+                $('body').css({'padding-top': navbarHeight});
+                $('progress-container').css({'padding-top': navbarHeight});
+                progressBar.css({'top': navbarHeight});
+                // On resize, both the 'max' and 'value' attributes need to be calculated.
+                progressBar.attr({max: getMax(), value: getValue()});
+            });
+        } else {
+            var max = getMax(), value, width;
+            var getWidth = function () {
+                // Calculate the window width as a percentage.
+                value = getValue();
+                width = (value / max) * 100;
+                width = width + '%';
+                return width;
+            }
+            var setWidth = function () {
+                progressBar.css({width: getWidth()});
+            };
+            setWidth();
+            $(document).on('scroll', setWidth);
+            $(window).on('resize', function () {
+                // Need to reset the 'max' attribute.
+                max = getMax();
+                setWidth();
+            });
+        }
     });
 
 
@@ -280,9 +286,9 @@
     // $grid.masonry('layout');
 
     // Trigger after images load.
-    $grid.imagesLoaded().progress(function() {
-      $grid.masonry({ percentPosition: true });
-      $grid.masonry('layout');
+    $grid.imagesLoaded().progress(function () {
+        $grid.masonry({percentPosition: true});
+        $grid.masonry('layout');
     });
 
 
@@ -291,7 +297,7 @@
 <!-- Enable Tooltips -->
 <script type="text/javascript">
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip()
     })
 
 
@@ -299,10 +305,17 @@
 
 <!-- Google Analytics -->
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', '', 'auto');
     ga('send', 'pageview');
 
