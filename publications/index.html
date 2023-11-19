@@ -125,6 +125,88 @@
                 <li>
                     <div class="row m-0 mt-3 p-0">
                         <div class="col-sm-1 p-0 abbr">
+                            <a class="badge font-weight-bold pink darken-1 align-middle" style="width: 65px;"
+                               href="https://sites.bu.edu/mrs2023/" target="_blank">
+                                MRS
+                            </a>
+                        </div>
+                        <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                            <div id="wu2023MRS" class="col p-0">
+                                <h5 class="title mb-0">Adversarial Search
+                                    and Tracking with Multiagent Reinforcement Learning in Sparsely Observable
+                                    Environments</h5>
+                                <div class="author">
+
+
+                                    <nobr><a href="https://core-robotics.gatech.edu/people/zixuan-wu/"
+                                             target="_blank">Zixuan Wu</a>,
+                                    </nobr>
+
+                                    <nobr><a href="https://xunil17.github.io/" target="_blank">Sean Ye</a>,</nobr>
+
+                                    <nobr><a href="https://www.linkedin.com/in/manishanatarajan" target="_blank">Manisha
+                                        Natarajan</a>,
+                                    </nobr>
+
+                                    <nobr><a href="http://www.letianchen.me/" target="_blank">Letian Chen</a>,</nobr>
+
+
+                                    <nobr><em>Rohan Paleja</em>,</nobr>
+
+
+                                    and
+
+                                    <nobr><a href="https://core-robotics.gatech.edu/people/matthew-gombolay/"
+                                             target="_blank">Matthew Gombolay</a>.
+                                    </nobr>
+
+                                </div>
+
+                                <div>
+                                    <p class="periodical font-italic">
+                                        International Symposium on Multi-Robot and Multi-Agent Systems (MRS), 2023
+                                    </p>
+                                </div>
+
+                                <div class="col p-0">
+
+                                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                       href="#wu2023MRS-abstract" role="button" aria-expanded="false"
+                                       aria-controls="wu2023MRS-abstract">Abstract</a>
+                                    <a class="badge grey waves-effect font-weight-light mr-1"
+                                       href="https://arxiv.org/abs/2306.11301" target="_blank">PDF</a>
+                                    <!--          <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/CORE-Robotics-Lab/ICCT" target="_blank">Code</a>-->
+
+                                </div>
+
+                                <div class="col mt-2 p-0">
+                                    <div id="wu2023MRS-abstract" class="collapse">
+                                        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            We study a search and tracking (S&T) problem where a team of dynamic search
+                                            agents must collaborate to track an adversarial, evasive agent. The
+                                            heterogeneous search team may only have access to a limited number of past
+                                            adversary trajectories within a large search space. This problem is
+                                            challenging for both model-based searching and reinforcement learning (RL)
+                                            methods since the adversary exhibits reactionary and deceptive evasive
+                                            behaviors in a large space leading to sparse detections for the search
+                                            agents. To address this challenge, we propose a novel Multi-Agent RL (MARL)
+                                            framework that leverages the estimated adversary location from our learnable
+                                            filtering model. We show that our MARL architecture can outperform all
+                                            baselines and achieves a 46% increase in detection rate.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="row m-0 mt-3 p-0">
+                        <div class="col-sm-1 p-0 abbr">
                             <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
                                href="https://ieee-iros.org/" target="_blank">
                                 IROS
@@ -1724,72 +1806,58 @@
 
 <!-- Scrolling Progress Bar -->
 <script type="text/javascript">
-    $(document).ready(function() {
-      var navbarHeight = $('#navbar').outerHeight(true);
-      $('body').css({ 'padding-top': navbarHeight });
-      $('progress-container').css({ 'padding-top': navbarHeight });
-      var progressBar = $('#progress');
-      progressBar.css({ 'top': navbarHeight });
-      var getMax = function() { return $(document).height() - $(window).height(); }
-      var getValue = function() { return $(window).scrollTop(); }   
-      // Check if the browser supports the progress element.
-      if ('max' in document.createElement('progress')) {
-        // Set the 'max' attribute for the first time.
-        progressBar.attr({ max: getMax() });
-        progressBar.attr({ value: getValue() });
-    
-        $(document).on('scroll', function() {
-          // On scroll only the 'value' attribute needs to be calculated.
-          progressBar.attr({ value: getValue() });
-        });
-
-        $(window).resize(function() {
-          var navbarHeight = $('#navbar').outerHeight(true);
-          $('body').css({ 'padding-top': navbarHeight });
-          $('progress-container').css({ 'padding-top': navbarHeight });
-          progressBar.css({ 'top': navbarHeight });
-          // On resize, both the 'max' and 'value' attributes need to be calculated.
-          progressBar.attr({ max: getMax(), value: getValue() });
-        });
-      } else {
-        var max = getMax(), value, width;
-        var getWidth = function() {
-          // Calculate the window width as a percentage.
-          value = getValue();
-          width = (value/max) * 100;
-          width = width + '%';
-          return width;
+    $(document).ready(function () {
+        var navbarHeight = $('#navbar').outerHeight(true);
+        $('body').css({'padding-top': navbarHeight});
+        $('progress-container').css({'padding-top': navbarHeight});
+        var progressBar = $('#progress');
+        progressBar.css({'top': navbarHeight});
+        var getMax = function () {
+            return $(document).height() - $(window).height();
         }
-        var setWidth = function() { progressBar.css({ width: getWidth() }); };
-        setWidth();
-        $(document).on('scroll', setWidth);
-        $(window).on('resize', function() {
-          // Need to reset the 'max' attribute.
-          max = getMax();
-          setWidth();
-        });
-      }
+        var getValue = function () {
+            return $(window).scrollTop();
+        }
+        // Check if the browser supports the progress element.
+        if ('max' in document.createElement('progress')) {
+            // Set the 'max' attribute for the first time.
+            progressBar.attr({max: getMax()});
+            progressBar.attr({value: getValue()});
+
+            $(document).on('scroll', function () {
+                // On scroll only the 'value' attribute needs to be calculated.
+                progressBar.attr({value: getValue()});
+            });
+
+            $(window).resize(function () {
+                var navbarHeight = $('#navbar').outerHeight(true);
+                $('body').css({'padding-top': navbarHeight});
+                $('progress-container').css({'padding-top': navbarHeight});
+                progressBar.css({'top': navbarHeight});
+                // On resize, both the 'max' and 'value' attributes need to be calculated.
+                progressBar.attr({max: getMax(), value: getValue()});
+            });
+        } else {
+            var max = getMax(), value, width;
+            var getWidth = function () {
+                // Calculate the window width as a percentage.
+                value = getValue();
+                width = (value / max) * 100;
+                width = width + '%';
+                return width;
+            }
+            var setWidth = function () {
+                progressBar.css({width: getWidth()});
+            };
+            setWidth();
+            $(document).on('scroll', setWidth);
+            $(window).on('resize', function () {
+                // Need to reset the 'max' attribute.
+                max = getMax();
+                setWidth();
+            });
+        }
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </script>
@@ -1825,30 +1893,10 @@
     // $grid.masonry('layout');
 
     // Trigger after images load.
-    $grid.imagesLoaded().progress(function() {
-      $grid.masonry({ percentPosition: true });
-      $grid.masonry('layout');
+    $grid.imagesLoaded().progress(function () {
+        $grid.masonry({percentPosition: true});
+        $grid.masonry('layout');
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </script>
@@ -1856,60 +1904,27 @@
 <!-- Enable Tooltips -->
 <script type="text/javascript">
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip()
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </script>
 
 <!-- Google Analytics -->
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', '', 'auto');
     ga('send', 'pageview');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </script>
