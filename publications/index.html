@@ -16,6 +16,74 @@
     <link rel="stylesheet" href="/assets/css/academicons.min.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="/publications/">
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+    <script src="./main.js"></script>
+    <script src="./scroll.js"></script>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+        <!--
+        Begin
+        var scripts = document.getElementsByTagName('script');
+        var myScript = scripts[scripts.length - 1];
+
+        var queryString = myScript.src.replace(/^[^\?]+\??/, '');
+
+        var params = parseQuery(queryString);
+
+        var recruit = 0;
+
+        function parseQuery(query) {
+            var Params = {};
+            if (!query) return Params;
+            var Pairs = query.split(/[;&]/);
+            for (var i = 0; i < Pairs.length; i++) {
+                var KeyVal = Pairs[i].split('=');
+                if (!KeyVal || KeyVal.length != 2) continue;
+                var key = unescape(KeyVal[0]);
+                var val = unescape(KeyVal[1]);
+                val = val.replace(/\+/g, ' ');
+                Params[key] = val;
+            }
+            return Params;
+        }
+
+
+        function showRecruit() {
+            if (recruit == 0) {
+                document.getElementById('recruit').style = 'display:inline-block';
+            } else {
+                document.getElementById('recruit').style = 'display:none';
+            }
+            recruit = 1 - recruit;
+        }
+
+        function showPubs(id) {
+            if (id == 0) {
+                document.getElementById('pubs').innerHTML = document.getElementById('pubs_selected').innerHTML;
+                document.getElementById('select0').style = 'text-decoration:underline;color:#000000';
+                document.getElementById('select1').style = '';
+                document.getElementById('select2').style = '';
+                _altmetric_embed_init();
+            } else if (id == 1) {
+                document.getElementById('pubs').innerHTML = document.getElementById('pubs_by_date').innerHTML;
+                document.getElementById('select1').style = 'text-decoration:underline;color:#000000';
+                document.getElementById('select0').style = '';
+                document.getElementById('select2').style = '';
+                _altmetric_embed_init();
+            } else {
+                document.getElementById('pubs').innerHTML = document.getElementById('pubs_by_topic').innerHTML;
+                document.getElementById('select2').style = 'text-decoration:underline;color:#000000';
+                document.getElementById('select0').style = '';
+                document.getElementById('select1').style = '';
+                _altmetric_embed_init();
+            }
+        }
+
+        //  End -->
+    </script>
 </head>
 <body>
 <!-- Header -->
@@ -104,17 +172,15 @@
 <!-- Content -->
 <div class="content">
 
-    <h1>Publications</h1>
+    <h3>Publications</h3>
     <h6>
         <nobr><em>*</em></nobr>
         denotes equal contribution and joint lead authorship.
     </h6>
-    <h6>Blue - Conference Papers.</h6>
-    <h6>Red - Workshop and Doctoral Consortia Papers.</h6>
-    <h6>Orange - Journal Papers.</h6>
+    <p>Blue - Conference Papers. <br>
+        Red - Workshop and Doctoral Consortia Papers.<br>
+        Orange - Journal Papers.</p>
 
-
-    <p><br/></p>
 
     <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
         <div class="col-sm-1 mt-2 p-0 pr-1">
@@ -122,83 +188,6 @@
         </div>
         <div class="col-sm-11 p-0">
             <ol class="bibliography">
-                <li>
-                    <div class="row m-0 mt-3 p-0">
-                        <div class="col-sm-1 p-0 abbr">
-                            <a class="badge font-weight-bold pink darken-1 align-middle" style="width: 65px;"
-                               href="https://humans-algs-society.github.io/" target="_blank">
-                                HAS
-                            </a>
-                        </div>
-                        <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-
-                            <div id="sharma20243ICML" class="col p-0">
-                                <h5 class="title mb-0">Why Would You Suggest That? Human Trust in Language Model
-                                    Responses</h5>
-                                <div class="author">
-
-
-                                    <nobr>Manasi Sharma,
-                                    </nobr>
-
-
-                                    <nobr>Ho Chit Siu,
-                                    </nobr>
-
-                                    <nobr><em>Rohan Paleja</em>,</nobr>
-                                    and
-
-                                    <nobr>Jaime Pena,</nobr>
-
-
-                                </div>
-
-                                <div>
-                                    <p class="periodical font-italic">
-                                        ICML Workshop on Humans, Algorithmic Decision-Making and Society, 2024
-                                    </p>
-                                </div>
-
-                                <div class="col p-0">
-
-                                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
-                                       href="#sharma20243ICML-abstract" role="button" aria-expanded="false"
-                                       aria-controls="sharma20243ICML-abstract">Abstract</a>
-                                    <a class="badge grey waves-effect font-weight-light mr-1"
-                                       href="https://arxiv.org/pdf/2406.02018" target="_blank">PDF</a>
-                                    <!--          <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/CORE-Robotics-Lab/ICCT" target="_blank">Code</a>-->
-
-                                </div>
-
-                                <div class="col mt-2 p-0">
-                                    <div id="sharma20243ICML-abstract" class="collapse">
-                                        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                                            As learned control policies become increasingly common in autonomous
-                                            systems, there is increasing need to ensure that they are interpretable and
-                                            can be checked by human stakeholders. Formal specifications have been
-                                            proposed as ways to produce human-interpretable policies for autonomous
-                                            systems that can still be learned from examples. Previous work showed that
-                                            despite claims of interpretability, humans are unable to use formal
-                                            specifications presented in a variety of ways to validate even simple robot
-                                            behaviors. This work uses active learning, a standard pedagogical method, to
-                                            attempt to improve humans’ ability to validate policies in signal temporal
-                                            logic (STL). Results show that overall validation accuracy is not high, at
-                                            65% ± 15% (mean ± standard deviation), and that the three conditions
-                                            of no active learning, active learning, and active learning with feedback do
-                                            not significantly differ from each other. Our results suggest that the
-                                            utility of formal specifications for human interpretability is still
-                                            unsupported but point to other avenues of development which may enable
-                                            improvements in system validation.
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-
                 <li>
                     <div class="row m-0 mt-3 p-0">
                         <div class="col-sm-1 p-0 abbr">
@@ -900,7 +889,8 @@
                                        aria-controls="pimentel2022Scaling-abstract">Abstract</a>
 
                                     <a class="badge grey waves-effect font-weight-light mr-1"
-                                       href="/assets/pdf/RSS22_SRL_Workshop_Paper_final_accepted.pdf" target="_blank">PDF</a>
+                                       href="/assets/pdf/RSS22_SRL_Workshop_Paper_final_accepted.pdf"
+                                       target="_blank">PDF</a>
 
                                 </div>
 
@@ -1421,9 +1411,16 @@
                                        target="_blank">PDF</a>
                                     <a class="badge grey waves-effect font-weight-light mr-1"
                                        href="https://github.com/CORE-Robotics-Lab/MAGIC" target="_blank">Code</a>
+                                    <br>
+                                    <iframe src="https://ghbtns.com/github-btn.html?user=CORE-Robotics-Lab&repo=MAGIC&type=star&count=true"
+                                            frameborder="0" scrolling="0" width="100" height="27" title="GitHub Star"
+                                            style="padding-top: 5px;"></iframe>
+                                    <br>
+                                    <iframe src="https://ghbtns.com/github-btn.html?user=CORE-Robotics-Lab&repo=MAGIC&type=fork&count=true"
+                                            frameborder="0" scrolling="0" width="100" height="20" title="GitHub Fork"
+                                            style="padding-top: 0px;"></iframe>
 
                                 </div>
-
 
                                 <div class="col mt-2 p-0">
                                     <div id="paleja2021AAMAS-abstract" class="collapse">
@@ -1593,8 +1590,14 @@
                                        href="https://www.youtube.com/watch?v=tjGEoe33HAg" target="_blank">Talk</a>
                                     <a class="badge grey waves-effect font-weight-light mr-1"
                                        href="https://www.youtube.com/watch?v=4TYfeymwj3E" target="_blank">Spotlight
-                                        Talk</a>
-
+                                        Talk</a><br>
+                                    <iframe src="https://ghbtns.com/github-btn.html?user=CORE-Robotics-Lab&repo=SSRR&type=star&count=true"
+                                            frameborder="0" scrolling="0" width="100" height="27" title="GitHub"
+                                            style="padding-top: 5px;"></iframe>
+                                    <br>
+                                    <iframe src="https://ghbtns.com/github-btn.html?user=CORE-Robotics-Lab&repo=SSRR&type=fork&count=true"
+                                            frameborder="0" scrolling="0" width="100" height="20"
+                                            title="GitHub"></iframe>
                                 </div>
 
 
@@ -1867,6 +1870,10 @@
 
 
 </footer>
+<!-- ShowPubs choices -->
+<script>showPubs(0);</script>
+<script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
+
 
 <!-- Core JavaScript Files -->
 <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
