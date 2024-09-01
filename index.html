@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="/">
 
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+	<script src="./main.js"></script>
+  	<script src="./scroll.js"></script>
+
     <SCRIPT LANGUAGE="JavaScript">
 
         <!--
@@ -44,6 +49,63 @@
         function showImage() {
             document.write('<img class="profile-img img-responsive" src="' + theImages[whichImage] + '" align="middle" height="230">');
             document.write('<p><font color="gray" size="1">Photo credit: ' + theCredits[whichImage] + '</font></p>');
+        }
+
+
+        var scripts = document.getElementsByTagName('script');
+        var myScript = scripts[scripts.length - 1];
+
+        var queryString = myScript.src.replace(/^[^\?]+\??/, '');
+
+        var params = parseQuery(queryString);
+
+        var recruit = 0;
+
+        function parseQuery(query) {
+            var Params = {};
+            if (!query) return Params;
+            var Pairs = query.split(/[;&]/);
+            for (var i = 0; i < Pairs.length; i++) {
+                var KeyVal = Pairs[i].split('=');
+                if (!KeyVal || KeyVal.length != 2) continue;
+                var key = unescape(KeyVal[0]);
+                var val = unescape(KeyVal[1]);
+                val = val.replace(/\+/g, ' ');
+                Params[key] = val;
+            }
+            return Params;
+        }
+
+
+        function showRecruit() {
+            if (recruit == 0) {
+                document.getElementById('recruit').style = 'display:inline-block';
+            } else {
+                document.getElementById('recruit').style = 'display:none';
+            }
+            recruit = 1 - recruit;
+        }
+
+        function showPubs(id) {
+            if (id == 0) {
+                document.getElementById('pubs').innerHTML = document.getElementById('pubs_selected').innerHTML;
+                document.getElementById('select0').style = 'text-decoration:underline;color:#000000';
+                document.getElementById('select1').style = '';
+                document.getElementById('select2').style = '';
+                _altmetric_embed_init();
+            } else if (id == 1) {
+                document.getElementById('pubs').innerHTML = document.getElementById('pubs_by_date').innerHTML;
+                document.getElementById('select1').style = 'text-decoration:underline;color:#000000';
+                document.getElementById('select0').style = '';
+                document.getElementById('select2').style = '';
+                _altmetric_embed_init();
+            } else {
+                document.getElementById('pubs').innerHTML = document.getElementById('pubs_by_topic').innerHTML;
+                document.getElementById('select2').style = 'text-decoration:underline;color:#000000';
+                document.getElementById('select0').style = '';
+                document.getElementById('select1').style = '';
+                _altmetric_embed_init();
+            }
         }
 
         //  End -->
@@ -173,8 +235,8 @@
             <p style="font-size: 16px; color: orange">
                 <strong>I will join Purdue as an Assistant Professor in Computer Science in Fall, 2025!</strong>
             </p>
-            <p style="font-size: 14px;">
-                I'm looking for technically strong self-motivated students to join my lab. For PhD students
+            <p style="font-size: 14px;  color: orange">
+                I'm looking for technically strong and self-motivated students to join my lab. For PhD students
                 with an application deadline in December 2024, please apply to Purdue CS, and mention my name in
                 your application (you are welcome to shoot me an email early at rpaleja {at} purdue.edu). For other
                 roles,
@@ -203,9 +265,11 @@
     </div>
 
 
+
+
     <!-- News -->
     <div class="news mt-3 p-0">
-        <h1 class="title mb-4 p-0">Recent News</h1>
+        <h3 class="title mb-4 p-0">Recent News</h3>
 
         <div class="row p-0">
             <div class="col-sm-2 p-0">
@@ -214,8 +278,9 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> Our paper <a href="https://arxiv.org/pdf/2406.02018"
-                                 target="_blank">Why Would You Suggest That? Human Trust in Language Model Responses</a>
+                <p style="font-size: 14px;"> Our paper <a href="https://arxiv.org/pdf/2406.02018"
+                                                          target="_blank">Why Would You Suggest That? Human Trust in
+                    Language Model Responses</a>
                     has been accepted to the <a
                             href="https://humans-algs-society.github.io/" target="_blank">ICML Workshop on Humans,
                         Algorithmic Decision-Making and Society.
@@ -231,7 +296,7 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> I gave an invited talk at the Carnegie Mellon University<a
+                <p style="font-size: 14px;"> I gave an invited talk at the Carnegie Mellon University<a
                         href="https://safeai-lab.github.io/index.html"
                         target="_blank">Safe AI Lab</a> seminar.
                 </p>
@@ -245,7 +310,7 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> I hosted a successful workshop on<a
+                <p style="font-size: 14px;"> I hosted a successful workshop on<a
                         href="https://sites.google.com/view/roboletics/home"
                         target="_blank">Robot Learning in Athletics</a> at the Conference of Robot Learning in Atlanta,
                     GA.
@@ -259,7 +324,7 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> I gave an invited talk at the <a
+                <p style="font-size: 14px;"> I gave an invited talk at the <a
                         href="https://events.temple.edu/me-seminar-transformative-science-technology-engineering-lecture-series"
                         target="_blank">Transformative Science and Technology Lecture Series</a> at Temple University.
             </div>
@@ -272,7 +337,8 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> I started as a Technical Staff Researcher at MIT Lincoln Laboratory in the AI Technology Group!
+                <p style="font-size: 14px;"> I started as a Technical Staff Researcher at MIT Lincoln Laboratory in the
+                    AI Technology Group!
             </div>
         </div>
 
@@ -283,7 +349,8 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> I successfully defended my Ph.D. on "Interpretable Artificial Intelligence for Personalized
+                <p style="font-size: 14px;"> I successfully defended my Ph.D. on "Interpretable Artificial Intelligence
+                    for Personalized
                     Human-Robot Collaboration."
             </div>
         </div>
@@ -296,8 +363,9 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> Our workshop on <a href="https://sites.google.com/view/roboletics/home"
-                                       target="_blank">Robot Learning in athlEtics (RoboLetics) </a> has been accepted
+                <p style="font-size: 14px;"> Our workshop on <a href="https://sites.google.com/view/roboletics/home"
+                                                                target="_blank">Robot Learning in athlEtics
+                    (RoboLetics) </a> has been accepted
                     to the Conference of Robot Learning in Atlanta.
             </div>
         </div>
@@ -310,8 +378,9 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> I gave an invited talk at the <a href="https://montrealrobotics.ca/robotlearningseries/"
-                                                     target="_blank"> Robot Learning Seminar</a> hosted by <a
+                <p style="font-size: 14px;"> I gave an invited talk at the <a
+                        href="https://montrealrobotics.ca/robotlearningseries/"
+                        target="_blank"> Robot Learning Seminar</a> hosted by <a
                         href="https://mila.quebec/en/" target="_blank"> Mila</a> and the <a
                         href="https://montrealrobotics.ca/" target="_blank">Robotics and Embodied AI Lab </a> on
                     "Personalized and Interpretable Artificial Intelligence for Positive Human-Machine Interaction".
@@ -326,8 +395,9 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> Our paper <a href="https://arxiv.org/pdf/2306.11168.pdf"
-                                 target="_blank">Learning Models of Adversarial Agent Behavior under Partial
+                <p style="font-size: 14px;"> Our paper <a href="https://arxiv.org/pdf/2306.11168.pdf"
+                                                          target="_blank">Learning Models of Adversarial Agent Behavior
+                    under Partial
                     Observability</a>
                     has been accepted to the <a
                             href="https://ieee-iros.org/" target="_blank">IEEE/RSJ International Conference on
@@ -344,8 +414,9 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> Our<a href="https://nms.kcl.ac.uk/icra2023.explainablerobotics/"
-                          target="_blank">Explainable Robotics</a> at ICRA 2023 was awarded an external sponsorship from
+                <p style="font-size: 14px;"> Our<a href="https://nms.kcl.ac.uk/icra2023.explainablerobotics/"
+                                                   target="_blank">Explainable Robotics</a> at ICRA 2023 was awarded an
+                    external sponsorship from
                     the Artificial Intelligence Journal.
                 </p>
             </div>
@@ -359,8 +430,9 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> Organizing a workshop on <a href="https://nms.kcl.ac.uk/icra2023.explainablerobotics/"
-                                                target="_blank">Explainable Robotics</a> at ICRA 2023 in London.
+                <p style="font-size: 14px;"> Organizing a workshop on <a
+                        href="https://nms.kcl.ac.uk/icra2023.explainablerobotics/"
+                        target="_blank">Explainable Robotics</a> at ICRA 2023 in London.
                 </p>
             </div>
         </div>
@@ -372,8 +444,9 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> Our paper <a href="https://sites.gatech.edu/core-robotics/files/2023/01/zaidi_wtr.pdf"
-                                 target="_blank">Athletic Mobile Manipulator System for Robotic Wheelchair Tennis </a>
+                <p style="font-size: 14px;"> Our paper <a
+                        href="https://sites.gatech.edu/core-robotics/files/2023/01/zaidi_wtr.pdf"
+                        target="_blank">Athletic Mobile Manipulator System for Robotic Wheelchair Tennis </a>
                     has been accepted to the <a
                             href="https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=7083369" target="_blank">IEEE
                         Robotics and Automation Letters</a>.
@@ -388,8 +461,9 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> Our paper <a href="https://core-robotics.gatech.edu/files/2023/01/HRI2023_Ping_Pong_colab_final.pdf"
-                                 target="_blank">The Effect of Robot Skill Level and Communication in Rapid, Proximate
+                <p style="font-size: 14px;"> Our paper <a
+                        href="https://core-robotics.gatech.edu/files/2023/01/HRI2023_Ping_Pong_colab_final.pdf"
+                        target="_blank">The Effect of Robot Skill Level and Communication in Rapid, Proximate
                     Human-Robot Collaboration</a> has been accepted to the <a
                         href="https://humanrobotinteraction.org/2023/" target="_blank">International Conference on
                     Human-Robot Interaction (HRI)</a>.
@@ -404,8 +478,9 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> Our paper <a href="https://sites.gatech.edu/core-robotics/files/2022/12/ProMP_WTR_final_draft.pdf"
-                                 target="_blank">Utilizing Human Feedback for Primitive Optimization in Wheelchair
+                <p style="font-size: 14px;"> Our paper <a
+                        href="https://sites.gatech.edu/core-robotics/files/2022/12/ProMP_WTR_final_draft.pdf"
+                        target="_blank">Utilizing Human Feedback for Primitive Optimization in Wheelchair
                     Tennis</a> has been accepted to the <a href="https://www.agilerobotscorl2022.com/" target="_blank">Learning
                     for Agile Robotics Workshop at the Conference of Robot Learning</a>.
                 </p>
@@ -419,7 +494,8 @@
         </span>
             </div>
             <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p> Our paper <a href="https://arxiv.org/pdf/2209.11908.pdf" target="_blank">Fast Lifelong Adaptive
+                <p style="font-size: 14px;"> Our paper <a href="https://arxiv.org/pdf/2209.11908.pdf" target="_blank">Fast
+                    Lifelong Adaptive
                     Inverse Reinforcement Learning from Demonstrations</a> has been accepted to the <a
                         href="https://www.robot-learning.org/" target="_blank">Conference of Robot Learning (CoRL)</a>.
                 </p>
@@ -427,252 +503,252 @@
         </div>
 
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--          Jun 2022-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper <a-->
-<!--                        href="https://cpn-us-w2.wpmucdn.com/sites.gatech.edu/dist/d/958/files/2022/06/RSS22_SRL_Workshop_Paper_final_accepted.pdf"-->
-<!--                        target="_blank">Scaling Multi-Agent Reinforcement Learning via State Upsampling</a> has been-->
-<!--                    accepted to the <a href="https://sites.google.com/view/rss22-srl/home" target="_blank">Robotics-->
-<!--                        Science and Systems Workshop on Scaling Robot Learning (RSS22-SRL)</a>.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--          Jun 2022-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper <a-->
+        <!--                        href="https://cpn-us-w2.wpmucdn.com/sites.gatech.edu/dist/d/958/files/2022/06/RSS22_SRL_Workshop_Paper_final_accepted.pdf"-->
+        <!--                        target="_blank">Scaling Multi-Agent Reinforcement Learning via State Upsampling</a> has been-->
+        <!--                    accepted to the <a href="https://sites.google.com/view/rss22-srl/home" target="_blank">Robotics-->
+        <!--                        Science and Systems Workshop on Scaling Robot Learning (RSS22-SRL)</a>.-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--          May 2022-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> I’ll be joining MIT Lincoln Laboratory for the summer as a summer research intern!-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--          May 2022-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> I’ll be joining MIT Lincoln Laboratory for the summer as a summer research intern!-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--          MAY 2022-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> I’ve officially passed my PhD thesis proposal titled “Interpretable Artificial Intelligence for-->
-<!--                    Personalized Human-Robot Collaboration” and am now a Ph.D. candidate!-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--          MAY 2022-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> I’ve officially passed my PhD thesis proposal titled “Interpretable Artificial Intelligence for-->
+        <!--                    Personalized Human-Robot Collaboration” and am now a Ph.D. candidate!-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--          FEB 2022-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> My submission, <a href="https://core-robotics.gatech.edu/files/2022/02/AAAI_DC_Rohan_Paleja.pdf"-->
-<!--                                      target="_blank">"Mutual Understanding in Human-Machine Teaming"</a> has been-->
-<!--                    accepted to the <a href="https://aaaidc.github.io/dc2022/"-->
-<!--                                       target="https://aaaidc.github.io/dc2022/">"Advancement of Artificial Intelligence-->
-<!--                        Conference (AAAI) Doctoral Consortium"</a>.&nbsp;-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--          FEB 2022-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> My submission, <a href="https://core-robotics.gatech.edu/files/2022/02/AAAI_DC_Rohan_Paleja.pdf"-->
+        <!--                                      target="_blank">"Mutual Understanding in Human-Machine Teaming"</a> has been-->
+        <!--                    accepted to the <a href="https://aaaidc.github.io/dc2022/"-->
+        <!--                                       target="https://aaaidc.github.io/dc2022/">"Advancement of Artificial Intelligence-->
+        <!--                        Conference (AAAI) Doctoral Consortium"</a>.&nbsp;-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--          DEC 2021-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper&nbsp;<a href="https://ieeexplore.ieee.org/document/9561430"-->
-<!--                                      target="https://ieeexplore.ieee.org/document/9561430">"Learning Efficient Diverse-->
-<!--                    Communication for Cooperative Heterogeneous Teaming"</a>&nbsp;has been accepted to the <a-->
-<!--                        href="https://aamas2022-conference.auckland.ac.nz/"-->
-<!--                        target="https://aamas2022-conference.auckland.ac.nz/">" International Conference on Autonomous-->
-<!--                    Agents and Multiagent Systems (AAMAS)"</a>.&nbsp;-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--          DEC 2021-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper&nbsp;<a href="https://ieeexplore.ieee.org/document/9561430"-->
+        <!--                                      target="https://ieeexplore.ieee.org/document/9561430">"Learning Efficient Diverse-->
+        <!--                    Communication for Cooperative Heterogeneous Teaming"</a>&nbsp;has been accepted to the <a-->
+        <!--                        href="https://aamas2022-conference.auckland.ac.nz/"-->
+        <!--                        target="https://aamas2022-conference.auckland.ac.nz/">" International Conference on Autonomous-->
+        <!--                    Agents and Multiagent Systems (AAMAS)"</a>.&nbsp;-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--          Nov 2021-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper&nbsp;<a-->
-<!--                        href="https://www.tandfonline.com/doi/full/10.1080/21681163.2021.2002724?scroll=top&needAccess=true"-->
-<!--                        target="https://www.tandfonline.com/doi/full/10.1080/21681163.2021.2002724?scroll=top&needAccess=true">"Using-->
-<!--                    Machine Learning to Predict Perfusionists Critical Decision-Making during Cardiac Surgery"</a>&nbsp;has-->
-<!--                    been published to the <a href="https://www.tandfonline.com/journals/tciv20"-->
-<!--                                             target="https://www.tandfonline.com/journals/tciv20">" Journal on Computer-->
-<!--                        Methods in Biomechanics and Biomedical Engineering: Imaging & Visualization</a>.&nbsp;-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--          Nov 2021-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper&nbsp;<a-->
+        <!--                        href="https://www.tandfonline.com/doi/full/10.1080/21681163.2021.2002724?scroll=top&needAccess=true"-->
+        <!--                        target="https://www.tandfonline.com/doi/full/10.1080/21681163.2021.2002724?scroll=top&needAccess=true">"Using-->
+        <!--                    Machine Learning to Predict Perfusionists Critical Decision-Making during Cardiac Surgery"</a>&nbsp;has-->
+        <!--                    been published to the <a href="https://www.tandfonline.com/journals/tciv20"-->
+        <!--                                             target="https://www.tandfonline.com/journals/tciv20">" Journal on Computer-->
+        <!--                        Methods in Biomechanics and Biomedical Engineering: Imaging & Visualization</a>.&nbsp;-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--          Oct 2021-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper&nbsp;<a-->
-<!--                        href="https://core-robotics.gatech.edu/files/2021/11/the_utility_of_explainable_ai_.pdf"-->
-<!--                        target="https://core-robotics.gatech.edu/files/2021/11/the_utility_of_explainable_ai_.pdf">"The-->
-<!--                    Utility of Explainable AI in Ad Hoc Human-Machine Teaming"</a>&nbsp;has been published to the <a-->
-<!--                        href="https://neurips.cc/Conferences/2021/" target="https://neurips.cc/Conferences/2021/">"-->
-<!--                    Conference on Neural Information Processing Systems (NeurIPS)</a>.&nbsp;-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--          Oct 2021-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper&nbsp;<a-->
+        <!--                        href="https://core-robotics.gatech.edu/files/2021/11/the_utility_of_explainable_ai_.pdf"-->
+        <!--                        target="https://core-robotics.gatech.edu/files/2021/11/the_utility_of_explainable_ai_.pdf">"The-->
+        <!--                    Utility of Explainable AI in Ad Hoc Human-Machine Teaming"</a>&nbsp;has been published to the <a-->
+        <!--                        href="https://neurips.cc/Conferences/2021/" target="https://neurips.cc/Conferences/2021/">"-->
+        <!--                    Conference on Neural Information Processing Systems (NeurIPS)</a>.&nbsp;-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--          Oct 2021-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper&nbsp;"MAGIC: Multi-Agent Graph Attention Communication"&nbsp; was accepted <a-->
-<!--                        href="https://www.mair2.com/home" target="https://www.mair2.com/home">" ICCV 2021 workshop on-->
-<!--                    Multiagent Interaction and Relational Reasoning (MAIR2)</a> and won a Best Workshop Paper award.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--          Oct 2021-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper&nbsp;"MAGIC: Multi-Agent Graph Attention Communication"&nbsp; was accepted <a-->
+        <!--                        href="https://www.mair2.com/home" target="https://www.mair2.com/home">" ICCV 2021 workshop on-->
+        <!--                    Multiagent Interaction and Relational Reasoning (MAIR2)</a> and won a Best Workshop Paper award.-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--          Sep 2021-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper "Towards Sample-efficient Apprenticeship Learning from Suboptimal Demonstration" was-->
-<!--                    accepted <a href="https://ai-hri.github.io/2021/" target="https://ai-hri.github.io/2021/">" AAAI-->
-<!--                        Artificial Intelligence for Human-Robot Interaction (AI-HRI) Fall Symposium.</a>-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--          Sep 2021-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper "Towards Sample-efficient Apprenticeship Learning from Suboptimal Demonstration" was-->
+        <!--                    accepted <a href="https://ai-hri.github.io/2021/" target="https://ai-hri.github.io/2021/">" AAAI-->
+        <!--                        Artificial Intelligence for Human-Robot Interaction (AI-HRI) Fall Symposium.</a>-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--          May 2021-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> I was awarded the Outstanding Graduate Teaching Assistant Award for the School of Interactive-->
-<!--                    Computing at the Georgia Institute of Technology.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--          May 2021-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> I was awarded the Outstanding Graduate Teaching Assistant Award for the School of Interactive-->
+        <!--                    Computing at the Georgia Institute of Technology.-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--      <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--        Mar 2021-->
-<!--      </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper&nbsp;<a href="https://arxiv.org/abs/1906.06397" target="https://arxiv.org/abs/1906.06397">"Interpretable-->
-<!--                    and Personalized Apprenticeship Scheduling: Learning Interpretable Scheduling Policies from-->
-<!--                    Heterogeneous User Demonstrations" </a>&nbsp;has been accepted to the <a-->
-<!--                        href="https://u.cs.biu.ac.il/~agmon/arms2021/" target="https://u.cs.biu.ac.il/~agmon/arms2021/">"-->
-<!--                    AAMAS Autonomous Robots and Multirobot Systems (ARMS) Workshop</a>.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--      <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--        Mar 2021-->
+        <!--      </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper&nbsp;<a href="https://arxiv.org/abs/1906.06397" target="https://arxiv.org/abs/1906.06397">"Interpretable-->
+        <!--                    and Personalized Apprenticeship Scheduling: Learning Interpretable Scheduling Policies from-->
+        <!--                    Heterogeneous User Demonstrations" </a>&nbsp;has been accepted to the <a-->
+        <!--                        href="https://u.cs.biu.ac.il/~agmon/arms2021/" target="https://u.cs.biu.ac.il/~agmon/arms2021/">"-->
+        <!--                    AAMAS Autonomous Robots and Multirobot Systems (ARMS) Workshop</a>.-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--         Dec 2020-->
-<!--        </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper&nbsp;<a href="https://dl.acm.org/doi/abs/10.5555/3463952.3464065"-->
-<!--                                      target="https://dl.acm.org/doi/abs/10.5555/3463952.3464065">"Multi-Agent-->
-<!--                    Graph-Attention Communication and Teaming"</a>&nbsp;has been accepted to the <a-->
-<!--                        href="https://aamas2021.soton.ac.uk/" target="https://aamas2021.soton.ac.uk/">" International-->
-<!--                    Conference on Autonomous Agents and Multiagent Systems (AAMAS)</a>.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--         Dec 2020-->
+        <!--        </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper&nbsp;<a href="https://dl.acm.org/doi/abs/10.5555/3463952.3464065"-->
+        <!--                                      target="https://dl.acm.org/doi/abs/10.5555/3463952.3464065">"Multi-Agent-->
+        <!--                    Graph-Attention Communication and Teaming"</a>&nbsp;has been accepted to the <a-->
+        <!--                        href="https://aamas2021.soton.ac.uk/" target="https://aamas2021.soton.ac.uk/">" International-->
+        <!--                    Conference on Autonomous Agents and Multiagent Systems (AAMAS)</a>.-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--      <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--        Dec 2020-->
-<!--      </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper&nbsp;<a href="https://dl.acm.org/doi/pdf/10.1145/3434073.3444649"-->
-<!--                                      target="https://dl.acm.org/doi/pdf/10.1145/3434073.3444649">" Effects of Social-->
-<!--                    Factors and Team Dynamics on Adoption of Collaborative Robot Autonomy" </a>&nbsp;has been accepted-->
-<!--                    to the <a href="https://humanrobotinteraction.org/2021/"-->
-<!--                              target="https://humanrobotinteraction.org/2021/">" International Conference on Human-Robot-->
-<!--                        Interaction (HRI)</a>.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--      <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--        Dec 2020-->
+        <!--      </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper&nbsp;<a href="https://dl.acm.org/doi/pdf/10.1145/3434073.3444649"-->
+        <!--                                      target="https://dl.acm.org/doi/pdf/10.1145/3434073.3444649">" Effects of Social-->
+        <!--                    Factors and Team Dynamics on Adoption of Collaborative Robot Autonomy" </a>&nbsp;has been accepted-->
+        <!--                    to the <a href="https://humanrobotinteraction.org/2021/"-->
+        <!--                              target="https://humanrobotinteraction.org/2021/">" International Conference on Human-Robot-->
+        <!--                        Interaction (HRI)</a>.-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--      <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--        Oct 2020-->
-<!--      </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper&nbsp;<a href="https://arxiv.org/pdf/2010.11723.pdf"-->
-<!--                                      target="https://arxiv.org/pdf/2010.11723.pdf">"Learning from Suboptimal-->
-<!--                    Demonstration via Self-Supervised Reward Regression"</a> was accepted to the&nbsp;<a-->
-<!--                        href="https://www.robot-learning.org/" target="https://www.robot-learning.org/"> Conference on-->
-<!--                    Robot Learning (CoRL).</a> and received a best paper nomination.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--      <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--        Oct 2020-->
+        <!--      </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper&nbsp;<a href="https://arxiv.org/pdf/2010.11723.pdf"-->
+        <!--                                      target="https://arxiv.org/pdf/2010.11723.pdf">"Learning from Suboptimal-->
+        <!--                    Demonstration via Self-Supervised Reward Regression"</a> was accepted to the&nbsp;<a-->
+        <!--                        href="https://www.robot-learning.org/" target="https://www.robot-learning.org/"> Conference on-->
+        <!--                    Robot Learning (CoRL).</a> and received a best paper nomination.-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--      <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--        Oct 2020-->
-<!--      </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper&nbsp;<a href="https://arxiv.org/abs/1906.06397" target="https://arxiv.org/abs/1906.06397">"Interpretable-->
-<!--                    and Personalized Apprenticeship Scheduling: Learning Interpretable Scheduling Policies from-->
-<!--                    Heterogeneous User Demonstrations"</a>&nbsp;has been published to the <a-->
-<!--                        href="https://neurips.cc/Conferences/2020/" target="https://neurips.cc/Conferences/2020/">"-->
-<!--                    Conference on Neural Information Processing Systems (NeurIPS)</a>.&nbsp;-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--      <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--        Oct 2020-->
+        <!--      </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper&nbsp;<a href="https://arxiv.org/abs/1906.06397" target="https://arxiv.org/abs/1906.06397">"Interpretable-->
+        <!--                    and Personalized Apprenticeship Scheduling: Learning Interpretable Scheduling Policies from-->
+        <!--                    Heterogeneous User Demonstrations"</a>&nbsp;has been published to the <a-->
+        <!--                        href="https://neurips.cc/Conferences/2020/" target="https://neurips.cc/Conferences/2020/">"-->
+        <!--                    Conference on Neural Information Processing Systems (NeurIPS)</a>.&nbsp;-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="row p-0">-->
-<!--            <div class="col-sm-2 p-0">-->
-<!--      <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
-<!--        Jan 2020-->
-<!--      </span>-->
-<!--            </div>-->
-<!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
-<!--                <p> Our paper&nbsp;<a href="https://arxiv.org/abs/2001.00503" target="https://arxiv.org/abs/2001.00503">"-->
-<!--                    Joint Goal and Strategy Inference across Heterogeneous Demonstrators via Reward Network Distillation-->
-<!--                    " </a>&nbsp;has been accepted to the <a href="https://humanrobotinteraction.org/2020/"-->
-<!--                                                            target="https://humanrobotinteraction.org/2020/">"-->
-<!--                    International Conference on Human-Robot Interaction (HRI)</a>.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row p-0">-->
+        <!--            <div class="col-sm-2 p-0">-->
+        <!--      <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">-->
+        <!--        Jan 2020-->
+        <!--      </span>-->
+        <!--            </div>-->
+        <!--            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">-->
+        <!--                <p> Our paper&nbsp;<a href="https://arxiv.org/abs/2001.00503" target="https://arxiv.org/abs/2001.00503">"-->
+        <!--                    Joint Goal and Strategy Inference across Heterogeneous Demonstrators via Reward Network Distillation-->
+        <!--                    " </a>&nbsp;has been accepted to the <a href="https://humanrobotinteraction.org/2020/"-->
+        <!--                                                            target="https://humanrobotinteraction.org/2020/">"-->
+        <!--                    International Conference on Human-Robot Interaction (HRI)</a>.-->
+        <!--                </p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
 
         <!--
@@ -699,6 +775,11 @@
     &copy; Copyright 2023 Rohan Paleja.
 
 </footer>
+
+	<!-- ShowPubs choices -->
+	<script>showPubs(0);</script>
+	<script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
+
 
 <!-- Core JavaScript Files -->
 <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
