@@ -22,6 +22,33 @@
     <script src="./main.js"></script>
     <script src="./scroll.js"></script>
 
+
+    <style>
+        .search-container {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 600px;
+            padding: 8px 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            transition: border-color 0.2s ease;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #666;
+        }
+
+        .publication-hidden {
+            display: none !important;
+        }
+    </style>
+
     <SCRIPT LANGUAGE="JavaScript">
 
         <!--
@@ -173,6 +200,49 @@
 <div class="content">
 
     <h3>Publications</h3>
+    <input type="text" id="publicationSearch" placeholder="Search publications..." class="search-box">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchBox = document.getElementById('publicationSearch');
+
+            searchBox.addEventListener('input', function (e) {
+                const searchTerm = e.target.value.toLowerCase();
+
+                // Get all publication rows
+                const publications = document.querySelectorAll('.row.m-0.mt-3.p-0');
+
+                publications.forEach(pub => {
+                    // Search in title, authors, venue, and abstract
+                    const title = pub.querySelector('.title')?.textContent.toLowerCase() || '';
+                    const author = pub.querySelector('.author')?.textContent.toLowerCase() || '';
+                    const venue = pub.querySelector('div')?.textContent.toLowerCase() || '';
+                    const abstract = pub.querySelector('.abstract')?.textContent.toLowerCase() || '';
+
+                    const matches = title.includes(searchTerm) ||
+                        author.includes(searchTerm) ||
+                        venue.includes(searchTerm) ||
+                        abstract.includes(searchTerm);
+
+                    // Toggle visibility
+                    pub.classList.toggle('publication-hidden', !matches);
+
+                    // Also handle the year headers
+                    const yearSection = pub.closest('.row.m-0.p-0');
+                    if (yearSection) {
+                        const visiblePubs = Array.from(yearSection.querySelectorAll('.row.m-0.mt-3.p-0'))
+                            .filter(p => !p.classList.contains('publication-hidden'));
+
+                        // Hide year section if no visible publications
+                        const yearHeader = yearSection.querySelector('.bibliography-year')?.closest('.row');
+                        if (yearHeader) {
+                            yearHeader.classList.toggle('publication-hidden', visiblePubs.length === 0);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
     <h6>
         <nobr><em>*</em></nobr>
         denotes equal contribution and joint lead authorship.
@@ -184,10 +254,258 @@
 
     <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
         <div class="col-sm-1 mt-2 p-0 pr-1">
+            <h3 class="bibliography-year">2024</h3>
+        </div>
+        <div class="col-sm-11 p-0">
+            <ol class="bibliography">
+                <li>
+                    <div class="row m-0 mt-3 p-0">
+                        <div class="col-sm-1 p-0 abbr">
+                            <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                               href="https://neurips.cc/" target="_blank">
+                                NeurIPS
+                            </a>
+                        </div>
+                        <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                            <div id="paleja2024NeurIPS" class="col p-0">
+                                <h5 class="title mb-0">Designs for Enabling Collaboration in Human-Machine Teaming via
+                                    Interactive and Explainable Systems</h5>
+                                <div class="author">
+
+                                    <nobr><em>Rohan Paleja,</em>,</nobr>
+                                    <nobr>Michael Munje,</nobr>
+                                    <nobr>Kimberlee Chang,</nobr>
+                                    <nobr>Reed Jensen,</nobr>
+                                    and
+                                    <nobr><a href="https://core-robotics.gatech.edu/people/matthew-gombolay/"
+                                             target="_blank">Matthew Gombolay</a>.
+                                    </nobr>
+
+                                </div>
+
+                                <div>
+                                    <p class="periodical font-italic">
+                                        Neural Information Processing Systems (NeurIPS), 2024
+                                    </p>
+                                </div>
+
+                                <div class="col p-0">
+
+                                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                       href="#paleja2024NeurIPS-abstract" role="button" aria-expanded="false"
+                                       aria-controls="paleja2024NeurIPS-abstract">Abstract</a>
+
+                                    <a class="badge grey waves-effect font-weight-light mr-1"
+                                       href="https://openreview.net/pdf?id=XrK4JK2jBr" target="_blank">PDF</a>
+                                    <a class="badge grey waves-effect font-weight-light mr-1"
+                                       href="https://github.com/CORE-Robotics-Lab/Team-Development-with-Transparent-Policies"
+                                       target="_blank">Code</a>
+                                </div>
+
+
+                                <div class="col mt-2 p-0">
+                                    <div id="paleja2024NeurIPS-abstract" class="collapse">
+                                        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            Collaborative robots and machine learning-based virtual agents are
+                                            increasingly entering the human workspace with the aim of increasing
+                                            productivity and enhancing safety. Despite this, we show in a ubiquitous
+                                            experimental domain, Overcooked-AI, that state-of-the-art techniques for
+                                            human-machine teaming (HMT), which rely on imitation or reinforcement
+                                            learning, are brittle and result in a machine agent that aims to decouple
+                                            the machine and human’s actions to act independently rather than in a
+                                            synergistic fashion. To remedy this deficiency, we develop HMT approaches
+                                            that enable iterative, mixed-initiative team development allowing end-users
+                                            to interactively reprogram interpretable AI teammates. Our 50-subject study
+                                            provides several findings that we summarize into guidelines. While all
+                                            approaches underperform a simple collaborative heuristic (a critical,
+                                            negative result for learning-based methods), we find that white-box
+                                            approaches supported by interactive modification can lead to significant
+                                            team development, outperforming white-box approaches alone, and that
+                                            black-box approaches are easier to train and result in better HMT
+                                            performance highlighting a tradeoff between explainability and interactivity
+                                            versus ease-of-training. Together, these findings present three important
+                                            future research directions: 1) Improving the ability to generate
+                                            collaborative agents with white-box models, 2) Better learning methods to
+                                            facilitate collaboration rather than individualized coordination, and 3)
+                                            Mixed-initiative interfaces that enable users, who may vary in ability, to
+                                            improve collaboration.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="row m-0 mt-3 p-0">
+                        <div class="col-sm-1 p-0 abbr">
+                            <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                               href="https://neurips.cc" target="_blank">
+                                NeurIPS
+                            </a>
+                        </div>
+                        <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                            <div id="hurley2024NeurIPS" class="col p-0">
+                                <h5 class="title mb-0">STL: Still Tricky Logic (for System Validation, Even When Showing
+                                    Your Work) </h5>
+                                <div class="author">
+                                    <nobr>Isabelle Hurley,
+                                        <nobr><em>Rohan Paleja</em>,</nobr>
+                                        <nobr>Ashley Suh,</nobr>
+                                        <nobr>Jaime D. Pe&ntildea,</nobr>
+                                        and
+
+                                        <nobr>Ho Chit Siu
+                                        </nobr>
+
+
+                                </div>
+
+                                <div>
+                                    <p class="periodical font-italic">
+                                        Conference on Neural Information Processing Systems (NeurIPS), 2024.
+                                    </p>
+                                </div>
+
+                                <div class="col p-0">
+
+                                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                       href="#hurley2024NeurIPS-abstract" role="button" aria-expanded="false"
+                                       aria-controls="hurley2024NeurIPS-abstract">Abstract</a>
+
+                                    <a class="badge grey waves-effect font-weight-light mr-1"
+                                       href="https://openreview.net/pdf?id=LXz1xIEBkF" target="_blank">PDF</a>
+
+                                </div>
+
+
+                                <div class="col mt-2 p-0">
+                                    <div id="hurley2024NeurIPS-abstract" class="collapse">
+                                        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            As learned control policies become increasingly common in autonomous
+                                            systems, there is increasing need to ensure that they are interpretable and
+                                            can be checked by human stakeholders. Formal specifications have been
+                                            proposed as ways to produce human-interpretable policies for autonomous
+                                            systems that can still be learned from examples. Previous work showed that
+                                            despite claims of interpretability, humans are unable to use formal
+                                            specifications presented in a variety of ways to validate even simple robot
+                                            behaviors. This work uses active learning, a standard pedagogical method, to
+                                            attempt to improve humans' ability to validate policies in signal temporal
+                                            logic (STL). Results show that overall validation accuracy is not high, at
+                                            65% \pm 15% (mean \pm standard deviation), and that the three conditions of
+                                            no active learning,
+                                            active learning, and active learning with feedback do not significantly
+                                            differ from each other. Our results suggest that the utility of formal
+                                            specifications for human interpretability is still unsupported but point to
+                                            other avenues of development which may enable improvements in system
+                                            validation.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row m-0 mt-3 p-0">
+                        <div class="col-sm-1 p-0 abbr">
+                            <a class="badge font-weight-bold orange darken-1 align-middle" style="width: 65px;"
+                               href="https://neurips.cc" target="_blank">
+                                T-Ro
+                            </a>
+                        </div>
+                        <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                            <div id="serarj2024tro" class="col p-0">
+                                <h5 class="title mb-0">SHeterogeneous Policy Networks for Composite Robot Team
+                                    Communication and Coordination</h5>
+                                <div class="author">
+                                    <nobr>Esmaeil Seraj*,
+                                        <nobr><em>Rohan Paleja*</em>,</nobr>
+                                        <nobr>Luis Pimentel,</nobr>
+                                        <nobr>Kin Man Lee,</nobr>
+                                        <nobr>Zheyuan Wang,</nobr>
+                                        <nobr>Daniel Martin,</nobr>
+                                        <nobr>Matthew Sklar,</nobr>
+                                        <nobr>John Zhang,</nobr>
+                                        <nobr>Zahi Kakish,</nobr>
+                                        and
+                                        <nobr>Matthew Gombolay.
+                                        </nobr>
+
+
+                                </div>
+
+                                <div>
+                                    <p class="periodical font-italic">
+                                        Conference on Neural Information Processing Systems (NeurIPS), 2024.
+                                    </p>
+                                </div>
+
+                                <div class="col p-0">
+
+                                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                       href="#serarj2024tro-abstract" role="button" aria-expanded="false"
+                                       aria-controls="serarj2024tro-abstract">Abstract</a>
+
+                                    <a class="badge grey waves-effect font-weight-light mr-1"
+                                       href="https://ieeexplore.ieee.org/abstract/document/10606072/authors#authors" target="_blank">PDF</a>
+
+                                </div>
+
+
+                                <div class="col mt-2 p-0">
+                                    <div id="serarj2024tro-abstract" class="collapse">
+                                        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            High-performing human–human teams learn intelligent and efficient
+                                            communication and coordination strategies to maximize their joint utility.
+                                            These teams implicitly understand the different roles of heterogeneous team
+                                            members and adapt their communication protocols accordingly. Multiagent
+                                            reinforcement learning (MARL) has attempted to develop computational methods
+                                            for synthesizing such joint coordination–communication strategies, but
+                                            emulating heterogeneous communication patterns across agents with different
+                                            state, action, and observation spaces has remained a challenge. Without
+                                            properly modeling agent heterogeneity, as in prior MARL work that leverages
+                                            homogeneous graph networks, communication becomes less helpful and can even
+                                            deteriorate the team's performance. In the past, we proposed heterogeneous
+                                            policy networks (HetNet) to learn efficient and diverse communication models
+                                            for coordinating cooperative heterogeneous teams. In this extended work, we
+                                            extend HetNet to support scaling heterogeneous robot teams. Building on
+                                            heterogeneous graph-attention networks, we show that HetNet not only
+                                            facilitates learning heterogeneous collaborative policies, but also enables
+                                            end-to-end training for learning highly efficient binarized messaging. Our
+                                            empirical evaluation shows that HetNet sets a new state-of-the-art in
+                                            learning coordination and communication strategies for heterogeneous
+                                            multiagent teams by achieving an 5.84% to 707.65% performance improvement
+                                            over the next-best baseline across multiple domains while simultaneously
+                                            achieving a 200× reduction in the required communication bandwidth.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ol>
+
+        </div>
+    </div>
+
+
+    <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+        <div class="col-sm-1 mt-2 p-0 pr-1">
             <h3 class="bibliography-year">2023</h3>
         </div>
         <div class="col-sm-11 p-0">
             <ol class="bibliography">
+
                 <li>
                     <div class="row m-0 mt-3 p-0">
                         <div class="col-sm-1 p-0 abbr">

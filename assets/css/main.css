@@ -11187,7 +11187,7 @@ progress::-moz-progress-bar { background-color: #039be5; }
 
 .progress-bar { background-color: #039be5; }
 
-.bibliography-year { color: #ddd; text-align: right; float: right; }
+.bibliography-year { color: #de935f; text-align: right; float: right; }
 
 .bibliography li .title { font-weight: bolder; }
 .bibliography li .author a { color: #3c4858; border-bottom: 1px dashed; }
@@ -14148,7 +14148,7 @@ progress::-moz-progress-bar { background-color: #039be5; }
 
 .progress-bar { background-color: #039be5; }
 
-.bibliography-year { color: #ddd; text-align: right; float: right; }
+.bibliography-year { color: #de935f; text-align: right; float: right; }
 
 .bibliography li .title { font-weight: bolder; }
 .bibliography li .author a { color: #3c4858; border-bottom: 1px dashed; }
