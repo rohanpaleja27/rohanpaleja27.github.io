@@ -1,0 +1,36 @@
+- date: "Feb 2025" # Item 1
+  description: 'I gave an invited talk at the Carnegie Mellon University <a href="https://harplab.github.io/harplab.deploy/reading-group/" target="_blank">Human-Robot Interaction</a> Reading Group.'
+- date: "Feb 2025" # Item 2
+  description: 'We have a paper accepted to ICLR 2025! Please see the publications tab for details.'
+- date: "Oct 2024" # Item 3
+  description: 'We have had two papers accepted to NeurIPS 2024! Please see the publications tab for details.'
+- date: "July 2024" # Item 4
+  description: 'Our paper <a href="https://arxiv.org/pdf/2406.02018" target="_blank">Why Would You Suggest That? Human Trust in Language Model Responses</a> has been accepted to the <a href="https://humans-algs-society.github.io/" target="_blank">ICML Workshop on Humans, Algorithmic Decision-Making and Society</a>.'
+- date: "Feb 2024" # Item 5
+  description: 'I gave an invited talk at the Carnegie Mellon University <a href="https://safeai-lab.github.io/index.html" target="_blank">Safe AI Lab</a> seminar.'
+- date: "Nov 2023" # Item 6
+  description: 'I hosted a successful workshop on <a href="https://sites.google.com/view/roboletics/home" target="_blank">Robot Learning in Athletics</a> at the Conference of Robot Learning in Atlanta, GA.'
+- date: "Sep 2023" # Item 7
+  description: 'I gave an invited talk at the <a href="https://events.temple.edu/me-seminar-transformative-science-technology-engineering-lecture-series" target="_blank">Transformative Science and Technology Lecture Series</a> at Temple University.'
+- date: "Aug 2023" # Item 8
+  description: 'I started as a Technical Staff Researcher at MIT Lincoln Laboratory in the AI Technology Group!'
+- date: "Aug 2023" # Item 9
+  description: 'I successfully defended my Ph.D. on "Interpretable Artificial Intelligence for Personalized Human-Robot Collaboration."'
+- date: "July 2023" # Item 10
+  description: 'Our workshop on <a href="https://sites.google.com/view/roboletics/home" target="_blank">Robot Learning in athlEtics (RoboLetics)</a> has been accepted to the Conference of Robot Learning in Atlanta.'
+- date: "June 2023" # Item 11
+  description: 'I gave an invited talk at the <a href="https://montrealrobotics.ca/robotlearningseries/" target="_blank">Robot Learning Seminar</a> hosted by <a href="https://mila.quebec/en/" target="_blank">Mila</a> and the <a href="https://montrealrobotics.ca/" target="_blank">Robotics and Embodied AI Lab</a> on "Personalized and Interpretable Artificial Intelligence for Positive Human-Machine Interaction".'
+- date: "June 2023" # Item 12
+  description: 'Our paper <a href="https://arxiv.org/pdf/2306.11168.pdf" target="_blank">Learning Models of Adversarial Agent Behavior under Partial Observability</a> has been accepted to the <a href="https://ieee-iros.org/" target="_blank">IEEE/RSJ International Conference on Intelligent Robots and Systems</a>.'
+- date: "Apr 2023" # Item 13
+  description: 'Our <a href="https://nms.kcl.ac.uk/icra2023.explainablerobotics/" target="_blank">Explainable Robotics</a> at ICRA 2023 was awarded an external sponsorship from the Artificial Intelligence Journal.'
+- date: "Jan 2023" # Item 14
+  description: 'Organizing a workshop on <a href="https://nms.kcl.ac.uk/icra2023.explainablerobotics/" target="_blank">Explainable Robotics</a> at ICRA 2023 in London.'
+- date: "Jan 2023" # Item 15
+  description: 'Our paper <a href="https://sites.gatech.edu/core-robotics/files/2023/01/zaidi_wtr.pdf" target="_blank">Athletic Mobile Manipulator System for Robotic Wheelchair Tennis</a> has been accepted to the <a href="https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=7083369" target="_blank">IEEE Robotics and Automation Letters</a>.'
+- date: "Dec 2022" # Item 16
+  description: 'Our paper <a href="https://core-robotics.gatech.edu/files/2023/01/HRI2023_Ping_Pong_colab_final.pdf" target="_blank">The Effect of Robot Skill Level and Communication in Rapid, Proximate Human-Robot Collaboration</a> has been accepted to the <a href="https://humanrobotinteraction.org/2023/" target="_blank">International Conference on Human-Robot Interaction (HRI)</a>.'
+- date: "Nov 2022" # Item 17
+  description: 'Our paper <a href="https://sites.gatech.edu/core-robotics/files/2022/12/ProMP_WTR_final_draft.pdf" target="_blank">Utilizing Human Feedback for Primitive Optimization in Wheelchair Tennis</a> has been accepted to the <a href="https://www.agilerobotscorl2022.com/" target="_blank">Learning for Agile Robotics Workshop at the Conference of Robot Learning</a>.'
+- date: "Sep 2022" # Item 18
+  description: 'Our paper <a href="https://arxiv.org/pdf/2209.11908.pdf" target="_blank">Fast Lifelong Adaptive Inverse Reinforcement Learning from Demonstrations</a> has been accepted to the <a href="https://www.robot-learning.org/" target="_blank">Conference of Robot Learning (CoRL)</a>.'

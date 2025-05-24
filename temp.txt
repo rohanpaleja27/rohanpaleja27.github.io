@@ -1,0 +1,1774 @@
+    <h4 id="Publications" style="padding-top: 75px; margin-top: -75px; margin-left: -15px;">
+        <!-- style="margin-bottom: 0.1em" -->
+        <small>&nbsp; (
+            <a href="" id="select0" onclick="showPubs(0); return false;">show selected</a> /
+            <a href="" id="select1" onclick="showPubs(1); return false;">show by date</a> /
+            <a href="" id="select2" onclick="showPubs(2); return false;">show by topic</a> )
+        </small>
+    </h4>
+    <div>
+        Research Topics:&nbsp;
+        <a href="#AIMedicine" onclick="showPubs(2)">Interactive Robot Learning</a>&nbsp; /&nbsp;
+        <a href="#CompHealth" onclick="showPubs(2)">Explainable AI</a>&nbsp; /&nbsp;
+        <a href="#FairML" onclick="showPubs(2)">Multi-Agent Coordination</a>
+    </div>
+    <div>
+        <small><span class="author">(* indicates equal contribution)</span></small>
+    </div>
+    <div id="pubs"></div>
+
+    <script id="pubs_selected" language="text">
+        <hr style="margin-top:0.6em">
+
+<!--            <div class="row">-->
+<!--                <div class="col-md-3">-->
+<!--                    <a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4"><img class="img-fluid img-rounded" src="static/nature_med_1600.jpg" alt=""></a>-->
+<!--                </div>-->
+<!--                <div class="col-md-9">-->
+<!--                    <span class="paper-title"><a target="_blank" href="https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p964.pdf">Multi-Agent Graph-Attention Communication and Teaming</a></span><br>-->
+<!--                    <span class="yuzhe">Yuzhe Yang*</span>,-->
+<!--                    <span class="author"><a target="_blank" href="https://haoran.ca/">Haoran Zhang*</a></span>,-->
+<!--                    <span class="author"><a target="_blank" href="https://www.gichoya.me/">Judy W. Gichoya</a></span>,-->
+<!--                    <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>,-->
+<!--                    <span class="author"><a target="_blank" href="https://healthyml.org/marzyeh/">Marzyeh Ghassemi</a></span>-->
+<!--                    <br>-->
+
+<!--                    <div class="row">-->
+<!--                        <div class="col-sm-10">-->
+<!--                            <a target="_blank" href="https://www.nature.com/nm/"><font color="black"><span class="venue">Nature Medicine</span></font></a> (2024)<br>-->
+
+<!--                            <font style="font-size: 13px">-->
+<!--                                <a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4.pdf">[Paper]</a>&nbsp;&bull;-->
+<!--                                <a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4">[Project Page]</a>&nbsp;&bull;-->
+<!--                                <a target="_blank" href="https://github.com/YyzHarry/shortcut-ood-fairness">[Code]</a>&nbsp;&bull;-->
+<!--                                &lt;!&ndash; <a target="_blank" href="static/pd_breathing.bib">[BibTeX]</a>&nbsp;&bull; &ndash;&gt;-->
+<!--                                <a target="_blank" href="https://news.mit.edu/2024/study-reveals-why-ai-analyzed-medical-images-can-be-biased-0628">[MIT News]</a>-->
+<!--                            </font><br>-->
+<!--                            <span class="brsmall"></span>-->
+<!--                            <span class="highlight title">Oral Presentation</span><span class="highlight">, NeurIPS 2023 Medical Imaging Workshop</span><br>-->
+<!--                        </div>-->
+<!--                        <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1038/s41591-024-03113-4" data-link-target="_blank"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div><hr>-->
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://subpopbench.csail.mit.edu"><img class="img-fluid img-rounded" src="static/subpop.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p964.pdf">Multi-Agent Graph-Attention Communication and Teaming</a></span><br>
+                <span class="author"><a target="_blank" href="https://haoran.ca/">Yaru Niu*</a></span>,
+                <span class="yuzhe">Rohan Paleja*</span>,
+                <span class="author"><a target="_blank" href="https://core-robotics.gatech.edu/people/matthew-gombolay/">Matthew Gombolay</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://aamas2021.soton.ac.uk/"><font color="black">International Conference on Autonomous Agents and Multiagent Systems<span class="venue"> (AAMAS)</span>, 2023</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p964.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="hhttps://github.com/CORE-Robotics-Lab/MAGIC">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/magic.bib">[BibTeX]</a>&nbsp;;
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Best Workshop Paper Award Winner at ICCV MAIR2 Workshop</span><span class="highlight">, <a arget="_blank" href="https://www.worldaic.com.cn/">ICCV MAIR2 Workshop, 2021</a></span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=CORE-Robotics-Lab&repo=MAGIC&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=CORE-Robotics-Lab&repo=MAGIC&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="/assets/pdf/the_utility_of_explainable_ai_.pdf"><img class="img-fluid img-rounded" src="static/simper.gif" alt=""></a>
+            </div>
+             <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p964.pdf">The Utility of Explainable AI in Ad Hoc Human-Machine Teaming</a></span><br>
+                <span class="yuzhe">Rohan Paleja*</span>,
+                <span class="author"><a href="https://www.linkedin.com/in/muyleng-ghuy" target="_blank">Muyleng Ghuy</a></span>,
+                <span class="author"><a href="https://www.linkedin.com/in/nadun-ranawaka-arachchige-87701b137" target="_blank">Nadun Ranawaka Arachchige</a></span>,
+                <span class="author"><a href="https://ilp.mit.edu/node/44597" target="_blank">Reed Jensen</a></span>,
+                <span class="author"><a target="_blank" href="https://core-robotics.gatech.edu/people/matthew-gombolay/">Matthew Gombolay</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://neurips.cc/Conferences/2021/"><font color="black">Neural Information Processing Systems<span class="venue"> (NeurIPS)</span>, 2021</font></a><br>
+
+                        <font style="font-size: 13px">
+                   <a target="_blank" href="/assets/pdf/the_utility_of_explainable_ai_.pdf">[Paper]</a>&nbsp;&bull;
+                    <a target="_blank" href="https://papertalk.org/papertalks/37000">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="hhttps://github.com/CORE-Robotics-Lab/Utility-of-Explainable-AI-NeurIPS2021">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/magic.bib">[BibTeX]</a>&nbsp;;
+                        </font><br>
+                        <span class="brsmall"></span>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=CORE-Robotics-Lab&repo=Utility-of-Explainable-AI-NeurIPS2021&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=CORE-Robotics-Lab&repo=Utility-of-Explainable-AI-NeurIPS2021&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://pd-breathing.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/pd_breathing.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="/assets/pdf/chen_self_supervised.pdf">Learning from Suboptimal Demonstration via Self-Supervised Reward Regression</a></span><br>
+                <span class="author">Letian Chen</span>,
+                <span class="yuzhe">Rohan Paleja</span>,
+                <span class="author"><a target="_blank" href="https://core-robotics.gatech.edu/people/matthew-gombolay/">Matthew Gombolay</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.robot-learning.org/"><font color="black">Conference on Robot Learning<span class="venue"> (CoRL)</span>, 2021</font></a><br>
+
+                        <!-- <font style="font-size: 13px">
+                            <sup>†<i></sup>Project initiator, project leader, main correspondence. Lead and supervise a team of 2 postdocs & 2 grad students at MIT.</i>
+                        </font><br> -->
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="/assets/pdf/chen_self_supervised.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=tjGEoe33HAg">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=4TYfeymwj3E">[Spotlight Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/pd_breathing.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://ic.gatech.edu/news/646279/robot-learned-table-tennis-approach-could-be-game-changer-future-robot-assistants">[Georgia Tech News]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Best Paper Award Finalist</span><span class="highlight"></span><br>
+
+                    </div>
+                      <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=CORE-Robotics-Lab&repo=SSRR&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=CORE-Robotics-Lab&repo=SSRR&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://rf-pd-gait.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/pd_gait.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://rf-pd-gait.csail.mit.edu/">Monitoring Gait at Home with Radio Waves in Parkinson's Disease: a Marker of Severity, Progression, and Medication Response</a></span><br>
+                <span class="author">Yingcheng Liu*</span>,
+                <span class="author">Guo Zhang*</span>,
+                <span class="author">...</span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Timothy Nordahl</span>,
+                <span class="author">Karlo Lizarraga</span>,
+                <span class="author">Jamie Adams</span>,
+                <span class="author">Ruth Schneider</span>,
+                <span class="author">Karl Kieburtz</span>,
+                <span class="author"><a target="_blank" href="https://www.bu.edu/sargent/profile/terry-ellis-pt-phd-ncs/">Terry Ellis</a></span>,
+                <span class="author"><a target="_blank" href="https://www.urmc.rochester.edu/people/26764214-earl-ray-dorsey">Ray Dorsey</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.science.org/journal/stm"><font color="black"><span class="venue">Science Translational Medicine</span></font></a>, 14, eadc9669 (2022)<br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.science.org/stoken/author-tokens/ST-748/full">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://rf-pd-gait.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/firstmover/rf-pd-gait">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=8lFzABIEGBE">[Video (MIT)]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=GkW-m6V7uYo">[Video (JClinic)]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/pd_gait.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://news.mit.edu/2022/home-wireless-parkinsons-progression-0921">[MIT News]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title"><a target="_blank" href="https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(22)00494-X/fulltext">Ten Crucial Advances in Movement Disorders in 2022</a></span><br>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1126/scitranslmed.adc9669" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://mdlt.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/mdlt_teaser.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="http://mdlt.csail.mit.edu/">On Multi-Domain Long-Tailed Recognition, Imbalanced Domain Generalization and Beyond</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="http://www.wanghao.in/">Hao Wang</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://eccv2022.ecva.net/"><font color="black">European Conference on Computer Vision <span class="venue">(ECCV)</span>, 2022</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2203.09513">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://mdlt.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/how-to-learn-imbalanced-data-arising-from-multiple-domains-7d0c0d6e3c17">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/multi-domain-imbalance">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/mdlt_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/oUky8S8d1_Y">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/mdlt.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=multi-domain-imbalance&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=multi-domain-imbalance&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://dir.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/dir_teaser.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="http://dir.csail.mit.edu/">Delving into Deep Imbalanced Regression</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="https://kaiwenzha.github.io/">Kaiwen Zha</a></span>,
+                <span class="author"><a target="_blank" href="https://yingcong.github.io/">Ying-Cong Chen</a></span>,
+                <span class="author"><a target="_blank" href="http://www.wanghao.in/">Hao Wang</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://icml.cc/Conferences/2021/"><font color="black">International Conference on Machine Learning <span class="venue">(ICML)</span>, 2021</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2102.09554">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://dir.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/strategies-and-tactics-for-regression-on-imbalanced-data-61eeb0921fca">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/imbalanced-regression">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/dir_icml21_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/grJGixofQRU">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/dir.bib">[BibTeX]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Long Oral Presentation</span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-regression&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-regression&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.mit.edu/~yuzhe/imbalanced-semi-self.html"><img class="img-fluid img-rounded" src="static/imbalance.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.mit.edu/~yuzhe/imbalanced-semi-self.html">Rethinking the Value of Labels for Improving Class-Imbalanced Learning</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Zhi Xu</span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://nips.cc/Conferences/2020/"><font color="black">Neural Information Processing Systems <span class="venue">(NeurIPS)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2006.07529">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.mit.edu/~yuzhe/imbalanced-semi-self.html">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/struggling-with-data-imbalance-semi-supervised-self-supervised-learning-help-4de8b8f23490">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/imbalanced-semi-self">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/imbalance_nips20_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/XltXZ3OZvyI">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/imbalance.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-semi-self&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-semi-self&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/"><img class="img-fluid img-rounded" src="static/posture.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/">BodyCompass: Monitoring Sleep Posture with Wireless Signals</a></span><br>
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/scyue/">Shichao Yue</a></span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="http://www.wanghao.in/">Hao Wang</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/rahul/">Hariharan Rahul</a></span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="http://ubicomp.org/ubicomp2020/"><font color="black">ACM International Joint Conference on Pervasive and Ubiquitous Computing <span class="venue">(UbiComp)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/bodycompass.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/bodycompass.pptx">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/hEqIr5ckm8o">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/posture.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://news.mit.edu/2020/monitoring-sleep-sensors-0911">[MIT News]</a>
+                        </font>
+                        <span class="brsmall"></span>
+                        <span class="highlight title"><a target="_blank" href="https://web.mit.edu/archive/spotlight/positioning-healthy-rest/">MIT Front Page Highlight (2020/09)</a></span>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1145/3397311" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+    </script>
+
+
+    <script id="pubs_by_date" language="text">
+        <hr style="margin-top:0.6em">
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4"><img class="img-fluid img-rounded" src="static/nature_med_1600.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4">The Limits of Fair Medical Imaging AI in Real-World Generalization</a></span><br>
+                <span class="yuzhe">Yuzhe Yang*</span>,
+                <span class="author"><a target="_blank" href="https://haoran.ca/">Haoran Zhang*</a></span>,
+                <span class="author"><a target="_blank" href="https://www.gichoya.me/">Judy W. Gichoya</a></span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>,
+                <span class="author"><a target="_blank" href="https://healthyml.org/marzyeh/">Marzyeh Ghassemi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.nature.com/nm/"><font color="black"><span class="venue">Nature Medicine</span></font></a> (2024)<br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/shortcut-ood-fairness">[Code]</a>&nbsp;&bull;
+                            <!-- <a target="_blank" href="static/pd_breathing.bib">[BibTeX]</a>&nbsp;&bull; -->
+                            <a target="_blank" href="https://news.mit.edu/2024/study-reveals-why-ai-analyzed-medical-images-can-be-biased-0628">[MIT News]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Oral Presentation</span><span class="highlight">, NeurIPS 2023 Medical Imaging Workshop</span><br>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1038/s41591-024-03113-4" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.nature.com/articles/s41591-024-02885-z"><img class="img-fluid img-rounded" src="static/nature_med_1600.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.nature.com/articles/s41591-024-02885-z">Demographic Bias in Misdiagnosis by Computational Pathology Models</a></span><br>
+                <span class="author">Anurag Vaidya*</span>,
+                <span class="author">Richard Chen*</span>,
+                <span class="author">Drew Williamson*</span>,
+                <span class="author">Andrew Song</span>,
+                <span class="author">Guillaume Jaume</span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Thomas Hartvigsen</span>,
+                <span class="author">Emma Dyer</span>,
+                <span class="author">Ming Yang Lu</span>,
+                <span class="author">Jana Lipkova</span>,
+                <span class="author">Muhammad Shaban</span>,
+                <span class="author">Tiffany Y. Chen</span>,
+                <span class="author">Faisal Mahmood</span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.nature.com/nm/"><font color="black"><span class="venue">Nature Medicine</span></font></a>, 30, 1174–1190 (2024)<br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.nature.com/articles/s41591-024-02885-z.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.nature.com/articles/s41591-024-02885-z">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/mahmoodlab/CPATH_demographics">[Code]</a>&nbsp;&bull;
+                            <!-- <a target="_blank" href="static/.bib">[BibTeX]</a>&nbsp;&bull; -->
+                            <a target="_blank" href="https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/researchers-reduce-bias-in-pathology-ai-algorithms-using-foundation-models">[MGB News]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1038/s41591-024-02885-z" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <!-- 2023
+        <br>
+        <div id="2023">
+          <h5>2023</h5>
+        </div><hr>  -->
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://arxiv.org/abs/2303.11573"><img class="img-fluid img-rounded" src="static/bigsmall.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://arxiv.org/abs/2303.11573">BigSmall: Efficient Multi-Task Learning for Disparate Spatial and Temporal Physiological Measurements</a></span><br>
+                <span class="author"><a target="_blank" href="https://girishvn.github.io/">Girish Narayanswamy</a></span>,
+                <span class="author"><a target="_blank" href="https://nancylyj.github.io/">Yujia Liu</a></span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Chengqian Ma</span>,
+                <span class="author"><a target="_blank" href="https://xliucs.github.io/">Xin Liu</a></span>,
+                <span class="author"><a target="_blank" href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ">Daniel McDuff</a></span>,
+                <span class="author"><a target="_blank" href="https://homes.cs.washington.edu/~shwetak/">Shwetak Patel</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://wacv2024.thecvf.com/"><font color="black">IEEE Winter Conference on Applications of Computer Vision <span class="venue">(WACV)</span>, 2024</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2303.11573">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/ubicomplab/rPPG-Toolbox">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/ubicomplab/rPPG-Toolbox">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/bigsmall.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=ubicomplab&repo=rPPG-Toolbox&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=ubicomplab&repo=rPPG-Toolbox&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://arxiv.org/abs/2210.01189"><img class="img-fluid img-rounded" src="static/rnc.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://arxiv.org/abs/2210.01189">Rank-N-Contrast: Learning Continuous Representations for Regression</a></span><br>
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/kzha/">Kaiwen Zha*</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/pengcao/">Peng Cao*</a></span>,
+                <span class="author"><a target="_blank" href="https://jeanyson.github.io/">Jeany Son</a></span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://nips.cc/Conferences/2023/"><font color="black">Neural Information Processing Systems <span class="venue">(NeurIPS)</span>, 2023</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2210.01189">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/kaiwenzha/Rank-N-Contrast">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/kaiwenzha/Rank-N-Contrast">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/rnc.bib">[BibTeX]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Spotlight Presentation</span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=kaiwenzha&repo=Rank-N-Contrast&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=kaiwenzha&repo=Rank-N-Contrast&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://subpopbench.csail.mit.edu"><img class="img-fluid img-rounded" src="static/subpop.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://subpopbench.csail.mit.edu">Change is Hard: A Closer Look at Subpopulation Shift</a></span><br>
+                <span class="yuzhe">Yuzhe Yang*</span>,
+                <span class="author"><a target="_blank" href="https://haoran.ca/">Haoran Zhang*</a></span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>,
+                <span class="author"><a target="_blank" href="https://healthyml.org/marzyeh/">Marzyeh Ghassemi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://icml.cc/Conferences/2023/"><font color="black">International Conference on Machine Learning <span class="venue">(ICML)</span>, 2023</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2302.12254">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://subpopbench.csail.mit.edu">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/on-learning-in-the-presence-of-underrepresented-groups-8937434d3c85">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/SubpopBench">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://subpopbench.csail.mit.edu/static/subpopbench_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=WiSrCWAAUNI">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/subpopbench.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://news.mit.edu/2023/how-machine-learning-models-can-amplify-inequities-medical-diagnosis-treatment-0817">[MIT News]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Oral Presentation</span><span class="highlight">, <a arget="_blank" href="https://www.worldaic.com.cn/">WAIC 2023</a></span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SubpopBench&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SubpopBench&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://simper.csail.mit.edu"><img class="img-fluid img-rounded" src="static/simper.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://simper.csail.mit.edu">SimPer: Simple Self-Supervised Learning of Periodic Targets</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="https://xliucs.github.io/">Xin Liu</a></span>,
+                <span class="author">Jiang Wu</span>,
+                <span class="author">Silviu Borac</span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>,
+                <span class="author"><a target="_blank" href="https://scholar.google.com/citations?user=HhErKoYAAAAJ">Ming-Zher Poh</a></span>,
+                <span class="author"><a target="_blank" href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ">Daniel McDuff</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://iclr.cc/Conferences/2023/"><font color="black">International Conference on Learning Representations <span class="venue">(ICLR)</span>, 2023</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2210.03115">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://openreview.net/forum?id=EKpMeEV0hOo">[OpenReview]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://simper.csail.mit.edu">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/SimPer">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://simper.csail.mit.edu/static/simper_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=uEezGU3P_-I">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/simper.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://ai.googleblog.com/2023/07/simper-simple-self-supervised-learning.html">[Google AI Blog]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Notable Top 5%, Oral Presentation</span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SimPer&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SimPer&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <!-- 2022
+        <br>
+        <div id="2022">
+          <h5>2022</h5>
+        </div><hr> -->
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://pd-breathing.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/pd_breathing.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://pd-breathing.csail.mit.edu/">Artificial Intelligence-Enabled Detection and Assessment of Parkinson's Disease using Nocturnal Breathing Signals</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Yuan Yuan</span>,
+                <span class="author">Guo Zhang</span>,
+                <span class="author">Hao Wang</span>,
+                <span class="author">Ying-Cong Chen</span>,
+                <span class="author">Yingcheng Liu</span>,
+                <span class="author">Christopher Tarolli</span>,
+                <span class="author">Daniel Crepeau</span>,
+                <span class="author">Jan Bukartyk</span>,
+                <span class="author">Mithri Junna</span>,
+                <span class="author"><a target="_blank" href="https://www.massgeneral.org/doctors/19418/aleksandar-videnovic">Aleksandar Videnovic</a></span>,
+                <span class="author"><a target="_blank" href="https://www.bu.edu/sargent/profile/terry-ellis-pt-phd-ncs/">Terry Ellis</a></span>,
+                <span class="author"><a target="_blank" href="https://www.mayoclinic.org/biographies/lipford-melissa-c-m-d/bio-20055552">Melissa Lipford</a></span>,
+                <span class="author"><a target="_blank" href="https://www.urmc.rochester.edu/people/26764214-earl-ray-dorsey">Ray Dorsey</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.nature.com/nm/"><font color="black"><span class="venue">Nature Medicine</span></font></a>, 28, 2207–2215 (2022)<br>
+
+                        <!-- <font style="font-size: 13px">
+                            <sup>†<i></sup>Project initiator, project leader, main correspondence. Lead and supervise a team of 2 postdocs & 2 grad students at MIT.</i>
+                        </font><br> -->
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.nature.com/articles/s41591-022-01932-x.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://pd-breathing.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/pd_breathing_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=MAfxw-GlkBI">[Talk (45min)]</a>&nbsp;&bull; <!-- @Stanford -->
+                            <!-- <a target="_blank" href="https://www.youtube.com/watch?v=-kkcK3BIt6s">[Talk (45min)]</a>&nbsp;&bull; @NTU/NUS -->
+                            <a target="_blank" href="https://www.youtube.com/watch?v=TqMh5lIiqIU">[Talk (15min)]</a>&nbsp;&bull; <!-- @SwissNex -->
+                            <!-- <a>[Blog Post]</a>&nbsp;&bull; -->
+                            <a target="_blank" href="static/pd_breathing.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://news.mit.edu/2022/artificial-intelligence-can-detect-parkinsons-from-breathing-patterns-0822">[MIT News]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title"><a target="_blank" href="https://www.nature.com/articles/s41591-022-02146-x">Ten Notable Advances in Medicine in 2022</a></span><br>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1038/s41591-022-01932-x" data-link-target="_blank"></div>
+                </div>
+
+                <!-- <span class="brmedium"></span>
+                <font style="font-size: 12px">Invited Interviews:
+                    [<a target="_blank" href="https://developer.nvidia.com/blog/ai-remotely-detects-parkinsons-disease-during-sleep/">NVIDIA Technical Blog</a>],
+                    [<a target="_blank" href="https://www.washingtonpost.com/technology/2022/09/02/parkinsons-disease-ai-diagnosis/">The Washington Post</a>],
+                    [<a target="_blank" href="https://www.medscape.com/viewarticle/979684?src=">Medscape</a>],
+                    [<a target="_blank" href="https://mp.weixin.qq.com/s/d51nVl0dsbdxdOassXcRMw">DeepTech (Chinese)</a>],
+                    [<a target="_blank" href="https://mp.weixin.qq.com/s/7uFQz2u4FWhUKp9RIQUuZQ">BioWorld (Chinese)</a>]
+                </font><br>
+                <font style="font-size: 12px">Invited Guest Lectures:
+                    [<a target="_blank" href="https://illinois.edu/">UIUC BioE Seminar</a>],
+                    [<a target="_blank" href="http://dshm.bjmu.edu.cn/info/1250/1872.htm">PKU NIHDS</a>],
+                    [<a target="_blank" href="https://english.pkuph.cn/">PKU People's Hospital</a>],
+                    [<a target="_blank" href="https://swissnex.org/boston/event/innovations-in-healthcare-neurodegenerative-disorders/">HESAV SwissNex</a>],
+                    [<a target="_blank" href="https://smdjt.sciconf.cn/cn/web/index/13845_1291343__">Chinese Sleep Research Society</a>]
+                </font> -->
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://rf-pd-gait.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/pd_gait.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://rf-pd-gait.csail.mit.edu/">Monitoring Gait at Home with Radio Waves in Parkinson's Disease: a Marker of Severity, Progression, and Medication Response</a></span><br>
+                <span class="author">Yingcheng Liu*</span>,
+                <span class="author">Guo Zhang*</span>,
+                <span class="author">...</span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Timothy Nordahl</span>,
+                <span class="author">Karlo Lizarraga</span>,
+                <span class="author">Jamie Adams</span>,
+                <span class="author">Ruth Schneider</span>,
+                <span class="author">Karl Kieburtz</span>,
+                <span class="author"><a target="_blank" href="https://www.bu.edu/sargent/profile/terry-ellis-pt-phd-ncs/">Terry Ellis</a></span>,
+                <span class="author"><a target="_blank" href="https://www.urmc.rochester.edu/people/26764214-earl-ray-dorsey">Ray Dorsey</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.science.org/journal/stm"><font color="black"><span class="venue">Science Translational Medicine</span></font></a>, 14, eadc9669 (2022)<br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.science.org/stoken/author-tokens/ST-748/full">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://rf-pd-gait.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/firstmover/rf-pd-gait">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=8lFzABIEGBE">[Video (MIT)]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=GkW-m6V7uYo">[Video (JClinic)]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/pd_gait.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://news.mit.edu/2022/home-wireless-parkinsons-progression-0921">[MIT News]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title"><a target="_blank" href="https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(22)00494-X/fulltext">Ten Crucial Advances in Movement Disorders in 2022</a></span><br>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1126/scitranslmed.adc9669" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://mdlt.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/mdlt_teaser.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="http://mdlt.csail.mit.edu/">On Multi-Domain Long-Tailed Recognition, Imbalanced Domain Generalization and Beyond</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="http://www.wanghao.in/">Hao Wang</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://eccv2022.ecva.net/"><font color="black">European Conference on Computer Vision <span class="venue">(ECCV)</span>, 2022</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2203.09513">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://mdlt.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/how-to-learn-imbalanced-data-arising-from-multiple-domains-7d0c0d6e3c17">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/multi-domain-imbalance">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/mdlt_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/oUky8S8d1_Y">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/mdlt.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=multi-domain-imbalance&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=multi-domain-imbalance&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://arxiv.org/abs/2111.13998"><img class="img-fluid img-rounded" src="static/tsc.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://arxiv.org/abs/2111.13998">Targeted Supervised Contrastive Learning for Long-Tailed Recognition</a></span><br>
+                <span class="author">Tianhong Li*</span>,
+                <span class="author">Peng Cao*</span>,
+                <span class="author">Yuan Yuan</span>,
+                <span class="author">Lijie Fan</span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="https://www.rogerioferis.org/">Rogerio Feris</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/indyk/">Piotr Indyk</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://cvpr2022.thecvf.com/"><font color="black">IEEE Conference on Computer Vision and Pattern Recognition <span class="venue">(CVPR)</span>, 2022</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2111.13998">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/LTH14/targeted-supcon">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/tsc.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=LTH14&repo=targeted-supcon&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=LTH14&repo=targeted-supcon&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <!-- 2021
+        <br>
+        <div id="2021">
+          <h5>2021</h5>
+        </div><hr> -->
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://dir.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/dir_teaser.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="http://dir.csail.mit.edu/">Delving into Deep Imbalanced Regression</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="https://kaiwenzha.github.io/">Kaiwen Zha</a></span>,
+                <span class="author"><a target="_blank" href="https://yingcong.github.io/">Ying-Cong Chen</a></span>,
+                <span class="author"><a target="_blank" href="http://www.wanghao.in/">Hao Wang</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://icml.cc/Conferences/2021/"><font color="black">International Conference on Machine Learning <span class="venue">(ICML)</span>, 2021</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2102.09554">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://dir.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/strategies-and-tactics-for-regression-on-imbalanced-data-61eeb0921fca">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/imbalanced-regression">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/dir_icml21_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/grJGixofQRU">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/dir.bib">[BibTeX]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Long Oral Presentation</span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-regression&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-regression&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2021.754169/full"><img class="img-fluid img-rounded" src="static/covid_activity.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2021.754169/full">Contactless In-Home Monitoring of the Long-Term Respiratory and Behavioral Phenotypes in Older Adults With COVID-19: A Case Series</a></span><br>
+                <span class="author">Guo Zhang*</span>,
+                <span class="author"><a target="_blank" href="https://www.mcleanhospital.org/profile/ipsit-vahia">Ipsit Vahia*</a></span>,
+                <span class="author">Yingcheng Liu*</span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Rose May</span>,
+                <span class="author">Hailey Cray</span>,
+                <span class="author">William McGrory</span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.frontiersin.org/journals/psychiatry"><font color="black"><span class="venue">Frontiers in Psychiatry</span></font></a>, 12 (2021)<br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2021.754169/full">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=UVRfHUtr5ps">[Video]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/covid_activity.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.csail.mit.edu/news/csail-device-lets-doctors-monitor-covid-19-patients-distance">[MIT CSAIL News]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.3389/fpsyt.2021.754169" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <!-- 2020
+        <br>
+        <div id="2020">
+          <h5>2020</h5>
+        </div><hr> -->
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.mit.edu/~yuzhe/imbalanced-semi-self.html"><img class="img-fluid img-rounded" src="static/imbalance.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.mit.edu/~yuzhe/imbalanced-semi-self.html">Rethinking the Value of Labels for Improving Class-Imbalanced Learning</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Zhi Xu</span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://nips.cc/Conferences/2020/"><font color="black">Neural Information Processing Systems <span class="venue">(NeurIPS)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2006.07529">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.mit.edu/~yuzhe/imbalanced-semi-self.html">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/struggling-with-data-imbalance-semi-supervised-self-supervised-learning-help-4de8b8f23490">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/imbalanced-semi-self">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/imbalance_nips20_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/XltXZ3OZvyI">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/imbalance.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-semi-self&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-semi-self&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://arxiv.org/abs/2006.06135"><img class="img-fluid img-rounded" src="static/lrrl.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://arxiv.org/abs/2006.06135">Sample Efficient Reinforcement Learning via Low-Rank Matrix Estimation</a></span><br>
+                (α-β order)
+                <span class="author"><a target="_blank" href="https://devavrat.mit.edu/">Devavrat Shah</a></span>,
+                <span class="author">Dogyoon Song</span>,
+                <span class="author">Zhi Xu</span>,
+                <span class="yuzhe">Yuzhe Yang</span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://nips.cc/Conferences/2020/"><font color="black">Neural Information Processing Systems <span class="venue">(NeurIPS)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/pdf/2006.06135.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://arxiv.org/abs/2006.06135">[arXiv]</a>&nbsp;&bull;
+                            <!-- <a target="_blank" href="">[Slides]</a>&nbsp;&bull; -->
+                            <a target="_blank" href="https://youtu.be/EQEoGI8MJDI">[Talk (by Devavrat)]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/lrrl.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SV-RL&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SV-RL&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://svrl.csail.mit.edu"><img class="img-fluid img-rounded" src="static/svrl.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="http://svrl.csail.mit.edu">Harnessing Structures for Value-Based Planning and Reinforcement Learning</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Guo Zhang</span>,
+                <span class="author">Zhi Xu</span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://iclr.cc/Conferences/2020/"><font color="black">International Conference on Learning Representations <span class="venue">(ICLR)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/1909.12255">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://openreview.net/forum?id=rklHqRVKvH">[OpenReview]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://svrl.csail.mit.edu">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/SV-RL">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/svrl_iclr20_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Jpm45nIDZYk">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/svrl.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://underactuated.mit.edu/dp.html#section4">[MIT 6.832 Highlight]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Oral Presentation</span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SV-RL&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SV-RL&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.mit.edu/~yuzhe/robnets.html"><img class="img-fluid img-rounded" src="static/robnet_teaser.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.mit.edu/~yuzhe/robnets.html">When NAS Meets Robustness: In Search of Robust Architectures against Adversarial Attacks</a></span><br>
+                <span class="author">Minghao Guo</span>*,
+                <span class="yuzhe">Yuzhe Yang*</span>,
+                <span class="author"><a target="_blank" href="https://nbei.github.io/">Rui Xu</a></span>,
+                <span class="author"><a target="_blank" href="https://liuziwei7.github.io/">Ziwei Liu</a></span>,
+                <span class="author"><a target="_blank" href="http://dahua.me/">Dahua Lin</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="http://cvpr2020.thecvf.com/"><font color="black">IEEE Conference on Computer Vision and Pattern Recognition <span class="venue">(CVPR)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/1911.10695">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.mit.edu/~yuzhe/robnets.html">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/gmh14/RobNets">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/robnets_cvpr20_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/robnets_cvpr20_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Bj7MW4hCeeA">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/robnets.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=gmh14&repo=RobNets&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=gmh14&repo=RobNets&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/"><img class="img-fluid img-rounded" src="static/posture.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/">BodyCompass: Monitoring Sleep Posture with Wireless Signals</a></span><br>
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/scyue/">Shichao Yue</a></span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="http://www.wanghao.in/">Hao Wang</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/rahul/">Hariharan Rahul</a></span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="http://ubicomp.org/ubicomp2020/"><font color="black">ACM International Joint Conference on Pervasive and Ubiquitous Computing <span class="venue">(UbiComp)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/bodycompass.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/bodycompass.pptx">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/hEqIr5ckm8o">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/posture.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://news.mit.edu/2020/monitoring-sleep-sensors-0911">[MIT News]</a>
+                        </font>
+                        <span class="brsmall"></span>
+                        <span class="highlight title"><a target="_blank" href="https://web.mit.edu/archive/spotlight/positioning-healthy-rest/">MIT Front Page Highlight (2020/09)</a></span>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1145/3397311" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <!-- 2019
+        <br>
+        <div id="2019">
+          <h5>2019</h5>
+        </div><hr> -->
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://me-net.csail.mit.edu"><img class="img-fluid img-rounded" src="static/menet.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="http://me-net.csail.mit.edu">ME-Net: Towards Effective Adversarial Robustness with Matrix Estimation</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Guo Zhang</span>,
+                <span class="author">Zhi Xu</span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://icml.cc/Conferences/2019"><font color="black">International Conference on Machine Learning <span class="venue">(ICML)</span>, 2019</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/1905.11971">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://me-net.csail.mit.edu">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/ME-Net">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/menet_icml19_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/menet_icml19_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtube.videoken.com/embed/SYn2w8niAHk?tocitem=22">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/menet.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=ME-Net&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=ME-Net&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.mit.edu/~yuzhe/imgsensnet.html"><img class="img-fluid img-rounded" src="static/imgsensingnet.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.mit.edu/~yuzhe/imgsensnet.html">ImgSensingNet: UAV Vision Guided Aerial-Ground Air Quality Sensing System</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Zhiwen Hu</a></span>,
+                <span class="author"><a target="_blank" href="http://net.pku.edu.cn/~bkg/">Kaigui Bian</a></span>,
+                <span class="author"><a target="_blank" href="http://net.pku.edu.cn/songly/index.html">Lingyang Song</a></span>
+                <br>
+                <a target="_blank" href="http://infocom2019.ieee-infocom.org/"><font color="black">IEEE International Conference on Computer Communications <span class="venue">(INFOCOM)</span>, 2019</font></a><br>
+
+                <font style="font-size: 13px">
+                    <a target="_blank" href="static/imgsensnet-infocom19.pdf">[Paper]</a>&nbsp;&bull;
+                    <a target="_blank" href="https://www.mit.edu/~yuzhe/imgsensnet.html">[Project Page]</a>&nbsp;&bull;
+                    <a target="_blank" href="https://arxiv.org/abs/1905.11299">[arXiv]</a>&nbsp;&bull;
+                    <a target="_blank" href="https://github.com/YyzHarry/ImgSensingNet">[Code]</a>&nbsp;&bull;
+                    <a target="_blank" href="https://www.youtube.com/watch?v=VUn4e-oP0xk">[Video]</a>&nbsp;&bull;
+                    <a target="_blank" href="static/imgsensnet.bib">[BibTeX]</a>
+                </font>
+            </div>
+        </div><hr>
+
+        <!-- 2018
+        <br>
+        <div id="2018">
+          <h5>2018</h5>
+        </div><hr> -->
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://ieeexplore.ieee.org/document/8119942"><img class="img-fluid img-rounded" src="static/arms-iot-j.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://ieeexplore.ieee.org/document/8119942">Real-Time Profiling of Fine-Grained Air Quality Index Distribution using UAV Sensing</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Zijie Zheng</a></span>,
+                <span class="author"><a target="_blank" href="http://net.pku.edu.cn/~bkg/">Kaigui Bian</a></span>,
+                <span class="author"><a target="_blank" href="http://net.pku.edu.cn/songly/index.html">Lingyang Song</a></span>,
+                <span class="author"><a target="_blank" href="http://www2.egr.uh.edu/~zhan2/">Zhu Han</a></span>
+                <br>
+                <a target="_blank" href="http://ieee-iotj.org/"><font color="black">IEEE Internet of Things Journal <span class="venue">(IoT-J)</span></font></a>, 5, 186-198 (2018)<br>
+
+                <font style="font-size: 13px">
+                    <a target="_blank" href="static/arms-iot-j18.pdf">[Paper]</a>&nbsp;&bull;
+                    <a target="_blank" href="https://arxiv.org/abs/1711.02821">[arXiv]</a>&nbsp;&bull;
+                    <a target="_blank" href="https://www.youtube.com/watch?v=POX-kazz_Ec">[Video]</a>&nbsp;&bull;
+                    <a target="_blank" href="static/arms.bib">[BibTeX]</a>&nbsp;&bull;
+                    <a target="_blank" href="https://eecs.pku.edu.cn/info/1040/3682.htm">[PKU News]</a>
+                </font>
+                <span class="brsmall"></span>
+                <span class="highlight title"><a target="_blank" href="https://www.comsoc.org/membership/ieee-comsoc-student-competition/winners">Best Project Award, IEEE Communications Society Student Competition 2017</a></span>
+            </div>
+        </div><hr>
+    </script>
+
+
+    <script id="pubs_by_topic" language="text">
+        <hr style="margin-top:0.6em">
+
+        <!-- AI for Disease and Medicine -->
+        <div id="AIMedicine" style="padding-top: 75px; margin-top: -75px;">
+            <span class="brmedium"></span>
+            <h6>AI-Enabled Scientific Discovery and Understanding for Human Disease and Medicine</h6>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://pd-breathing.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/pd_breathing.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://pd-breathing.csail.mit.edu/">Artificial Intelligence-Enabled Detection and Assessment of Parkinson's Disease using Nocturnal Breathing Signals</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Yuan Yuan</span>,
+                <span class="author">Guo Zhang</span>,
+                <span class="author">Hao Wang</span>,
+                <span class="author">Ying-Cong Chen</span>,
+                <span class="author">Yingcheng Liu</span>,
+                <span class="author">Christopher Tarolli</span>,
+                <span class="author">Daniel Crepeau</span>,
+                <span class="author">Jan Bukartyk</span>,
+                <span class="author">Mithri Junna</span>,
+                <span class="author"><a target="_blank" href="https://www.massgeneral.org/doctors/19418/aleksandar-videnovic">Aleksandar Videnovic</a></span>,
+                <span class="author"><a target="_blank" href="https://www.bu.edu/sargent/profile/terry-ellis-pt-phd-ncs/">Terry Ellis</a></span>,
+                <span class="author"><a target="_blank" href="https://www.mayoclinic.org/biographies/lipford-melissa-c-m-d/bio-20055552">Melissa Lipford</a></span>,
+                <span class="author"><a target="_blank" href="https://www.urmc.rochester.edu/people/26764214-earl-ray-dorsey">Ray Dorsey</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.nature.com/nm/"><font color="black"><span class="venue">Nature Medicine</span></font></a>, 28, 2207–2215 (2022)<br>
+
+                        <!-- <font style="font-size: 13px">
+                            <sup>†<i></sup>Project initiator, project leader, main correspondence. Lead and supervise a team of 2 postdocs & 2 grad students at MIT.</i>
+                        </font><br> -->
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.nature.com/articles/s41591-022-01932-x.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://pd-breathing.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/pd_breathing_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=MAfxw-GlkBI">[Talk (45min)]</a>&nbsp;&bull; <!-- @Stanford -->
+                            <!-- <a target="_blank" href="https://www.youtube.com/watch?v=-kkcK3BIt6s">[Talk (45min)]</a>&nbsp;&bull; @NTU/NUS -->
+                            <a target="_blank" href="https://www.youtube.com/watch?v=TqMh5lIiqIU">[Talk (15min)]</a>&nbsp;&bull; <!-- @SwissNex -->
+                            <!-- <a>[Blog Post]</a>&nbsp;&bull; -->
+                            <a target="_blank" href="static/pd_breathing.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://news.mit.edu/2022/artificial-intelligence-can-detect-parkinsons-from-breathing-patterns-0822">[MIT News]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title"><a target="_blank" href="https://www.nature.com/articles/s41591-022-02146-x">Ten Notable Advances in Medicine in 2022</a></span><br>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1038/s41591-022-01932-x" data-link-target="_blank"></div>
+                </div>
+
+                <!-- <span class="brmedium"></span>
+                <font style="font-size: 12px">Invited Interviews:
+                    [<a target="_blank" href="https://developer.nvidia.com/blog/ai-remotely-detects-parkinsons-disease-during-sleep/">NVIDIA Technical Blog</a>],
+                    [<a target="_blank" href="https://www.washingtonpost.com/technology/2022/09/02/parkinsons-disease-ai-diagnosis/">The Washington Post</a>],
+                    [<a target="_blank" href="https://www.medscape.com/viewarticle/979684?src=">Medscape</a>],
+                    [<a target="_blank" href="https://mp.weixin.qq.com/s/d51nVl0dsbdxdOassXcRMw">DeepTech (Chinese)</a>],
+                    [<a target="_blank" href="https://mp.weixin.qq.com/s/7uFQz2u4FWhUKp9RIQUuZQ">BioWorld (Chinese)</a>]
+                </font><br>
+                <font style="font-size: 12px">Invited Guest Lectures:
+                    [<a target="_blank" href="https://illinois.edu/">UIUC BioE Seminar</a>],
+                    [<a target="_blank" href="http://dshm.bjmu.edu.cn/info/1250/1872.htm">PKU NIHDS</a>],
+                    [<a target="_blank" href="https://english.pkuph.cn/">PKU People's Hospital</a>],
+                    [<a target="_blank" href="https://swissnex.org/boston/event/innovations-in-healthcare-neurodegenerative-disorders/">HESAV SwissNex</a>],
+                    [<a target="_blank" href="https://smdjt.sciconf.cn/cn/web/index/13845_1291343__">Chinese Sleep Research Society</a>]
+                </font> -->
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://rf-pd-gait.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/pd_gait.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://rf-pd-gait.csail.mit.edu/">Monitoring Gait at Home with Radio Waves in Parkinson's Disease: a Marker of Severity, Progression, and Medication Response</a></span><br>
+                <span class="author">Yingcheng Liu*</span>,
+                <span class="author">Guo Zhang*</span>,
+                <span class="author">...</span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Timothy Nordahl</span>,
+                <span class="author">Karlo Lizarraga</span>,
+                <span class="author">Jamie Adams</span>,
+                <span class="author">Ruth Schneider</span>,
+                <span class="author">Karl Kieburtz</span>,
+                <span class="author"><a target="_blank" href="https://www.bu.edu/sargent/profile/terry-ellis-pt-phd-ncs/">Terry Ellis</a></span>,
+                <span class="author"><a target="_blank" href="https://www.urmc.rochester.edu/people/26764214-earl-ray-dorsey">Ray Dorsey</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.science.org/journal/stm"><font color="black"><span class="venue">Science Translational Medicine</span></font></a>, 14, eadc9669 (2022)<br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.science.org/stoken/author-tokens/ST-748/full">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://rf-pd-gait.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/firstmover/rf-pd-gait">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=8lFzABIEGBE">[Video (MIT)]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=GkW-m6V7uYo">[Video (JClinic)]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/pd_gait.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://news.mit.edu/2022/home-wireless-parkinsons-progression-0921">[MIT News]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title"><a target="_blank" href="https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(22)00494-X/fulltext">Ten Crucial Advances in Movement Disorders in 2022</a></span><br>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1126/scitranslmed.adc9669" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2021.754169/full"><img class="img-fluid img-rounded" src="static/covid_activity.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2021.754169/full">Contactless In-Home Monitoring of the Long-Term Respiratory and Behavioral Phenotypes in Older Adults With COVID-19: A Case Series</a></span><br>
+                <span class="author">Guo Zhang*</span>,
+                <span class="author"><a target="_blank" href="https://www.mcleanhospital.org/profile/ipsit-vahia">Ipsit Vahia*</a></span>,
+                <span class="author">Yingcheng Liu*</span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Rose May</span>,
+                <span class="author">Hailey Cray</span>,
+                <span class="author">William McGrory</span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.frontiersin.org/journals/psychiatry"><font color="black"><span class="venue">Frontiers in Psychiatry</span></font></a>, 12 (2021)<br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2021.754169/full">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=UVRfHUtr5ps">[Video]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/covid_activity.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.csail.mit.edu/news/csail-device-lets-doctors-monitor-covid-19-patients-distance">[MIT CSAIL News]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.3389/fpsyt.2021.754169" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <!-- Computational Health -->
+        <div id="CompHealth" style="padding-top: 75px; margin-top: -75px;">
+            <span class="brmedium"></span>
+            <h6>Computational Approaches for Healthcare Delivery and Equity</h6>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4"><img class="img-fluid img-rounded" src="static/nature_med_1600.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4">The Limits of Fair Medical Imaging AI in Real-World Generalization</a></span><br>
+                <span class="yuzhe">Yuzhe Yang*</span>,
+                <span class="author"><a target="_blank" href="https://haoran.ca/">Haoran Zhang*</a></span>,
+                <span class="author"><a target="_blank" href="https://www.gichoya.me/">Judy W. Gichoya</a></span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>,
+                <span class="author"><a target="_blank" href="https://healthyml.org/marzyeh/">Marzyeh Ghassemi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.nature.com/nm/"><font color="black"><span class="venue">Nature Medicine</span></font></a> (2024)<br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.nature.com/articles/s41591-024-03113-4">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/shortcut-ood-fairness">[Code]</a>&nbsp;&bull;
+                            <!-- <a target="_blank" href="static/pd_breathing.bib">[BibTeX]</a>&nbsp;&bull; -->
+                            <a target="_blank" href="https://news.mit.edu/2024/study-reveals-why-ai-analyzed-medical-images-can-be-biased-0628">[MIT News]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Oral Presentation</span><span class="highlight">, NeurIPS 2023 Medical Imaging Workshop</span><br>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1038/s41591-024-03113-4" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.nature.com/articles/s41591-024-02885-z"><img class="img-fluid img-rounded" src="static/nature_med_1600.jpg" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.nature.com/articles/s41591-024-02885-z">Demographic Bias in Misdiagnosis by Computational Pathology Models</a></span><br>
+                <span class="author">Anurag Vaidya*</span>,
+                <span class="author">Richard Chen*</span>,
+                <span class="author">Drew Williamson*</span>,
+                <span class="author">Andrew Song</span>,
+                <span class="author">Guillaume Jaume</span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Thomas Hartvigsen</span>,
+                <span class="author">Emma Dyer</span>,
+                <span class="author">Ming Yang Lu</span>,
+                <span class="author">Jana Lipkova</span>,
+                <span class="author">Muhammad Shaban</span>,
+                <span class="author">Tiffany Y. Chen</span>,
+                <span class="author">Faisal Mahmood</span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://www.nature.com/nm/"><font color="black"><span class="venue">Nature Medicine</span></font></a>, 30, 1174–1190 (2024)<br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://www.nature.com/articles/s41591-024-02885-z.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.nature.com/articles/s41591-024-02885-z">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/mahmoodlab/CPATH_demographics">[Code]</a>&nbsp;&bull;
+                            <!-- <a target="_blank" href="static/.bib">[BibTeX]</a>&nbsp;&bull; -->
+                            <a target="_blank" href="https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/researchers-reduce-bias-in-pathology-ai-algorithms-using-foundation-models">[MGB News]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1038/s41591-024-02885-z" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://simper.csail.mit.edu"><img class="img-fluid img-rounded" src="static/simper.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://simper.csail.mit.edu">SimPer: Simple Self-Supervised Learning of Periodic Targets</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="https://xliucs.github.io/">Xin Liu</a></span>,
+                <span class="author">Jiang Wu</span>,
+                <span class="author">Silviu Borac</span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>,
+                <span class="author"><a target="_blank" href="https://scholar.google.com/citations?user=HhErKoYAAAAJ">Ming-Zher Poh</a></span>,
+                <span class="author"><a target="_blank" href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ">Daniel McDuff</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://iclr.cc/Conferences/2023/"><font color="black">International Conference on Learning Representations <span class="venue">(ICLR)</span>, 2023</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2210.03115">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://openreview.net/forum?id=EKpMeEV0hOo">[OpenReview]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://simper.csail.mit.edu">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/SimPer">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://simper.csail.mit.edu/static/simper_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=uEezGU3P_-I">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/simper.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://ai.googleblog.com/2023/07/simper-simple-self-supervised-learning.html">[Google AI Blog]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Notable Top 5%, Oral Presentation</span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SimPer&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SimPer&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/"><img class="img-fluid img-rounded" src="static/posture.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/">BodyCompass: Monitoring Sleep Posture with Wireless Signals</a></span><br>
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/scyue/">Shichao Yue</a></span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="http://www.wanghao.in/">Hao Wang</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/rahul/">Hariharan Rahul</a></span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="http://ubicomp.org/ubicomp2020/"><font color="black">ACM International Joint Conference on Pervasive and Ubiquitous Computing <span class="venue">(UbiComp)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/bodycompass.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://people.csail.mit.edu/scyue/projects/bodycompass/bodycompass.pptx">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/hEqIr5ckm8o">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/posture.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://news.mit.edu/2020/monitoring-sleep-sensors-0911">[MIT News]</a>
+                        </font>
+                        <span class="brsmall"></span>
+                        <span class="highlight title"><a target="_blank" href="https://web.mit.edu/archive/spotlight/positioning-healthy-rest/">MIT Front Page Highlight (2020/09)</a></span>
+                    </div>
+                    <div class="col-sm-2 altmetric-embed" data-badge-type="donut" data-doi="10.1145/3397311" data-link-target="_blank"></div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://arxiv.org/abs/2303.11573"><img class="img-fluid img-rounded" src="static/bigsmall.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://arxiv.org/abs/2303.11573">BigSmall: Efficient Multi-Task Learning for Disparate Spatial and Temporal Physiological Measurements</a></span><br>
+                <span class="author"><a target="_blank" href="https://girishvn.github.io/">Girish Narayanswamy</a></span>,
+                <span class="author"><a target="_blank" href="https://nancylyj.github.io/">Yujia Liu</a></span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Chengqian Ma</span>,
+                <span class="author"><a target="_blank" href="https://xliucs.github.io/">Xin Liu</a></span>,
+                <span class="author"><a target="_blank" href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ">Daniel McDuff</a></span>,
+                <span class="author"><a target="_blank" href="https://homes.cs.washington.edu/~shwetak/">Shwetak Patel</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://wacv2024.thecvf.com/"><font color="black">IEEE Winter Conference on Applications of Computer Vision <span class="venue">(WACV)</span>, 2024</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2303.11573">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/ubicomplab/rPPG-Toolbox">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/ubicomplab/rPPG-Toolbox">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/bigsmall.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=ubicomplab&repo=rPPG-Toolbox&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=ubicomplab&repo=rPPG-Toolbox&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <!-- Fair, Equitable & Trustworthy ML -->
+        <div id="FairML" style="padding-top: 75px; margin-top: -75px;">
+            <span class="brmedium"></span>
+            <h6>Trustworthy Machine Learning Foundations: Fairness, Robustness, and Generalization</h6>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://subpopbench.csail.mit.edu"><img class="img-fluid img-rounded" src="static/subpop.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://subpopbench.csail.mit.edu">Change is Hard: A Closer Look at Subpopulation Shift</a></span><br>
+                <span class="yuzhe">Yuzhe Yang*</span>,
+                <span class="author"><a target="_blank" href="https://haoran.ca/">Haoran Zhang*</a></span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>,
+                <span class="author"><a target="_blank" href="https://healthyml.org/marzyeh/">Marzyeh Ghassemi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://icml.cc/Conferences/2023/"><font color="black">International Conference on Machine Learning <span class="venue">(ICML)</span>, 2023</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2302.12254">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://subpopbench.csail.mit.edu">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/on-learning-in-the-presence-of-underrepresented-groups-8937434d3c85">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/SubpopBench">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://subpopbench.csail.mit.edu/static/subpopbench_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=WiSrCWAAUNI">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/subpopbench.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://news.mit.edu/2023/how-machine-learning-models-can-amplify-inequities-medical-diagnosis-treatment-0817">[MIT News]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Oral Presentation</span><span class="highlight">, <a arget="_blank" href="https://www.worldaic.com.cn/">WAIC 2023</a></span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SubpopBench&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SubpopBench&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://arxiv.org/abs/2210.01189"><img class="img-fluid img-rounded" src="static/rnc.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://arxiv.org/abs/2210.01189">Rank-N-Contrast: Learning Continuous Representations for Regression</a></span><br>
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/kzha/">Kaiwen Zha*</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/pengcao/">Peng Cao*</a></span>,
+                <span class="author"><a target="_blank" href="https://jeanyson.github.io/">Jeany Son</a></span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://nips.cc/Conferences/2023/"><font color="black">Neural Information Processing Systems <span class="venue">(NeurIPS)</span>, 2023</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2210.01189">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/kaiwenzha/Rank-N-Contrast">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/kaiwenzha/Rank-N-Contrast">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/rnc.bib">[BibTeX]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Spotlight Presentation</span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=kaiwenzha&repo=Rank-N-Contrast&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=kaiwenzha&repo=Rank-N-Contrast&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://mdlt.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/mdlt_teaser.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="http://mdlt.csail.mit.edu/">On Multi-Domain Long-Tailed Recognition, Imbalanced Domain Generalization and Beyond</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="http://www.wanghao.in/">Hao Wang</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://eccv2022.ecva.net/"><font color="black">European Conference on Computer Vision <span class="venue">(ECCV)</span>, 2022</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2203.09513">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://mdlt.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/how-to-learn-imbalanced-data-arising-from-multiple-domains-7d0c0d6e3c17">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/multi-domain-imbalance">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/mdlt_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/oUky8S8d1_Y">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/mdlt.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=multi-domain-imbalance&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=multi-domain-imbalance&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://arxiv.org/abs/2111.13998"><img class="img-fluid img-rounded" src="static/tsc.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://arxiv.org/abs/2111.13998">Targeted Supervised Contrastive Learning for Long-Tailed Recognition</a></span><br>
+                <span class="author">Tianhong Li*</span>,
+                <span class="author">Peng Cao*</span>,
+                <span class="author">Yuan Yuan</span>,
+                <span class="author">Lijie Fan</span>,
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="https://www.rogerioferis.org/">Rogerio Feris</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/indyk/">Piotr Indyk</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://cvpr2022.thecvf.com/"><font color="black">IEEE Conference on Computer Vision and Pattern Recognition <span class="venue">(CVPR)</span>, 2022</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2111.13998">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/LTH14/targeted-supcon">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/tsc.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=LTH14&repo=targeted-supcon&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=LTH14&repo=targeted-supcon&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://dir.csail.mit.edu/"><img class="img-fluid img-rounded" src="static/dir_teaser.gif" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="http://dir.csail.mit.edu/">Delving into Deep Imbalanced Regression</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author"><a target="_blank" href="https://kaiwenzha.github.io/">Kaiwen Zha</a></span>,
+                <span class="author"><a target="_blank" href="https://yingcong.github.io/">Ying-Cong Chen</a></span>,
+                <span class="author"><a target="_blank" href="http://www.wanghao.in/">Hao Wang</a></span>,
+                <span class="author"><a target="_blank" href="https://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://icml.cc/Conferences/2021/"><font color="black">International Conference on Machine Learning <span class="venue">(ICML)</span>, 2021</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2102.09554">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://dir.csail.mit.edu/">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/strategies-and-tactics-for-regression-on-imbalanced-data-61eeb0921fca">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/imbalanced-regression">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/dir_icml21_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/grJGixofQRU">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/dir.bib">[BibTeX]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Long Oral Presentation</span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-regression&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-regression&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.mit.edu/~yuzhe/imbalanced-semi-self.html"><img class="img-fluid img-rounded" src="static/imbalance.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.mit.edu/~yuzhe/imbalanced-semi-self.html">Rethinking the Value of Labels for Improving Class-Imbalanced Learning</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Zhi Xu</span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://nips.cc/Conferences/2020/"><font color="black">Neural Information Processing Systems <span class="venue">(NeurIPS)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/2006.07529">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.mit.edu/~yuzhe/imbalanced-semi-self.html">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://towardsdatascience.com/struggling-with-data-imbalance-semi-supervised-self-supervised-learning-help-4de8b8f23490">[Blog Post]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/imbalanced-semi-self">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/imbalance_nips20_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtu.be/XltXZ3OZvyI">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/imbalance.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-semi-self&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=imbalanced-semi-self&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://arxiv.org/abs/2006.06135"><img class="img-fluid img-rounded" src="static/lrrl.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://arxiv.org/abs/2006.06135">Sample Efficient Reinforcement Learning via Low-Rank Matrix Estimation</a></span><br>
+                (α-β order)
+                <span class="author"><a target="_blank" href="https://devavrat.mit.edu/">Devavrat Shah</a></span>,
+                <span class="author">Dogyoon Song</span>,
+                <span class="author">Zhi Xu</span>,
+                <span class="yuzhe">Yuzhe Yang</span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://nips.cc/Conferences/2020/"><font color="black">Neural Information Processing Systems <span class="venue">(NeurIPS)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/pdf/2006.06135.pdf">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://arxiv.org/abs/2006.06135">[arXiv]</a>&nbsp;&bull;
+                            <!-- <a target="_blank" href="">[Slides]</a>&nbsp;&bull; -->
+                            <a target="_blank" href="https://youtu.be/EQEoGI8MJDI">[Talk (by Devavrat)]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/lrrl.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SV-RL&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SV-RL&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://svrl.csail.mit.edu"><img class="img-fluid img-rounded" src="static/svrl.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="http://svrl.csail.mit.edu">Harnessing Structures for Value-Based Planning and Reinforcement Learning</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Guo Zhang</span>,
+                <span class="author">Zhi Xu</span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://iclr.cc/Conferences/2020/"><font color="black">International Conference on Learning Representations <span class="venue">(ICLR)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/1909.12255">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://openreview.net/forum?id=rklHqRVKvH">[OpenReview]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://svrl.csail.mit.edu">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/SV-RL">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/svrl_iclr20_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Jpm45nIDZYk">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/svrl.bib">[BibTeX]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://underactuated.mit.edu/dp.html#section4">[MIT 6.832 Highlight]</a>
+                        </font><br>
+                        <span class="brsmall"></span>
+                        <span class="highlight title">Oral Presentation</span><br>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SV-RL&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=SV-RL&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://www.mit.edu/~yuzhe/robnets.html"><img class="img-fluid img-rounded" src="static/robnet_teaser.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="https://www.mit.edu/~yuzhe/robnets.html">When NAS Meets Robustness: In Search of Robust Architectures against Adversarial Attacks</a></span><br>
+                <span class="author">Minghao Guo</span>*,
+                <span class="yuzhe">Yuzhe Yang*</span>,
+                <span class="author"><a target="_blank" href="https://nbei.github.io/">Rui Xu</a></span>,
+                <span class="author"><a target="_blank" href="https://liuziwei7.github.io/">Ziwei Liu</a></span>,
+                <span class="author"><a target="_blank" href="http://dahua.me/">Dahua Lin</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="http://cvpr2020.thecvf.com/"><font color="black">IEEE Conference on Computer Vision and Pattern Recognition <span class="venue">(CVPR)</span>, 2020</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/1911.10695">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.mit.edu/~yuzhe/robnets.html">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/gmh14/RobNets">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/robnets_cvpr20_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/robnets_cvpr20_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Bj7MW4hCeeA">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/robnets.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=gmh14&repo=RobNets&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=gmh14&repo=RobNets&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://me-net.csail.mit.edu"><img class="img-fluid img-rounded" src="static/menet.png" alt=""></a>
+            </div>
+            <div class="col-md-9">
+                <span class="paper-title"><a target="_blank" href="http://me-net.csail.mit.edu">ME-Net: Towards Effective Adversarial Robustness with Matrix Estimation</a></span><br>
+                <span class="yuzhe">Yuzhe Yang</span>,
+                <span class="author">Guo Zhang</span>,
+                <span class="author">Zhi Xu</span>,
+                <span class="author"><a target="_blank" href="http://people.csail.mit.edu/dina/">Dina Katabi</a></span>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a target="_blank" href="https://icml.cc/Conferences/2019"><font color="black">International Conference on Machine Learning <span class="venue">(ICML)</span>, 2019</font></a><br>
+
+                        <font style="font-size: 13px">
+                            <a target="_blank" href="https://arxiv.org/abs/1905.11971">[Paper]</a>&nbsp;&bull;
+                            <a target="_blank" href="http://me-net.csail.mit.edu">[Project Page]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://github.com/YyzHarry/ME-Net">[Code]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/menet_icml19_slides.pdf">[Slides]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/menet_icml19_poster.pdf">[Poster]</a>&nbsp;&bull;
+                            <a target="_blank" href="https://youtube.videoken.com/embed/SYn2w8niAHk?tocitem=22">[Talk]</a>&nbsp;&bull;
+                            <a target="_blank" href="static/menet.bib">[BibTeX]</a>
+                        </font>
+                    </div>
+                    <div class="col-sm-2" style="margin-left: -20px;">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=ME-Net&type=star&count=true" frameborder="0" scrolling="0" width="100" height="27" title="GitHub"></iframe><br>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=YyzHarry&repo=ME-Net&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+    </script>
+
+    <br>
+</div>

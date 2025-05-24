@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Rohan Paleja | Explainable AI</title>
+    <meta name="description" content="My personal website.
+">
+
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons"/>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/academicons.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/projects/xAI">
+</head>
+<body>
+<!-- Header -->
+<nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
+    <div class="container-fluid p-0">
+
+        <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Rohan</span>
+            Paleja</a>
+        <div class="row ml-1 ml-sm-0">
+          <span class="contact-icon text-center" style="line-height: 1em;">
+            <a href="mailto:rpaleja3@gatech.edu"><i class="fa fa-envelope-square gm-icon"></i></a>
+            <a href="https://scholar.google.com/citations?user=xjnQbKgAAAAJ&hl=en" target="_blank"
+               title="Google Scholar"><i class="ai ai-google-scholar-square gs-icon"></i></a>
+            <a href="https://github.com/rohanpaleja27" target="_blank" title="GitHub"><i
+                    class="fab fa-github-square gh-icon"></i></a>
+            <a href="https://www.linkedin.com/in/rohan-paleja-6370a3111/" target="_blank" title="LinkedIn"><i
+                    class="fab fa-linkedin li-icon"></i></a>
+            <a href="https://twitter.com/rohanpaleja27" target="_blank" title="Twitter"><i
+                    class="fab fa-twitter-square tw-icon"></i></a>
+          </span>
+        </div>
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">
+                        About
+
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="/assets/pdf/vitae.pdf">
+                        Curriculum Vitae
+                    </a>
+                </li>
+
+
+            <li class="nav-item ">
+                <a class="nav-link" href="/projects/">
+                  Projects
+
+                </a>
+            </li>
+
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="/publications/">
+                        Publications
+
+                    </a>
+                </li>
+
+                <!--              <li class="nav-item ">-->
+                <!--                  <a class="nav-link" href="/teaching/">-->
+                <!--                    Teaching-->
+                <!--                    -->
+                <!--                  </a>-->
+                <!--              </li>-->
+
+                <!--              <li class="nav-item ">-->
+                <!--                  <a class="nav-link" href="/service/">-->
+                <!--                    Service-->
+                <!--                                        -->
+                <!--                  </a>-->
+                <!--              </li>-->
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Scrolling Progress Bar -->
+<progress id="progress" value="0">
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+</progress>
+
+<!-- Content -->
+<div class="content">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb p-0 text-lowercase">
+            <li class="breadcrumb-item"><a href="/">home</a></li>
+            <li class="breadcrumb-item"><a href="/projects">Projects</a></li>
+            <li class="breadcrumb-item less">Explainable AI</li>
+        </ol>
+    </nav>
+
+    <div class="row m-0" style="width: 100%;">
+        <div class="col-sm-12 p-0">
+            <h1>Explainable AI</h1>
+            <h5 class="mb-4">Recent advances in machine learning have led to growing interest in xAI to
+                enable humans to gain insight into the decision-making of machine learning models. However, 1)
+                interpretable reinforcement learning remains an open challenge, and 2) the utility of interpretable
+                models in human-machine teaming has not yet been characterized.</h5>
+        </div>
+        <!--	<div><p style="float: left;"><img src="../../assets/img/OODA.png"  height="200" width="300" class="post_thumb" ></p>-->
+        <!--		<p style="margin-left:220px">Recent advances in machine learning have led to growing interest in xAI to enable humans to gain insight-->
+        <!--into the decision-making of machine learning models. Despite this, the utility of xAI techniques has not yet been characterized in human-machine teaming. Importantly, xAI offers the promise of enhancing team situational awareness (SA) and shared mental model development, which are the key characteristics of effective human-machine teams. Inspired by prior work in human factors, I present the first analyses of xAI under sequential decision-making settings for human-machine teams.</p>-->
+        <!--	</div>-->
+
+        <div class="row m-0" style="width:100%;">
+            <p>Reinforcement Learning (RL) with deep function approximators has enabled the generation of effective
+                control policies across numerous applications in robotics.
+                However, while the performance of these policies allows for autonomously learning collaborative
+                behaviors, the conventional deep-RL policies used in prior work lack interpretability, limiting
+                deployability in safety-critical and legally-regulated domains. Without the utilization of interpretable
+                models, it is difficult to assess a system's flaws, verify its correctness, and promote its
+                trustworthiness.</p>
+            <img src="/assets/img/icct_framework.png" alt="iqubes" width="800px" height="200px"/>
+            <p>In this work, I directly produce high-performance, interpretable policies represented by a minimalistic
+                tree-based architecture augmented with low-fidelity linear controllers via reinforcement learning,
+                providing a novel interpretable reinforcement learning architecture, "Interpretable Continuous Control
+                Trees" (ICCTs). I provide several extensions to
+                prior differentiable decision tree frameworks within our proposed architecture: 1) a differentiable
+                crispification procedure allowing for optimization in a sparse decision-tree like representation, and 2)
+                the addition of sparse linear leaf controllers to increase
+                expressivity while maintaining legibility.</p>
+            <table>
+                <tbody>
+                <tr>
+                    <td><img src="/assets/img/trained_icct.gif" alt="iqubes" width="600px" height="500px"/>
+                        <center>Trained ICCT Policies</center>
+                    </td>
+                    <td style="font-size: 15px"> Our Interpretable Continuous Control Trees (ICCTs) have competitive
+                        performance to that of deep neural networks across six continuous control domains, including
+                        four difficult autonomous driving scenarios, while maintaining high interpretability. The
+                        maintenance of both high performance and interpretability within an interpretable reinforcement
+                        learning architecture provides a paradigm that would be beneficial for the real-world deployment
+                        of autonomous systems.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row m-0" style="width:100%;">
+            <h5>Project materials:</h5>
+            <ul style="margin-left:10px">
+                <li>
+                    <div id="paleja2021AAMAS" class="col p-0">
+                        <nobr><em>Rohan Paleja*</em>,</nobr>
+
+                        <nobr><a href="https://yaruniu.com/" target="_blank">Yaru Niu
+                            <nobr><em>*</em></nobr>
+                        </a>,
+                        </nobr>
+
+                        <nobr><a href="https://www.andrew-silva.com/" target="_blank">Andrew Silva</a>,</nobr>
+
+                        <nobr><a href="https://www.linkedin.com/in/chace-ritchie" target="_blank">Chace Ritchie</a>,
+                        </nobr>
+
+                        <nobr><a href="https://www.linkedin.com/in/sugju-choi" target="_blank">Sugju Choi</a>,</nobr>
+
+                        and
+
+                        <nobr><a href="https://core-robotics.gatech.edu/people/matthew-gombolay/" target="_blank">Matthew
+                            Gombolay</a>.
+                        </nobr>
+
+
+                        <a href="/assets/pdf/ICCT/2202.02352.pdf" target="_blank">Learning Interpretable,
+                            High-Performing Policies for Autonomous Driving</a>.
+                        <i>Robotics: Science and Systems (RSS), 2022</i>.
+                    </div>
+                </li>
+                <li><a href="https://github.com/CORE-Robotics-Lab/ICCT" target="_blank">Codebase</a>.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- <div class="col-sm-2 p-0 mt-auto mb-auto">
+          <img src="/assets/img/active_learning/active_learning_logo.svg" alt="project thumbnail">
+        </div> -->
+    </div>
+
+    <div class="row m-0" style="width: 100%;">
+        <p>While we can now train agents that maintain interpretable models, the utility of such
+            interpretability has not yet been characterized in human-machine teaming. Importantly, xAI offers
+            the promise of enhancing team situational awareness (SA) and shared mental model development, which
+            are the key characteristics of effective human-machine teams. Inspired by prior work in human
+            factors, we present the first analyses of xAI under sequential decision-making settings for
+            human-machine teams.</p>
+        <figure>
+            <img src="/assets/img/OODA.png" style="width: 100%"/>
+            <figcaption>An overview of our experimentation in relation to the Observe-Orient-Decide-Act loop. On the
+                left, I display the HMT interaction with both agents taking actions and the cobot outputting a policy
+                explanation to the human teammate. On the right, I display the two questions assessed by our
+                human-subjects experiments.
+            </figcaption>
+        </figure>
+        <p>
+            We assessed the ability for human teammates to gain improved SA through the augmentation of xAI techniques
+            and quantified the subjective and objective impact of xAI-supported SA on human-machine team fluency.
+            Significantly, I utilized Minecraft as a human-machine teaming (HMT) platform, creating a complex
+            collaboration task where humans and machines must make decisions in real-time and reason about the world in
+            a continuous space. The resultant interaction is much closer to the envisage of a real-world human-robot
+            interaction scenario compared to prior research that has focused on point interactions (i.e., a
+            classification problem rather than a sequential decision-making problem) and does not assess the
+            preoccupation cost of online explanations in HMT.
+            <!--            Our domain has long-term collaboration, agent communication, hierarchical reasoning, and requires intent-->
+            <!--            recognition, resource sharing, and trust building for high-performance coordination.-->
+            Importantly, I found that 1) using interpretable models that can support information sharing with humans can
+            lead to increased SA and 2) xAI-based support is not always beneficial, as there is a cost of paying
+            attention to the xAI and this may outweigh the benefits obtained from generating an accurate shared mental
+            model. These findings emphasize the importance of developing the "right" xAI models for HMT and the
+            optimization methods to support learning these xAI models. Furthermore, this study lays the groundwork for
+            future studies studying
+            xAI in sequential decision-making settings and brings to light important challenges that must be addressed
+            within the fields of xAI and HRI.
+        </p>
+
+        <!--        <div><p style="float: left;"><img src="../../assets/img/Full_CommGraph_Final.PNG" height="250" width="200"-->
+        <!--                                          class="post_thumb"></p>-->
+        <!--            <p style="margin-left:220px">In HetNet, I research how robots with different capabilities can coordinate-->
+        <!--                under partial observability and decentralized communication. Heterogeneity in robots' design-->
+        <!--                characteristics and their roles are introduced to leverage the relative merits of different agents and-->
+        <!--                their capabilities. I define a heterogeneous robot team as a group of cooperative agents that are-->
+        <!--                capable of performing different tasks and may have access to different sensory information. I categorize-->
+        <!--                agents with similar state, action, and observation spaces in the same class. In such a heterogeneous-->
+        <!--                setting, communicating is not straightforward as agents do not speak the same "language''; The-->
+        <!--                dependency generated via sensor-lax agents on agents with strong sensing capabilities makes efficient-->
+        <!--                communication protocols for cooperation a requirement rather than an additional modeling technique for-->
+        <!--                performance.-->
+        <!--            </p>-->
+        <!--        </div>-->
+
+        <!--        <div class="row m-0" style="width:100%;">-->
+        <!--            <p>Accordingly, I directly model each agent class as a unique node type.</p>-->
+        <!--        </div>-->
+        <div class="row m-0" style="width:100%;">
+            <h5>Project materials:</h5>
+            <ul style="margin-left:10px">
+                <li>
+                    <a href="https://slideslive.com/38969185/the-utility-of-explainable-ai-in-ad-hoc-humanmachine-teaming?ref=recommended"
+                       target="_blank">Talk</a> from
+                    NeurIPS'21.
+                </li>
+                <li>
+                    <div id="Paleja2021NeurIPS" class="col p-0">
+                        <nobr><em>Rohan Paleja</em>,</nobr>
+
+                        <nobr><a href="https://www.linkedin.com/in/muyleng-ghuy" target="_blank">Muyleng Ghuy</a>,
+                        </nobr>
+                        <nobr><a href="https://www.linkedin.com/in/nadun-ranawaka-arachchige-87701b137" target="_blank">Nadun
+                            Ranawaka Arachchige</a>,
+                        </nobr>
+                        <nobr><a href="https://ilp.mit.edu/node/44597" target="_blank">Reed Jensen</a>,</nobr>
+                        and
+                        <nobr><a href="https://core-robotics.gatech.edu/people/matthew-gombolay/" target="_blank">Matthew
+                            Gombolay</a>.
+                        </nobr>
+
+
+                        <a href="/assets/pdf/paleja_hetnet.pdf" target="_blank">The Utility of Explainable AI in Ad Hoc
+                            Human-Machine Teaming</a>.
+                        <i>Conference on Neural Information Processing Systems (NeurIPS), 2021</i>.
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- <div class="col-sm-2 p-0 mt-auto mb-auto">
+          <img src="/assets/img/active_learning/active_learning_logo.svg" alt="project thumbnail">
+        </div> -->
+    </div>
+
+    <div class="container-fluid p-0 text-justify">
+
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; Copyright 2023 Rohan Paleja.
+
+
+</footer>
+
+<!-- Core JavaScript Files -->
+<script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/js/popper.min.js" type="text/javascript"></script>
+<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/js/mdb.min.js" type="text/javascript"></script>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+<script src="/assets/js/common.js"></script>
+
+<!-- GitHub Stars -->
+<script src="/assets/js/github-stars.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+
+
+
+
+        githubStars("eaplatanios/symphony-mt", function(stars) { $("#curriculum-learningeaplatanios-symphony-mt-stars").text('' + stars); });
+
+
+
+
+        githubStars("eaplatanios/jelly-bean-world", function(stars) { $("#jelly-bean-worldeaplatanios-jelly-bean-world-stars").text('' + stars); });
+
+
+
+
+        githubStars("eaplatanios/symphony-mt", function(stars) { $("#machine-translationeaplatanios-symphony-mt-stars").text('' + stars); });
+
+
+
+
+
+
+
+
+        githubStars("eaplatanios/tensorflow_scala", function(stars) { $("#TensorFlow-Scalaeaplatanios-tensorflow_scala-stars").text('' + stars); });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+    $(document).ready(function() {
+      var navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      var progressBar = $('#progress');
+      progressBar.css({ 'top': navbarHeight });
+      var getMax = function() { return $(document).height() - $(window).height(); }
+      var getValue = function() { return $(window).scrollTop(); }
+      // Check if the browser supports the progress element.
+      if ('max' in document.createElement('progress')) {
+        // Set the 'max' attribute for the first time.
+        progressBar.attr({ max: getMax() });
+        progressBar.attr({ value: getValue() });
+
+        $(document).on('scroll', function() {
+          // On scroll only the 'value' attribute needs to be calculated.
+          progressBar.attr({ value: getValue() });
+        });
+
+        $(window).resize(function() {
+          var navbarHeight = $('#navbar').outerHeight(true);
+          $('body').css({ 'padding-top': navbarHeight });
+          $('progress-container').css({ 'padding-top': navbarHeight });
+          progressBar.css({ 'top': navbarHeight });
+          // On resize, both the 'max' and 'value' attributes need to be calculated.
+          progressBar.attr({ max: getMax(), value: getValue() });
+        });
+      } else {
+        var max = getMax(), value, width;
+        var getWidth = function() {
+          // Calculate the window width as a percentage.
+          value = getValue();
+          width = (value/max) * 100;
+          width = width + '%';
+          return width;
+        }
+        var setWidth = function() { progressBar.css({ width: getWidth() }); };
+        setWidth();
+        $(document).on('scroll', setWidth);
+        $(window).on('resize', function() {
+          // Need to reset the 'max' attribute.
+          max = getMax();
+          setWidth();
+        });
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<!-- Code Syntax Highlighting -->
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<script src="/~abobu/assets/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- Script Used for Randomizing the Projects Order -->
+<!-- <script type="text/javascript">
+  $.fn.shuffleChildren = function() {
+    $.each(this.get(), function(index, el) {
+      var $el = $(el);
+      var $find = $el.children();
+
+      $find.sort(function() {
+        return 0.5 - Math.random();
+      });
+
+      $el.empty();
+      $find.appendTo($el);
+    });
+  };
+  $("#projects").shuffleChildren();
+</script> -->
+
+<!-- Project Cards Layout -->
+<script type="text/javascript">
+    var $grid = $('#projects');
+
+    // $grid.masonry({ percentPosition: true });
+    // $grid.masonry('layout');
+
+    // Trigger after images load.
+    $grid.imagesLoaded().progress(function() {
+      $grid.masonry({ percentPosition: true });
+      $grid.masonry('layout');
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<!-- Enable Tooltips -->
+<script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-54519238-1', 'auto');
+    ga('send', 'pageview');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

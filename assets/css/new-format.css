@@ -1,0 +1,643 @@
+/* In your new custom-yuzhe-style.css OR add to the end of main.css to override */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* System font stack, or choose a specific clean sans-serif */
+    font-size: 16px; /* Or your preferred base size */
+    line-height: 1.7; /* Increased for readability */
+    color: #333333;   /* Darker gray for text */
+    background-color: #ffffff; /* Plain white background */
+    -webkit-font-smoothing: antialiased; /* Smoother fonts on WebKit */
+    -moz-osx-font-smoothing: grayscale; /* Smoother fonts on Firefox */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Consistent font */
+    font-weight: 400; /* Less bold than default Bootstrap/MDB, closer to Yuzhe */
+    color: #222222;   /* Slightly darker for headings */
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+h1.title { /* Your main name title */
+    font-size: 2.8em; /* Adjust as needed */
+    font-weight: 300; /* Lighter for a modern feel */
+    margin-bottom: 1em;
+    text-align: left; /* As in your current HTML */
+}
+
+.content-section h2.title { /* For section titles like "Recent News", "Publications" */
+    font-size: 2em;
+    font-weight: 400;
+    color: #333;
+    text-align: left; /* Yuzhe's section titles are left-aligned */
+    margin-bottom: 1em;
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid #eeeeee; /* Subtle separator like Yuzhe's */
+}
+
+.content-section h3.title { /* For section titles like "Recent News", "Publications" */
+    font-size: 2em;
+    font-weight: 400;
+    color: #333;
+    text-align: left; /* Yuzhe's section titles are left-aligned */
+    margin-bottom: 1em;
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
+    border-bottom: 1px solid #eeeeee; /* Subtle separator like Yuzhe's */
+}
+
+p {
+    margin-bottom: 1em;
+    color: #444444; /* Slightly lighter than headings */
+}
+
+a {
+    color: #0056b3; /* A common academic blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #003d80; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Remove excessive shadows from MDB buttons if you use them for links */
+.btn {
+    box-shadow: none !important;
+    text-transform: none; /* Yuzhe's links are not uppercase */
+    font-weight: normal;
+    padding: 0.375rem 0.75rem; /* Reset padding if too large */
+}
+.btn-primary { /* If you use .btn-primary for links */
+    background-color: transparent !important;
+    color: #0056b3 !important;
+    border: 1px solid transparent !important; /* Remove border or make it subtle */
+}
+.btn-primary:hover {
+    background-color: transparent !important;
+    color: #003d80 !important;
+    text-decoration: underline;
+}
+
+/* Remove MDB wave effects if you want a more static feel */
+.waves-effect .waves-ripple {
+    display: none !important;
+}
+
+/* In your new custom-yuzhe-style.css OR add to the end of main.css */
+
+.container, .content { /* .content is your main wrapper */
+    max-width: 800px; /* This is already in your CSS, good. Adjust if needed. */
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2em; /* Add some space at the top */
+    padding-bottom: 2em;
+}
+
+.content-section {
+    padding-top: .1em; /* Space above section title */
+    padding-bottom: .1em; /* Space below section content */
+    /* Optional: border-bottom: 1px solid #e0e0e0; (if you want separators) */
+}
+.content-section:last-of-type {
+    border-bottom: none;
+}
+
+/* Remove default jumbotron styling if not desired */
+.jumbotron {
+    background-color: transparent; /* Remove grey background */
+    padding: 0; /* Remove padding if sections handle it */
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* In your new custom-yuzhe-style.css OR add to the end of main.css */
+
+#navbar {
+    background-color: #ffffff !important; /* Ensure it's white or very light */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Softer shadow or none */
+    /* Or remove shadow completely: box-shadow: none; border-bottom: 1px solid #e0e0e0; */
+    font-weight: 400; /* Normal weight for nav links */
+}
+
+#navbar .navbar-nav .nav-link {
+    color: #333333 !important; /* Darker nav links */
+    padding: 0.5rem 1rem; /* Standard padding */
+    font-size: 0.95rem;
+    text-transform: none; /* Yuzhe's are not uppercase */
+}
+
+#navbar .navbar-nav .nav-link:hover,
+#navbar .navbar-nav .nav-link:focus {
+    color: #0056b3 !important; /* Blue on hover */
+    background-color: transparent; /* No background change on hover */
+}
+
+#navbar .navbar-nav .nav-item.navbar-active .nav-link, /* Your active class */
+#navbar .navbar-nav .nav-item .nav-link.active { /* Bootstrap's typical active class */
+    color: #0056b3 !important;
+    font-weight: 600; /* Slightly bolder for active link */
+    background-color: transparent;
+}
+
+/* Your social icons in the nav */
+#navbar .contact-icon a i {
+    font-size: 1.5rem; /* Adjust if they are too large/small */
+    /* Consider standardizing their colors or using a subtle grayscale effect */
+}
+
+/* In your new custom-yuzhe-style.css OR add to the end of main.css */
+
+#publications-section .publication-item { /* Assuming each pub is wrapped in this class */
+    margin-bottom: 2.5em;
+    line-height: 1.7;
+}
+
+#publications-section .publication-item .title {
+    font-weight: 600; /* Or 700 for bolder */
+    font-size: 1.1em;
+    color: #222;
+    display: block; /* Ensure title is on its own line or flows well */
+    margin-bottom: 0.2em;
+}
+
+#publications-section .publication-item .authors {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 0.2em;
+}
+/* Highlight your name if you have a class for it, e.g., .self-author */
+#publications-section .publication-item .authors .self-author {
+     font-weight: 600; /* Make your name bold */
+}
+
+
+#publications-section .publication-item .venue {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+#publications-section .publication-item .links a,
+#publications-section .publication-item .material-icons { /* If using material icons for links */
+    font-size: 0.9em;
+    margin-right: 10px;
+    color: #0056b3;
+    border: 1px solid #0056b3; /* Subtle button-like links */
+    padding: 2px 6px;
+    border-radius: 3px;
+    white-space: nowrap; /* Keep [Paper] etc. on one line */
+}
+
+#publications-section .publication-item .links a:hover,
+#publications-section .publication-item .material-icons:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Remove bibliography specific styles if they conflict or simplify them */
+.bibliography {
+    padding-left: 0; /* Remove default ul padding */
+}
+.bibliography li {
+    list-style-type: none; /* Remove bullets */
+    margin-bottom: 2em; /* Spacing between publication entries */
+}
+.bibliography li .author a {
+    border-bottom: none; /* Yuzhe's site doesn't have dashed underlines for authors */
+    color: inherit; /* Inherit color from .authors */
+}
+.bibliography li .author a:hover {
+    text-decoration: underline;
+}
+
+/* Hide Altmetric badges if you don't want them or style them appropriately */
+/* .altmetric-embed { display: none !important; } */
+
+/* In your new custom-yuzhe-style.css OR add to the end of main.css */
+#news-section .row {
+    margin-bottom: 1em;
+}
+
+#news-section .date {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #555;
+    background-color: #f0f0f0 !important; /* Lighter, less prominent badge */
+    padding: 0.3em 0.6em;
+    border-radius: 3px;
+    /* Remove MDB badge shadow if it's still there */
+    box-shadow: none;
+}
+
+#news-section .text p {
+    font-size: 0.95em;
+    margin-bottom: 0; /* Compact list */
+    color: #444;
+}
+
+/* In your new custom-yuzhe-style.css OR add to the end of main.css */
+
+footer.page-footer { /* Your existing selector */
+    background-color: #f8f8f8; /* Light grey background */
+    color: #555555;       /* Medium grey text */
+    padding: 1.5em 0;
+    font-size: 0.85em;
+    text-align: center;
+    box-shadow: none; /* Remove MDB shadow */
+    border-top: 1px solid #e0e0e0; /* Subtle top border */
+    /* If you want it static at the bottom of the content, not fixed: */
+    /* position: static;  */
+}
+footer.page-footer a {
+    color: #0056b3;
+}
+footer.page-footer a:hover {
+    color: #003d80;
+}
+
+/* Add to your custom CSS file or end of main.css */
+
+body {
+    padding-top: 40px; /* KEEP THIS: Adjust this value to accurately match your navbar's height.
+                          If your navbar is taller than 56px, increase this. If shorter, decrease.
+                          This prevents the fixed navbar from overlapping the very top of your content. */
+}
+
+/* In your new custom-style.css OR add to the end of main.css */
+
+/* --- For Reducing Top Whitespace --- */
+body {
+    padding-top: 40px; /* Adjust this to match your actual fixed navbar height */
+}
+
+.content {
+    margin-top: 0 !important; /* Remove Bootstrap's default margin if it's applied */
+    padding-top: 1.5rem;    /* Controls space between navbar and your name. Adjust 1.5rem as needed. */
+                            /* Try 1rem for less space, 0.5rem for very little. */
+}
+
+/* If your very first element inside .content (e.g., the h1 for your name, or its container)
+   still has top padding (like from a 'pt-4' class), remove that class in HTML
+   or override it here: */
+#about-section > .row:first-child > .col-12[class*="pt-"] { /* Targets the div holding your H1 if it has pt- classes */
+    padding-top: 0 !important; /* Or a very small value like 0.5rem */
+}
+
+
+/* --- For Making Page Wider --- */
+.content { /* This is your main content wrapper from your HTML structure */
+    max-width: 1140px; /* Example: Yuzhe's site is around this. Try 900px, 960px, or 1000px. */
+                    /* Default was 800px in your main.css */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* If your sections are using the ".container" class like:
+   <section id="about-section" class="content-section container">
+   Then the ".container" class from Bootstrap will also try to set a max-width.
+   To ensure it doesn't restrict your new .content width, you can either:
+   1. Remove ".container" from the section tags in your HTML, and let ".content" manage width.
+   2. Or, override .container for larger screens if needed (less ideal):
+*/
+/*
+@media (min-width: 992px) { // Corresponds to Bootstrap's lg breakpoint
+    .container {
+        max-width: 960px; // Match your .content max-width
+    }
+}
+@media (min-width: 1200px) { // Corresponds to Bootstrap's xl breakpoint
+    .container {
+        max-width: 960px; // Match your .content max-width (if .content is 960px)
+                           // Or, if .content is 1140px, this could be 1140px too.
+    }
+}
+*/
+
+/* Widen the navbar's inner container to match the new content width */
+#navbar .container {
+    max-width: 1140px; /* Match the new max-width of .content */
+                     /* If .content is 1140px, make this 1140px or use .container-fluid for full width nav items */
+}
+
+/* Custom Navbar Styling */
+#navbar {
+    background-color: #e0e0e0 !important; /* A light-medium gray. You can change this hex code! */
+                                      /* Examples: #cccccc, #d3d3d3 (lightgray), #adb5bd (Bootstrap secondary) */
+    /* If you want to ensure text colors are appropriate, see Step 3 below */
+}
+
+/* Optional: Adjust border color if needed, or remove shadow for a flatter look */
+#navbar.z-depth-1 { /* MDB class for shadow */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); /* Softer shadow, or none */
+    /* For no shadow and just a bottom border: */
+    /* box-shadow: none !important; */
+    /* border-bottom: 1px solid #c0c0c0; */ /* Example border color if shadow is removed */
+}
+
+#navbar {
+    padding-top: 0.1rem !important;    /* Reduce Bootstrap/MDB default padding (e.g., 0.5rem or more) */
+    padding-bottom: 0.1rem !important; /* Reduce Bootstrap/MDB default padding */
+    /* Any existing background-color and box-shadow rules should remain */
+    background-color: #e0e0e0 !important; /* Your chosen gray or other color */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); /* Keep or adjust shadow */
+}
+
+/* Address padding of the .container or .container-fluid directly inside the navbar */
+#navbar > .container,
+#navbar > .container-fluid {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#navbar .navbar-brand {
+    font-size: 2rem !important;      /* Slightly reduce brand font size (was 1.2rem in example) */
+                                      /* Default Bootstrap is 1.25rem */
+    padding-top: 0.1rem !important;   /* Reduce padding around your name */
+    padding-bottom: 0.1rem !important;
+    /* Keep color and font-weight as you like */
+    color: #333333 !important;
+    font-weight: 500;
+}
+#navbar .navbar-brand:hover {
+    color: #0056b3 !important;
+}
+
+
+#navbar .navbar-nav .nav-link {
+    font-size: 0.9rem !important;      /* Reduce nav link font size (was 0.95rem in example) */
+                                      /* Default Bootstrap nav-link font-size is often 1rem */
+    padding-top: 0.2rem !important;   /* Reduce top/bottom padding for links */
+    padding-bottom: 0.2rem !important;
+    /* padding-left and padding-right control horizontal spacing between items, adjust if needed */
+    /* padding-left: 0.75rem !important; */
+    /* padding-right: 0.75rem !important; */
+    /* Keep color styling */
+    /* color: #333333 !important; /* If navbar-light */
+}
+
+/* Adjust hover/active link padding if necessary, though usually covered by the above */
+/*
+#navbar .navbar-nav .nav-item .nav-link.active,
+#navbar .navbar-nav .nav-item.active .nav-link {
+    Keep color and font-weight, padding is inherited
+}
+*/
+
+/* Ensure the navbar toggler (hamburger icon on mobile) doesn't add extra height */
+#navbar .navbar-toggler {
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    font-size: 1.1rem; /* Adjust size of the icon if needed */
+}
+
+/* Profile Picture Styling */
+.profile-img {
+    display: block; /* Helps with margin auto for centering if text-align isn't enough */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;   /* ADJUST THIS VALUE: Make it smaller (e.g., 180px, 200px, 220px)
+                           This will be the maximum width, height will adjust automatically.
+                           The original inline height was 300px. */
+    height: auto;       /* Maintain aspect ratio */
+    border: 4px solid #bbbbbb; /* Border: width, style, color. Adjust as you like.
+                                   e.g., 2px solid #e0e0e0 for a lighter border
+                                   or 4px solid #bbbbbb for a thicker one. */
+    border-radius: 8px; /* Optional: Adds slightly rounded corners.
+                           For a circle, use border-radius: 50%;
+                           For no rounding, remove this line.
+                           Yuzhe Yang's aesthetic is generally sharp, so minimal/no radius might be closer. */
+    margin-top: 10px;   /* Adjust top margin as needed, was 20px inline */
+    margin-bottom: 20px; /* Add some space below the image */
+
+    /* Optional: A very subtle shadow can look good, but Yuzhe Yang's site is flat.
+       If you want one, uncomment and adjust: */
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.08); */
+}
+
+
+/* News List Styling */
+.news-list {
+    list-style-type: disc; /* Standard disc bullets. Options: 'circle', 'square', or 'none' if you prefer no bullets. */
+    padding-left: 20px;  /* Standard indentation for bulleted lists. Adjust if needed. */
+    margin-top: 0;       /* Remove top margin if the section heading provides enough space. */
+}
+
+.news-list li {
+    margin-bottom: 0.8em;  /* Space between individual news items. */
+    font-size: 0.95rem;    /* Or adjust to match your body paragraph font size. */
+    line-height: 1.6;      /* For readability. */
+    color: #444444;       /* Main text color for news items. */
+}
+
+.news-list li .news-date {
+    font-weight: 600;      /* Make the date part slightly bolder. */
+    color: #333333;         /* Darker color for the date. */
+    margin-right: 0.5em;   /* Space after the date colon. */
+}
+
+/* Ensure links within news items are styled consistently with your site's links */
+.news-list li a {
+    color: #0056b3; /* Your standard link color */
+    /* text-decoration: underline; /* Optional: always underline links in news */
+}
+
+.news-list li a:hover {
+    color: #003d80; /* Your standard link hover color */
+    text-decoration: underline;
+}
+
+/* Remove any conflicting styles from the old .news .badge or .news .text if they were very specific */
+#news-section .badge.date { /* If you want to completely neutralize old badge styling if it persists */
+    /* display: none; */ /* Or reset its properties: */
+    background-color: transparent !important;
+    color: inherit !important;
+    font-weight: normal !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-transform: none !important;
+    box-shadow: none !important;
+    /* Add more resets if needed */
+}
+/* News List Styling (from previous step - ensure it's in your custom CSS) */
+.news-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.news-list li {
+    margin-bottom: 0.8em;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444444;
+}
+
+.news-list li .news-date {
+    font-weight: 600;
+    color: #333333;
+    margin-right: 0.5em;
+}
+
+.news-list li a {
+    color: #0056b3;
+}
+
+.news-list li a:hover {
+    color: #003d80;
+    text-decoration: underline;
+}
+
+/* Publication Section Styling */
+.publication-controls .btn-group .btn,
+.publication-controls .dropdown .btn {
+    font-size: 0.85rem; /* Smaller buttons for controls */
+    padding: 0.375rem 0.5rem;
+}
+.search-box { /* Already in your provided HTML's style tag, ensure it's styled */
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Slightly more subtle border */
+    border-radius: 4px;
+}
+.search-box:focus {
+    border-color: #0056b3; /* Match link color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Bootstrap-like focus shadow */
+}
+
+.publication-entry {
+    border-bottom: 1px solid #eee; /* Separator between entries */
+    padding-bottom: 1.5rem;
+}
+.publication-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0; /* No extra margin for the last item */
+    padding-bottom: 0;
+}
+
+.publication-image {
+    border: 1px solid #ddd;
+    padding: 3px;
+    background-color: #fff;
+    max-height: 160px; /* Control max image height */
+    width: auto;       /* Maintain aspect ratio */
+    object-fit: cover; /* Or 'contain' if you prefer to see the whole image */
+}
+
+.publication-title {
+    font-size: 1.15rem; /* Adjust title size */
+    font-weight: 600;
+    color: #333;
+}
+.publication-title em { /* For the asterisk */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.publication-authors {
+    font-size: 0.9rem;
+    color: #555;
+}
+.publication-authors strong {
+    color: #000; /* Make your name stand out */
+}
+
+.publication-venue {
+    font-size: 0.85rem;
+    color: #666;
+}
+.publication-venue .badge { /* For the short venue badge */
+    vertical-align: middle;
+}
+
+.publication-links .badge {
+    font-size: 0.75rem;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+.publication-links .badge:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.publication-abstract-collapse .card {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+}
+
+.publication-hidden { /* For JavaScript search/filter */
+    display: none !important;
+}
+
+    .extra-bold {
+      font-weight: 900;
+        color: red; /* or any valid CSS color */
+
+    }
+        .extra-bold-blue {
+      font-weight: 900;
+        color: blue; /* or any valid CSS color */
+
+    }
+    /* Publication Controls Button Highlighting */
+.publication-controls .btn-group .btn.active { /* Targets any button in the group with .active */
+    background-color: #5a6268 !important; /* Bootstrap's active/hover color for secondary, or pick your own */
+    color: #fff !important;               /* White text for active state */
+    border-color: #545b62 !important;     /* Border to match */
+}
+
+/* If you want a slightly different style just for the "Selected" button when active: */
+button[data-filter="selected"].active {
+    background-color: #007bff !important; /* Example: Primary blue */
+    color: #ffffff !important;
+    border-color: #007bff !important;
+}
+
+/* CSS for News List (ensure this is in your custom CSS file) */
+.news-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.news-list li {
+    margin-bottom: 0.8em;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444444;
+}
+
+.news-list li .news-date {
+    font-weight: 600;
+    color: #333333;
+    margin-right: 0.5em;
+}
+
+.news-list li a {
+    color: #0056b3; /* Your standard link color */
+}
+
+.news-list li a:hover {
+    color: #003d80; /* Your standard link hover color */
+    text-decoration: underline;
+}
+/* General rule for titles within content sections if you want less space above all such titles */
+.content-section .title { /* This targets elements with class="title" inside .content-section */
+    margin-top: 0; /* Removes the top margin if the section's padding is enough */
+                   /* Or use a smaller value like 0.5em or 1em if you want some margin */
+    margin-bottom: 0;
+    padding-bottom: 0; /* Space between title and content */
+}
+
+/* More specifically for your <h3> if it doesn't always have class="title" or if you need to override other h3 styles: */
+#lab-section h3 { /* Targets h3 specifically within #lab-section */
+    margin-top: 0; /* Example: No top margin */
+    margin-bottom: .1em; /* Space before the paragraph below it */
+}
+

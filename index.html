@@ -1,0 +1,994 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Rohan Paleja - Personal Academic Webpage</title>
+    <meta name="description" content="Personal Academic Webpage for Rohan Paleja - Single Page Layout">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons"/>
+
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/academicons.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/new-format.css">
+    <link rel="canonical" href="/">
+    <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+    <script src="./main.js"></script>
+    <script src="./scroll.js"></script>
+
+    <style>
+        /* Basic CSS for smooth scroll (fallback or enhancement) and section spacing */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Add some padding to sections for visual separation, adjust as needed */
+        .content-section {
+            padding-top: 30px; /* Adjust based on your fixed navbar height + desired spacing */
+            padding-bottom: 20px;
+            /* Consider adding a light border-bottom if you want clear visual breaks:
+            border-bottom: 1px solid #eee; */
+        }
+
+        .content-section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* Ensure anchor links with IDs are not obscured by the fixed navbar */
+        .content-section::before {
+            content: "";
+            display: block;
+            height: 80px; /* Adjust to your navbar's height */
+            margin-top: -80px; /* Negative margin of the same height */
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+<body>
+<!--<nav id="navbar" class="navbar fixed-top navbar-expand-md z-depth-1 navbar-light">-->
+<!--    <div class="container-fluid p-0">-->
+<!--        <div class="row ml-1 ml-sm-0">-->
+<!--          <span class="contact-icon text-center" style="line-height: 1em;">-->
+<!--            <a href="mailto:rohan.paleja@mit.edu"><i class="fa fa-envelope-square gm-icon"></i></a>-->
+<!--            <a href="https://scholar.google.com/citations?user=xjnQbKgAAAAJ&hl=en" target="_blank"-->
+<!--               title="Google Scholar"><i class="ai ai-google-scholar-square gs-icon"></i></a>-->
+<!--            <a href="https://github.com/rohanpaleja27" target="_blank" title="GitHub"><i-->
+<!--                    class="fab fa-github-square gh-icon"></i></a>-->
+<!--            <a href="https://www.linkedin.com/in/rohan-paleja-6370a3111/" target="_blank" title="LinkedIn"><i-->
+<!--                    class="fab fa-linkedin li-icon"></i></a>-->
+<!--            <a href="https://twitter.com/rohanpaleja27" target="_blank" title="Twitter"><i-->
+<!--                    class="fab fa-twitter-square tw-icon"></i></a>-->
+<!--          </span>-->
+<!--        </div>-->
+
+<!--        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"-->
+<!--                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse text-right" id="navbarNav">-->
+<!--            <ul class="navbar-nav ml-auto flex-nowrap">-->
+<!--                <li class="nav-item navbar-active font-weight-bold">-->
+<!--                    <a class="nav-link" href="#about-section">-->
+<!--                        About-->
+<!--                        <span class="sr-only">(current)</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                 <li class="nav-item ">-->
+<!--                    <a class="nav-link" href="#news-section">-->
+<!--                        News-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-item ">-->
+<!--                    <a class="nav-link" href="#projects-section">-->
+<!--                        Projects-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-item ">-->
+<!--                    <a class="nav-link" href="#publications-section">-->
+<!--                        Publications-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-item ">-->
+<!--                    <a class="nav-link" href="/assets/pdf/vitae.pdf" target="_blank">-->
+<!--                        Curriculum Vitae-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-item ">-->
+<!--                    <a class="nav-link" href="#contact-section">-->
+<!--                        Contact-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+
+
+<nav id="navbar" class="navbar fixed-top navbar-expand-md z-depth-1 navbar-light">
+    <div class="container"><a class="navbar-brand" href="#about-section" style="font-size: 1.2rem; font-weight: 500;">Rohan
+        Paleja</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lab-section">Lab</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news-section">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#publications-section">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#talks-section">Talks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#misc-section">Misc</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/assets/pdf/vitae.pdf" target="_blank">CV</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<progress id="progress" value="0">
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+</progress>
+
+<div class="content">
+    <section id="about-section" class="content-section container">
+        <!--        <div class="row">-->
+        <!--            <div class="col-12 p-0 pt-4 pb-4">-->
+        <!--                <h1 class="pb-3 title text-left font-weight-bold">Rohan Paleja</h1>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <div class="row">
+            <div class="col-md-8">
+                <p class="extra-bold">
+                    I will join Purdue as an Assistant Professor in Department of Computer Science in Fall 2025!
+                </p>
+                <p style="font-size: 14px;">
+                    Until Fall 2025, I will continue in my role as a Technical Staff Researcher in the Artificial
+                    Intelligence
+                    Technology Group at MIT Lincoln
+                    Laboratory.
+                    <!--                    , investigating new approaches to help operators understand, program, utilize, and team-->
+                    <!--                    with-->
+                    <!--                    autonomous systems, ranging from large language models to symbolic agents.-->
+                </p>
+                <p style="font-size: 14px;">Across my research, I focus on developing novel machine-learning
+                    architectures and algorithms to
+                    support robot learning and human-robot collaboration in the diverse and unstructured environments
+                    that will be encountered by these agents in the real world. My research has received
+                    a Best Paper Finalist Award at the Conference of Robot Learning (CoRL) and
+                    a Best Workshop Paper Award at the International Conference of Computer Vision (ICCV) Multi-Agent
+                    Relational Reasoning Workshop.</p>
+                <p style="font-size: 14px;">
+                    Previously, I completed my Ph.D. in Robotics at the Georgia Institute of Technology, advised by
+                    Matthew
+                    Gombolay.
+                    Prior to that, I received my M.Sc. in
+                    Mechanical
+                    Engineering at Rutgers University in 2018, and a B.Sc. in Mechanical Engineering with a
+                    concentration in Aerospace Engineering at Rutgers University in 2017.
+                </p>
+                <p class="extra-bold-blue">
+                    Our lab has multiple openings. See instructions on applying below.
+                </p>
+            </div>
+            <!--            <div class="col-md-4 text-center">-->
+            <!--                <img class="profile-img img-responsive" src="assets/img/paleja_phd.jpg" alt="Rohan Paleja" align="middle" height="200px" style="width: auto; margin-top: .1px;">-->
+            <!--            </div>-->
+            <div class="col-md-4 text-center">
+                <img class="profile-img img-fluid" src="assets/img/paleja_phd.jpg" alt="Rohan Paleja">
+            </div>
+        </div>
+    </section>
+
+    <section id="lab-section" class="content-section container">
+        <h3 class="title text-left">Strategies for Collaboration, Autonomy, Learning, and Exploration in Robotics Lab
+            (SCALE Robotics Lab)</h3>
+        <p>Our lab focuses on advancing <b>machine learning</b> and <b>artificial intelligence</b> to improve <b>robot
+            learning</b>,
+            <b>human-robot interaction</b>, and <b>multi-agent collaboration</b>. </p>
+        <ul>
+            <li><strong>Interactive Robot Learning and Algorithmic Human-Robot Interaction: </strong> Developing new
+                computational approaches to help humans
+                interact with robots and teach new behaviors or correct existing behaviors.
+            </li>
+            <li><strong>Explainable Robotics:</strong> Imbibing intelligent robotic systems with decision-making
+                capabilities and
+                behaviors that can be understood, traced, and trusted by humans, especially in critical settings like
+                healthcare, defense, and disaster response.
+            </li>
+            <li><strong>Multi-Agent Coordination and Information Sharing:</strong> Developing methods that enable teams
+                of robots and humans to communicate, collaborate, and make decisions together in complex, dynamic
+                environments.
+            </li>
+        </ul>
+        <h5>Openings</h5>
+        <p style="font-size: 16px;  color: #FF0000">
+            <b>I'm looking for technically strong and self-motivated students (at all levels) to join my lab.</b> For
+            PhD students with an application deadline in December 2025, please apply to Purdue CS, and mention my name in
+            your application (you are welcome to shoot me an email early at rpaleja {at} purdue.edu). For other
+            roles, please reach out directly and email your CV.
+        </p>
+
+        <p>
+            <b style="font-weight: 600">Admitted Purdue PhD Students</b> If you have already been admitted and are looking for an advisor, please
+            email me directly. I am able to directly advise students in the CS department and can co-advise students in other departments. <br>
+
+            <b style="font-weight: 600">Masters/Undergraduate students:</b> If you are interested in working with me, please send me an email with your
+            CV and a brief description of your interests, and include [Prospective Masters/Undergraduate Student] in the subject respectively.
+            I am looking for students who are passionate about robotics
+            and AI, and who are eager to learn and contribute to our research projects.
+
+        </p>
+    </section>
+
+
+    <section id="news-section" class="content-section container">
+        <h2 class="title text-left">Recent News</h2>
+        <ul class="news-list">
+            {% assign news_items = site.data.news %}
+            {% for item in news_items limit:10 %}
+            <li>
+                <span class="news-date">{{ item.date }}:</span>
+                {{ item.description }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% if site.data.news.size > 10 %}
+        <p style="margin-top: 1em; text-align: left;">
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="loadMoreNewsButton">
+                Older News...
+            </button>
+        </p>
+        {% endif %}
+    </section>
+
+    <!--    <section id="projects-section" class="content-section container"> -->
+    <!--         <h2 class="title mb-4 p-0 text-center">Projects</h2>-->
+    <!--        <div class="row">-->
+    <!--            <div class="col-12">-->
+    <!--                <p class="text-center">Your project content will go here. Please copy it from your projects page.</p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </section>-->
+
+    <section id="publications-section" class="content-section container">
+        <h2 class="title text-left">Publications</h2>
+
+        <div class="publication-controls row mb-4">
+            <div class="col-md-6 mb-3">
+                <input type="text" id="publicationSearch" placeholder="Search by title, author, topic..."
+                       class="form-control search-box">
+            </div>
+            <div class="col-md-6">
+                <div class="btn-group d-flex" role="group" aria-label="Filter publications">
+                    <button type="button" class="btn btn-outline-secondary w-100" id="showAllButton">All (Newest
+                        First)
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary w-100 active" id="showSelectedButton">
+                        Selected Only
+                    </button>
+                    <div class="dropdown w-100">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="topicDropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Filter by Topic
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="topicDropdown" id="topicFilterContainer">
+                            <a class="dropdown-item topic-filter-all active" href="#" data-topic="all">All Topics</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 0.9em;">
+            <nobr><em>*</em></nobr>
+            denotes equal contribution. Blue - Conference. Orange - Journal. Pink - Workshop/Other.
+        </p>
+
+        <div id="publication-list-container">
+            {% assign sorted_pubs = site.data.publications | sort: "year" | reverse %} {% for pub in sorted_pubs %}
+            <div class="publication-entry row mb-4 pt-3" data-id="{{ pub.id }}"
+                 data-title="{{ pub.title | downcase }}"
+                 data-authors="{% for author_obj in pub.authors %}{{ author_obj.name | downcase }},{% endfor %}"
+                 data-venue="{{ pub.venue_full | downcase }} {{ pub.venue_short | downcase }}"
+                 data-year="{{ pub.year }}"
+                 data-abstract="{{ pub.abstract | strip_html | downcase }}"
+                 data-topics="{% for topic in pub.topics %}{{ topic | downcase }},{% endfor %}"
+                 data-selected="{{ pub.selected }}">
+
+                <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
+                    {% if pub.image %}
+                    <img src="{{ pub.image | relative_url }}" alt="Teaser for {{ pub.title }}"
+                         class="img-fluid publication-image rounded"
+                         style="max-height: 180px; width: auto; border: 1px solid #ddd;">
+                    {% else %}
+                    <img src="{{ '/assets/img/publications/default_thumbnail.png' | relative_url }}"
+                         alt="Default thumbnail" class="img-fluid publication-image rounded"
+                         style="max-height: 150px; width:auto; border: 1px solid #ddd;">
+                    {% endif %}
+                </div>
+
+                <div class="col-md-9">
+                    <h5 class="publication-title mb-1">{{ pub.title }}</h5>
+                    <p class="publication-authors mb-1">
+                        {% for author_obj in pub.authors %}
+                        {% if author_obj.me %}<strong>{{ author_obj.name }}</strong>{% else %}{{ author_obj.name }}{%
+                        endif %}
+                        {% if author_obj.equal_contribution_marker == true %}<em>*</em>{% endif %}
+                        {% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
+                    </p>
+
+                    <p class="publication-venue mb-2">
+                        <em>
+                            <a href="{{ pub.badge_url | default: '#' }}" target="_blank"
+                               class="badge font-weight-bold {{ pub.badge_class | default: 'grey' }} mr-1"
+                               style="font-size: 0.7rem; padding: .2em .4em;">{{ pub.venue_short }} {{pub.year}}</a>
+                            {{ pub.venue_full }}
+                        </em>
+                    </p>
+
+                    {% comment %} The equal contribution note logic was here in your provided file,
+                    ensure it's placed appropriately if you're using it, or
+                    rely on the general note at the top of the publications section.
+                    It should not be inside the author paragraph.
+                    This note itself should not cause duplication of the venue.
+                    {% endcomment %}
+                    {% assign show_equal_contribution_note = false %}
+                    {% for author_obj in pub.authors %}
+                    {% if author_obj.equal_contribution_marker == true %}
+                    {% assign show_equal_contribution_note = true %}
+                    {% break %}
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if show_equal_contribution_note and forloop.first %}
+                    {% comment %} This logic might be better handled by a single static note
+                    at the top of your publications list, which you already have.
+                    So, this dynamic note might be redundant.
+                    {% endcomment %}
+                    {% endif %}
+
+                    <div class="publication-links mb-2">
+                        {% for link in pub.links %}
+                        {% if link.name == "Abstract" %}
+                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                           href="#{{ pub.id }}-abstract" role="button" aria-expanded="false"
+                           aria-controls="{{ pub.id }}-abstract">Abstract</a>
+                        {% else %}
+                        <a href="{{ link.url | relative_url }}" class="badge grey waves-effect font-weight-light mr-1"
+                           target="_blank">{{ link.name }}</a>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    {% comment %} START: Add GitHub iframe buttons if github_repo is defined {% endcomment %}
+                    {% if pub.github_repo %}
+                    <div class="publication-github-buttons mt-1 mb-2">
+                        {% assign gh_parts = pub.github_repo | split: '/' %}
+                        {% assign gh_user = gh_parts[0] %}
+                        {% assign gh_repo_name = gh_parts[1] %}
+                        <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo_name }}&type=star&count=true"
+                                frameborder="0" scrolling="0" width="100" height="27"
+                                title="GitHub Star for {{ pub.github_repo }}"
+                                style="padding-top: 5px; vertical-align: middle;"></iframe>
+                        <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo_name }}&type=fork&count=true"
+                                frameborder="0" scrolling="0" width="100" height="27"
+                                title="GitHub Fork for {{ pub.github_repo }}"
+                                style="padding-top: 5px; vertical-align: middle;"></iframe>
+                    </div>
+                    {% endif %}
+                    {% comment %} END: GitHub iframe buttons {% endcomment %}
+
+                    {% if pub.abstract %}
+                    <div class="collapse publication-abstract-collapse" id="{{ pub.id }}-abstract">
+                        <div class="card card-body p-3 mb-2" style="font-size: 0.85rem; background-color: #f9f9f9;">
+                            {{ pub.abstract | markdownify | remove: "<p>" | remove: "</p>" }}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <hr class="w-100 d-md-none mb-4">
+            {% endfor %}
+        </div>
+    </section>
+
+
+    <section id="talks-section" class="content-section container">
+        <h2 class="title text-left">Talks</h2>
+        <!--        <p>List of invited talks, guest lectures, etc...</p>-->
+        <ul>
+            <li>[02/2025] Invited Talk at the Carnegie Mellon University Human-Robot Interaction Reading Group</li>
+            <li>[02/2024] Invited Talk at the Carnegie Mellon University Safe AI Lab</li>
+            <li>[01/2024] Invited talk at the Transformative Science and Technology Lecture Series at Temple
+                University
+            </li>
+            <li>[06/2023] Invited talk at the Robot Learning Seminar hosted by Mila and the Robotics and Embodied AI
+                Lab
+            </li>
+            <li>[02/2023] Invited Talk, Brown University. Providence, RI 02912, USA</li>
+        </ul>
+    </section>
+
+    <section id="misc-section" class="content-section container">
+        <h2 class="title text-left">Misc</h2>
+        <!--        <p>Any other relevant information, hobbies, links, etc.</p>-->
+
+        <h5 class="title text-left">Honors and Awards</h5>
+        <ul>
+            <li>[2023] Sponsorship Award for our ICRA 2023 Explainable Robotics Workshop</li>
+            <li>[2021] Interactive Computing Graduate Teaching Assistant of the Year</li>
+            <li>[2021] Best Workshop Paper Award, International Conference on Computer Vision (ICCV) Workshop
+                on Multi-Agent Interaction and Relational Reasoning
+            </li>
+            <li>[2020] Best Paper Finalist Award, Conference of Robot Learning (CoRL)</li>
+            <li>[2016] Technology Ventures Award, Rutgers University</li>
+        </ul>
+
+        <h5 class="title text-left">Professional Service</h5>
+        <ul>
+            <li>Workshop Organizer, CoRL 2023 Workshop on Robot Learning in Athletics, Atlanta, Georgia, USA
+            </li>
+            <li>Public Relations Vice President, Executive Board of the Robotics Graduate Student
+                Organization, Georgia Institute of Technology
+            </li>
+            <li>Workshop Organizer, ICRA 2023 Workshop on Explainable Robotics, London, United King-
+                dom
+            </li>
+            <li>Sponsorship Chair, Human-Robot Interaction (HRI) 2020 Pioneers Workshop, Cambridge,
+                United Kingdom
+            </li>
+        </ul>
+
+        <h5 class="title text-left">Press coverage</h5>
+        <ul>
+            <li><strong>This tennis-playing robot could one day win Wimbledon</strong> |
+                <a href="https://www.usatoday.com/videos/tech/2023/06/27/could-robot-future-wimbledon-champ-some-developers-say-yes/12172883002/">USA
+                    Today</a> |
+                <a href="https://spectrum.ieee.org/video-friday-biological-end-effectors">IEEE Spectrum</a> |
+                <a href="https://tylerpaper.com/news/national/this-tennis-playing-robot-could-one-day-win-wimbledon/article_cbbd6328-0522-5dee-8202-8f44ed8f5391.html">Tyler
+                    Morning Paragraph</a> |
+                <a href="https://www.newsontheneck.com/news/national/this-tennis-playing-robot-could-one-day-win-wimbledon/article_3f7aeadb-31f9-5f66-8176-f109a5544ca9.html">News
+                    on the Neck</a> |
+                <a href="https://www.hartfordcitynewstimes.com/news/nation/this-tennis-playing-robot-could-one-day-win-wimbledon/article_5ed2e3b1-fd7e-5319-9d21-d01cbc8fff14.html">The
+                    News Times</a> |
+                <a href="https://www.kulr8.com/news/national/this-tennis-playing-robot-could-one-day-win-wimbledon/article_5b8f244e-94ff-5a5b-a0ca-1b4f9bb81849.html">Talker
+                    News</a> |
+                <a href="https://www.dailymail.co.uk/sciencetech/article-12237785/Watch-ROBOT-tennis-player-zips-court-ahead-Wimbledon.html">Daily
+                    Mail</a> |
+                <a href="https://metro.co.uk/video/meet-tennis-robot-tipped-win-wimbledon-one-day-2967935/">Metro UK</a>
+                |
+                <a href="https://helenair.com/news/nation-world/robot-tennis-player-will-soon-outmaneuver-human-opponents/video_4d6b8217-f246-5de2-af7f-3d90717bd4d5.html">Independent
+                    Record</a> |
+                <a href="https://kenoshanews.com/news/robot-tennis-player-will-soon-outmaneuver-human-opponents/video_cd89aade-7025-5eff-8f64-78ba94754c17.html">Kenosha
+                    News</a> |
+                <a href="https://www.tennis.com/baseline/articles/meet-esther-your-new-tennis-playing-robot-partner">Tennis</a>
+            </li>
+            <li><strong>Tennis Robot Could Pave Way for Advancement in Fast-Movement Robotics</strong>
+                <a href="https://www.youtube.com/watch?time_continue=6&v=plUktbRLfQw&embeds_euri=https%3A%2F%2Fwww.cc.gatech.edu%2F&source_ve_path=Mjg2NjQsMjM4NTE&feature=emb_title">Video</a>
+                |
+                <a href="https://www.cc.gatech.edu/news/tennis-robot-could-pave-way-advancement-fast-movement-robotics?utm_source=newsletter&utm_medium=email&utm_content=Tennis%20Robot%20Could%20Pave%20Way%20for%20Advancement%20in%20Fast-Movement%20Robotics&utm_campaign=Daily%20Digest%20-%20April%2014%2C%202023">Blog</a>
+                |
+                <a href="https://mashable.com/video/robot-tennis-esther">Mashable</a> |
+                <a href="https://www.iotworldtoday.com/robotics/tennis-playing-robot-could-to-help-with-athlete-training">IOT
+                    World Today</a> |
+                <a href="https://interestingengineering.com/innovation/georgia-tech-team-unveils-autonomous-tennis-robot-to-help-you-beat-your-foes">Interesting
+                    Engineering</a> |
+                <a href="https://www.watson.ch/videos/wissen/335336438-bald-kannst-du-vielleicht-tennis-mit-diesem-roboter-spielen?utm_source=ground.news&utm_medium=referral">Watson</a>
+            </li>
+            <li><strong>Georgia Tech Researchers Teach a Robot How to Improve at Ping Pong on Its Own</strong>
+                <a href="https://www.youtube.com/watch?v=tjGEoe33HAg">Video</a> |
+                <a href="https://ic.gatech.edu/news/646279/robot-learned-table-tennis-approach-could-be-game-changer-future-robot-assistants">Blog</a><br>
+            </li>
+            <li><strong>Georgia Tech Researchers Use Table Tennis to Understand Human-Robot Dynamics</strong>
+                <a href="https://t.e2ma.net/click/vsossg/75akffg/voh8su">Blog</a>
+            </li>
+        </ul>
+    </section>
+
+
+    <section id="contact-section" class="content-section container">
+        <h2 class="title mb-4 p-0 text-center">Get In Touch</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <p>If you'd like to discuss research, collaborations, or opportunities, feel free to reach out!</p>
+                <p>
+                    Email: <a href="mailto:rohan.paleja@mit.edu">rohan.paleja@mit.edu</a> (or rpaleja [at] purdue.edu
+                    for Purdue inquiries)
+                </p>
+                <p>You can also find me on:</p>
+                <p>
+                    <a href="https://scholar.google.com/citations?user=xjnQbKgAAAAJ&hl=en" target="_blank"
+                       title="Google Scholar" class="btn btn-outline-primary m-1"><i class="ai ai-google-scholar"></i>
+                        Google Scholar</a>
+                    <a href="https://github.com/rohanpaleja27" target="_blank" title="GitHub"
+                       class="btn btn-outline-secondary m-1"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/rohan-paleja-6370a3111/" target="_blank" title="LinkedIn"
+                       class="btn btn-outline-info m-1"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://twitter.com/rohanpaleja27" target="_blank" title="Twitter"
+                       class="btn btn-outline-primary m-1"><i class="fab fa-twitter"></i> Twitter</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; Copyright
+    <script>document.write(new Date().getFullYear())</script>
+    Rohan Paleja.
+</footer>
+
+<script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/js/popper.min.js" type="text/javascript"></script>
+<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/js/mdb.min.js" type="text/javascript"></script>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+<script src="/assets/js/common.js"></script>
+
+<script type="text/javascript">
+    // This script should still work as intended.
+    $(document).ready(function () {
+        var navbarHeight = $('#navbar').outerHeight(true);
+        $('body').css({'padding-top': navbarHeight});
+        // $('progress-container').css({'padding-top': navbarHeight}); // progress-container is not a standard element, maybe a class?
+        var progressBar = $('#progress');
+        progressBar.css({'top': navbarHeight});
+        var getMax = function () {
+            return $(document).height() - $(window).height();
+        }
+        var getValue = function () {
+            return $(window).scrollTop();
+        }
+        if ('max' in document.createElement('progress')) {
+            progressBar.attr({max: getMax()});
+            progressBar.attr({value: getValue()});
+            $(document).on('scroll', function () {
+                progressBar.attr({value: getValue()});
+            });
+            $(window).resize(function () {
+                var currentNavbarHeight = $('#navbar').outerHeight(true); // Recalculate on resize
+                $('body').css({'padding-top': currentNavbarHeight});
+                progressBar.css({'top': currentNavbarHeight});
+                progressBar.attr({max: getMax(), value: getValue()});
+            });
+        } else {
+            var max = getMax(), value, width;
+            var getWidth = function () {
+                value = getValue();
+                width = (value / max) * 100;
+                width = width + '%';
+                return width;
+            }
+            var setWidth = function () {
+                progressBar.css({width: getWidth()});
+            };
+            setWidth();
+            $(document).on('scroll', setWidth);
+            $(window).on('resize', function () {
+                max = getMax();
+                setWidth();
+            });
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    const allNewsData = {
+    {
+        site.data.news | jsonify
+    }
+    }
+    ;
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<script src="/assets/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="text/javascript">
+    // This script will apply to the #projects-section if you structure its content
+    // with an element having the ID "projects" (e.g., <div id="projects" class="row">...</div>)
+    var $grid = $('#projects'); // This targets an element with ID 'projects'
+    $grid.imagesLoaded().progress(function () {
+        $grid.masonry({percentPosition: true});
+        // $grid.masonry('layout'); // layout is often called automatically after init with imagesLoaded
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+<script type="text/javascript">
+    const allNewsData = {{ site.data.news | jsonify }};
+</script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'YOUR_GA_TRACKING_ID', 'auto'); // Replace YOUR_GA_TRACKING_ID with your actual ID
+    ga('send', 'pageview');
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const newsListUL = document.querySelector('#news-section ul.news-list');
+        const loadMoreNewsButton = document.getElementById('loadMoreNewsButton');
+
+// Check if allNewsData is defined (it should be from the script tag with jsonify)
+// and if the necessary HTML elements are present.
+        if (typeof allNewsData !== 'undefined' && newsListUL && loadMoreNewsButton) {
+            let initiallyDisplayedNewsCount = 10; // This should match the `limit:10` in your Liquid loop
+            let currentlyDisplayedNewsCount = newsListUL.querySelectorAll('li').length; // More robust way to get initial count
+            const newsIncrement = 5; // How many news items to load each time
+
+            // Function to create a single news list item
+            function createNewsListItem(item) {
+                const listItem = document.createElement('li');
+
+                const dateSpan = document.createElement('span');
+                dateSpan.className = 'news-date';
+                dateSpan.textContent = `${item.date}: `; // Your existing date format
+
+                listItem.appendChild(dateSpan);
+
+                // To correctly append HTML content from item.description
+                const descriptionContainer = document.createElement('span'); // Use a span to append inline
+                descriptionContainer.innerHTML = item.description; // This parses the HTML string
+
+                // Append all parsed child nodes (text and <a> tags) to the listItem
+                while (descriptionContainer.firstChild) {
+                    listItem.appendChild(descriptionContainer.firstChild);
+                }
+
+                return listItem;
+            }
+
+            // Initially, hide the button if there are no more items to load
+            if (allNewsData.length <= currentlyDisplayedNewsCount) {
+                loadMoreNewsButton.style.display = 'none';
+            }
+
+            loadMoreNewsButton.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent default behavior if it's an <a> tag
+
+                const startIndex = currentlyDisplayedNewsCount;
+                const endIndex = Math.min(startIndex + newsIncrement, allNewsData.length);
+
+                for (let i = startIndex; i < endIndex; i++) {
+                    if (allNewsData[i]) { // Check if item exists
+                        const newsItemElement = createNewsListItem(allNewsData[i]);
+                        newsListUL.appendChild(newsItemElement);
+                    }
+                }
+
+                currentlyDisplayedNewsCount = endIndex;
+
+                // Hide the button if all items have now been loaded
+                if (currentlyDisplayedNewsCount >= allNewsData.length) {
+                    loadMoreNewsButton.style.display = 'none';
+                }
+            });
+
+        } else {
+            // Log errors if essential parts are missing, for debugging
+            if (typeof allNewsData === 'undefined') {
+                console.error("Error: 'allNewsData' JavaScript variable is not defined. Ensure it's created from site.data.news via jsonify.");
+            }
+            if (!newsListUL) {
+                console.error("Error: News list <ul> element with class 'news-list' inside '#news-section' not found.");
+            }
+            if (loadMoreNewsButton) { // Button might legitimately not be there if all news fits in initial 10
+                // console.log("Load more news button not found, or no more news to load initially.");
+            }
+        }
+
+
+        const publicationsContainer = document.getElementById('publication-list-container');
+        if (!publicationsContainer) {
+            console.error("Publication list container not found!");
+            return;
+        }
+        // Capture all entries ONCE. These are already sorted by Jekyll (newest first by year).
+        const allPublicationEntries = Array.from(publicationsContainer.querySelectorAll('.publication-entry'));
+
+        const searchBox = document.getElementById('publicationSearch');
+        const topicFilterContainer = document.getElementById('topicFilterContainer');
+        const topicDropdownButton = document.getElementById('topicDropdown');
+        const showSelectedButton = document.getElementById('showSelectedButton');
+        const showAllButton = document.getElementById('showAllButton');
+
+        if (!searchBox || !topicFilterContainer || !topicDropdownButton || !showSelectedButton || !showAllButton) {
+            console.error("One or more control elements for publications are missing!");
+            return;
+        }
+
+        // --- 1. Populate Topic Filters Dynamically ---
+        let topics = new Set();
+        allPublicationEntries.forEach(entry => {
+            (entry.dataset.topics || "").split(',').forEach(topic => {
+                if (topic.trim()) topics.add(topic.trim().toLowerCase()); // Store lowercase
+            });
+        });
+
+        // Clear previous dynamic topic filters (keeping "All Topics")
+        const existingDynamicFilters = topicFilterContainer.querySelectorAll('.topic-filter:not(.topic-filter-all)');
+        existingDynamicFilters.forEach(f => f.remove());
+
+        topics.forEach(topic => {
+            const a = document.createElement('a');
+            a.classList.add('dropdown-item', 'topic-filter');
+            a.href = '#';
+            a.dataset.topic = topic; // Store lowercase topic
+            // Capitalize for display
+            // a.textContent = topic.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+            let displayText = topic.split(' ').map(word => {
+                if (word === 'ai') { // 'topic' is already lowercase, so 'word' will be 'ai'
+                    return 'AI';
+                }
+                if (word.length > 0) {
+                    return word.charAt(0).toUpperCase() + word.slice(1);
+                }
+                return '';
+            }).join(' ');
+            a.textContent = displayText;
+            topicFilterContainer.appendChild(a);
+        });
+
+        // --- 2. Main Filtering and Display Function ---
+        function applyFiltersAndDisplay() {
+            const searchTerm = searchBox.value.toLowerCase().trim();
+            const activeTopicFilterElement = topicFilterContainer.querySelector('.topic-filter.active, .topic-filter-all.active');
+            const filterTopic = activeTopicFilterElement ? activeTopicFilterElement.dataset.topic : 'all';
+            const isSelectedFilterActive = showSelectedButton.classList.contains('active');
+
+            // console.log("Filtering with: Search=", searchTerm, "Topic=", filterTopic, "Selected=", isSelectedFilterActive);
+
+            let filteredEntries = [...allPublicationEntries];
+
+            // Apply search filter
+            if (searchTerm) {
+                filteredEntries = filteredEntries.filter(entry =>
+                    (entry.dataset.title || '').includes(searchTerm) ||
+                    (entry.dataset.authors || '').includes(searchTerm) ||
+                    (entry.dataset.venue || '').includes(searchTerm) ||
+                    (entry.dataset.abstract || '').includes(searchTerm) ||
+                    (entry.dataset.year || '').includes(searchTerm)
+                );
+            }
+
+            // Apply topic filter
+            if (filterTopic !== 'all') {
+                filteredEntries = filteredEntries.filter(entry => (entry.dataset.topics || '').includes(filterTopic));
+            }
+
+            // Apply "Selected Only" filter (if its button is active)
+            if (isSelectedFilterActive) {
+                filteredEntries = filteredEntries.filter(entry => entry.dataset.selected === 'true');
+            }
+            // If !isSelectedFilterActive, all items (that passed previous filters) are shown,
+            // which is the "All (Newest First)" behavior because allPublicationEntries is pre-sorted.
+
+            // Render
+            publicationsContainer.innerHTML = ''; // Clear current list
+            if (filteredEntries.length > 0) {
+                filteredEntries.forEach(entry => publicationsContainer.appendChild(entry.cloneNode(true)));
+            } else {
+                publicationsContainer.innerHTML = '<p class="text-center p-3">No publications match your criteria.</p>';
+            }
+        }
+
+        // --- 3. Event Listeners ---
+        searchBox.addEventListener('input', applyFiltersAndDisplay);
+
+        topicFilterContainer.addEventListener('click', function (e) {
+            const targetLink = e.target.closest('a.topic-filter, a.topic-filter-all');
+            if (targetLink) {
+                e.preventDefault();
+                topicFilterContainer.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
+                targetLink.classList.add('active');
+                const topic = targetLink.dataset.topic;
+                topicDropdownButton.textContent = topic === 'all' ? 'Filter by Topic' : targetLink.textContent;
+                applyFiltersAndDisplay();
+            }
+        });
+
+        showSelectedButton.addEventListener('click', function () {
+            if (!this.classList.contains('active')) {
+                this.classList.add('active');
+                showAllButton.classList.remove('active');
+                applyFiltersAndDisplay();
+            }
+        });
+
+        showAllButton.addEventListener('click', function () {
+            if (!this.classList.contains('active')) {
+                this.classList.add('active');
+                showSelectedButton.classList.remove('active');
+
+                // Reset topic filter to "All Topics" when showing all papers
+                topicFilterContainer.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
+                const allTopicsButton = topicFilterContainer.querySelector('.topic-filter-all');
+                if (allTopicsButton) {
+                    allTopicsButton.classList.add('active');
+                }
+                topicDropdownButton.textContent = 'Filter by Topic';
+
+                applyFiltersAndDisplay();
+            }
+        });
+
+        // --- 4. Initial Page Load ---
+        // The HTML already sets 'showSelectedButton' and 'topic-filter-all' to active.
+        // This call will respect those initial active classes.
+        applyFiltersAndDisplay();
+    });
+
+    //     document.addEventListener('DOMContentLoaded', function () {
+    //         const publicationsContainer = document.getElementById('publication-list-container');
+    //         const allPublicationEntries = Array.from(publicationsContainer.querySelectorAll('.publication-entry'));
+    //         const searchBox = document.getElementById('publicationSearch');
+    //         const topicFilterContainer = document.getElementById('topicFilterContainer');
+    //
+    //         // --- 1. Populate Topic Filters ---
+    //         let topics = new Set();
+    //         allPublicationEntries.forEach(entry => {
+    //             entry.dataset.topics.split(',').forEach(topic => {
+    //                 if (topic.trim()) topics.add(topic.trim());
+    //             });
+    //         });
+    //         topics.forEach(topic => {
+    //             const a = document.createElement('a');
+    //             a.classList.add('dropdown-item', 'topic-filter');
+    //             a.href = '#';
+    //             a.dataset.topic = topic;
+    //             a.textContent = topic.charAt(0).toUpperCase() + topic.slice(1); // Capitalize
+    //             topicFilterContainer.appendChild(a);
+    //         });
+    //
+    //         // --- Function to render/filter publications ---
+    // function filterAndDisplayPublications(searchTerm = '', sortBy = 'year_desc', filterTopic = 'all', showSelected = false) {
+    //     let filtered = [...allPublicationEntries]; // Ensure allPublicationEntries is correctly populated
+    //
+    //     console.log("--- Filtering ---");
+    //     console.log("Search Term:", searchTerm);
+    //     console.log("Sort By:", sortBy);
+    //     console.log("Filter Topic:", filterTopic);
+    //     console.log("Show Selected:", showSelected);
+    //     console.log("Initial entries to filter:", allPublicationEntries.length);
+    //
+    //     // Search
+    //     if (searchTerm) {
+    //         filtered = filtered.filter(entry =>
+    //             (entry.dataset.title || '').includes(searchTerm) ||
+    //             (entry.dataset.authors || '').includes(searchTerm) ||
+    //             (entry.dataset.venue || '').includes(searchTerm) ||
+    //             (entry.dataset.abstract || '').includes(searchTerm) ||
+    //             (entry.dataset.year || '').includes(searchTerm)
+    //         );
+    //     }
+    //     console.log("After search filter:", filtered.length);
+    //
+    //     // Filter by Topic
+    //     if (filterTopic !== 'all') {
+    //         filtered = filtered.filter(entry => (entry.dataset.topics || '').includes(filterTopic));
+    //     }
+    //     console.log("After topic filter:", filtered.length);
+    //
+    //     // Filter by Selected
+    //     if (showSelected) {
+    //         console.log("Applying 'selected' filter. Expecting data-selected='true'");
+    //         filtered = filtered.filter(entry => {
+    //             const isSelected = entry.dataset.selected === 'true';
+    //             // Optional: log each item being checked for 'selected'
+    //             // console.log(`Item: ${entry.dataset.title}, data-selected: ${entry.dataset.selected}, Is Selected: ${isSelected}`);
+    //             return isSelected;
+    //         });
+    //     }
+    //     console.log("After selected filter:", filtered.length);
+    //
+    //
+    //     // Sort (Placeholder - ensure this doesn't break anything if not fully implemented)
+    //     // if (sortBy === 'date') { ... }
+    //
+    //     // Hide all, then show filtered
+    //     allPublicationEntries.forEach(entry => entry.classList.add('publication-hidden'));
+    //     if (filtered.length > 0) {
+    //         filtered.forEach(entry => entry.classList.remove('publication-hidden'));
+    //     } else {
+    //         console.log("No publications match the current filters.");
+    //         // Optionally, display a "No results found" message in publicationsContainer
+    //     }
+    // }
+    //
+    //         // Initial display
+    //         // filterAndDisplayPublications();
+    //
+    //         // --- 2. Search Functionality ---
+    //         searchBox.addEventListener('input', function (e) {
+    //             const searchTerm = e.target.value.toLowerCase();
+    //             // Get current filters/sorts to maintain them
+    //             const currentTopic = document.querySelector('.topic-filter.active')?.dataset.topic || 'all';
+    //             const currentSelected = document.querySelector('button[data-filter="selected"].active') ? true : false;
+    //             filterAndDisplayPublications(searchTerm, 'year_desc', currentTopic, currentSelected);
+    //         });
+    //
+    //         // --- 3. Sort by Date ---
+    //         document.querySelector('button[data-sort="date"]').addEventListener('click', function () {
+    //             // This is simplified. True client-side sorting based on year would involve:
+    //             // 1. Get all visible .publication-entry elements.
+    //             // 2. Sort them using their data-year attribute.
+    //             // 3. Re-append them to publicationsContainer in the new order.
+    //             // For now, the Liquid sort is the primary date sort.
+    //             // You could toggle between ascending/descending here.
+    //             alert("Client-side date sorting would be implemented here. Currently sorted by Jekyll.");
+    //         });
+    //
+    //         // --- 4. Filter by Topic ---
+    //         topicFilterContainer.addEventListener('click', function (e) {
+    //             if (e.target.classList.contains('topic-filter') || e.target.classList.contains('topic-filter-all')) {
+    //                 e.preventDefault();
+    //                 document.querySelectorAll('.topic-filter, .topic-filter-all').forEach(el => el.classList.remove('active'));
+    //                 e.target.classList.add('active');
+    //                 const topic = e.target.dataset.topic;
+    //                 const searchTerm = searchBox.value.toLowerCase();
+    //                 const currentSelected = document.querySelector('button[data-filter="selected"].active') ? true : false;
+    //                 filterAndDisplayPublications(searchTerm, 'year_desc', topic, currentSelected);
+    //                 document.getElementById('topicDropdown').textContent = topic === 'all' ? 'Filter by Topic' : e.target.textContent;
+    //             }
+    //         });
+    //
+    //         // --- 5. Show Selected ---
+    //         const selectedButton = document.querySelector('button[data-filter="selected"]');
+    //         selectedButton.addEventListener('click', function () {
+    //             this.classList.toggle('active'); // Toggle active state for the button
+    //             const showSelected = this.classList.contains('active');
+    //             const searchTerm = searchBox.value.toLowerCase();
+    //             const currentTopic = document.querySelector('.topic-filter.active')?.dataset.topic || 'all';
+    //             filterAndDisplayPublications(searchTerm, 'year_desc', currentTopic, showSelected);
+    //         });
+    //     });
+
+</script>
+</body>
+</html>
+
