@@ -346,6 +346,9 @@
                                class="badge font-weight-bold {{ pub.badge_class | default: 'grey' }} mr-1"
                                style="font-size: 0.7rem; padding: .2em .4em;">{{ pub.venue_short }} {{pub.year}}</a>
                             {{ pub.venue_full }}
+                            {% if pub.venue_note %}
+                                <br><strong class="publication-venue-note">{{ pub.venue_note }}</strong>
+                            {% endif %}
                         </em>
                     </p>
 

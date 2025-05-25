@@ -641,3 +641,10 @@ button[data-filter="selected"].active {
     margin-bottom: .1em; /* Space before the paragraph below it */
 }
 
+/* Styling for publication venue notes/awards */
+.publication-venue-note {
+    color: red;
+    /* font-weight: bold; is already applied by the <strong> tag in HTML */
+    /* You can add other styles here if needed, like a slightly smaller font-size */
+    /* font-size: 0.9em; */
+}

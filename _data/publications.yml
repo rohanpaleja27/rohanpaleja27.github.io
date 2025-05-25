@@ -809,7 +809,8 @@
       equal_contribution_marker: true
     - name: "Matthew Gombolay"
   venue_short: "AAMAS"
-  venue_full: "International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2021. Best Workshop Paper Award Winner at ICCV MAIR2 Workshop"
+  venue_full: "International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2021"
+  venue_note: "Best Workshop Paper Award Winner at ICCV MAIR2 Workshop"
   year: 2021
   badge_class: "light-blue darken-1"
   badge_url: "https://aamas2021.soton.ac.uk/"
@@ -906,7 +907,8 @@
       me: true
     - name: "Matthew Gombolay"
   venue_short: "CoRL"
-  venue_full: "Conference on Robot Learning (CoRL), 2020. Best Paper Award Finalist" # HTML said 2021 for venue, but year header 2020
+  venue_full: "Conference on Robot Learning (CoRL), 2020"
+  venue_note: "Best Paper Award Finalist"
   year: 2020
   badge_class: "light-blue darken-1"
   badge_url: "https://www.robot-learning.org/"
