@@ -1,1 +1,15 @@
+title: Rohan Paleja - Personal Academic Website
+author: Rohan Paleja
+description: >- # Your site's description
+  Personal academic website of Rohan Paleja, Assistant Professor at Purdue.
+url: "https://rohanpaleja.com"  # VERY IMPORTANT: Your site's full URL
+baseurl: ""                   # VERY IMPORTANT: Keep this empty
+
 theme: jekyll-theme-minimal
+
+# Plugins
+# These are standard for GitHub Pages and should be included
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from

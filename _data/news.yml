@@ -1,7 +1,7 @@
 - date: "Feb 2025" # Item 1
   description: 'I gave an invited talk at the <a href="https://harplab.github.io/harplab.deploy/reading-group/" target="_blank">Carnegie Mellon University Human-Robot Interaction</a> Reading Group.'
 - date: "Feb 2025" # Item 2
-  description: 'We have a paper accepted to ICLR 2025! Please see the publications tab for details.'
+  description: 'We have a paper accepted to ICLR 2025! Please see the publications block for details.'
 - date: "Oct 2024" # Item 3
   description: 'We have had two papers accepted to NeurIPS 2024! Please see the publications tab for details.'
 - date: "July 2024" # Item 4
