@@ -14332,3 +14332,17 @@ body {
     padding-bottom: 2.5em; /* Example vertical padding */
     /* Any border-bottom styling for separation if desired */
 }
+
+/* Styling for the lab heading with its logo */
+.lab-heading-with-logo {
+  display: flex;
+  flex-direction: column;  /* This is the key change: stacks items vertically */
+  align-items: center;     /* This will now center the items horizontally */
+  gap: 5px;               /* Adjusts the vertical space between image and text */
+  text-align: center;      /* Ensures the text itself is centered if it wraps */
+}
+
+.lab-heading-with-logo img {
+  width: 450px;             /* Adjust logo size as needed */
+  height: auto;
+}
