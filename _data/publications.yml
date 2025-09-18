@@ -1,3 +1,38 @@
+# Item 0
+- id: chang2025thri
+  image: /assets/img/publications/chang2025thri.png # REPLACE with actual image path
+  title: "Asynchronous Training of Mixed-Role Human Actors in a Partially Observable Environment"
+  authors:
+    - name: "Kimberlee Chestnut Chang"
+    - name: "Reed Jensen"
+      equal_contribution_marker: true # For '*'
+    - name: "Rohan Paleja"
+      me: true
+      equal_contribution_marker: true # For '*'
+    - name: "Sam L Polk"
+      equal_contribution_marker: true # For '*'
+    - name: "Rob Seater"
+    - name: "Jackson Steilberg"
+    - name: "Curran Schiefelbein"
+    - name: "Melissa Scheldrup"
+    - name: "Matthew Gombolay"
+    - name: "Mabel D. Ramirez"
+  venue_short: "THRI"
+  venue_full: "ACM Transactions on Human-Robot Interaction."
+  year: 2025
+  badge_class: "orange darken-1"
+  badge_url: "https://dl.acm.org/journal/thri"
+  links:
+    - name: "Abstract" # For collapse trigger
+      url: "#chang2025thri-abstract"
+    - name: "PDF" # Add PDF link when available
+      url: "https://dl.acm.org/doi/pdf/10.1145/3766892"
+  abstract: |
+    In cooperative training, humans within a team coordinate on complex tasks, building mental models of their teammates and learning to adapt to teammates’ actions in real-time. To reduce the often prohibitive scheduling constraints associated with cooperative training, this article introduces a paradigm for cooperative asynchronous training of human teams in which trainees practice coordination with autonomous teammates rather than humans. We introduce a novel experimental design for evaluating autonomous teammates for use as training partners in cooperative training. We apply this design to a human-subjects experiment where humans are trained with either another human or an autonomous teammate and are evaluated with a new human subject in a new, partially observable, cooperative game developed for this study. Importantly, we employ an unsupervised sequential clustering methodology to partition teammate trajectories from demonstrations performed in the experiment to form a smaller number of training conditions. This results in a simpler experiment design, enabling us to conduct a complex cooperative training human-subjects study in a reasonable amount of time. Through a demonstration of the proposed experimental design, we provide takeaways and design recommendations for future research in the development of cooperative asynchronous training systems utilizing robot surrogates for human teammates.
+  topics: [ "Human-Machine Teaming" ]
+  selected: false
+  equal_contribution: true
+
 # Item 1 (sreeramdassICLR from your HTML)
 - id: sreeramdass2025iclr
   image: /assets/img/publications/sreeramdass2025iclr.png # REPLACE with actual image path
@@ -18,7 +53,7 @@
     - name: "Abstract" # For collapse trigger
       url: "#sreeramdass2025iclr-abstract"
     - name: "PDF" # Add PDF link when available
-      url: "https://openreview.net/pdf?id=Q7EjHroO1w" # This was an example, update
+      url: "https://openreview.net/pdf?id=Q7EjHroO1w"
   abstract: |
     Diverse behavior policies are valuable in domains requiring quick test-time
     adaptation or personalized human-robot interaction. Human demonstrations
@@ -36,7 +71,7 @@
     discovery by 21%. Finally, we demonstrate that GSD can generalize striking
     behaviors for table tennis in a virtual testbed while leveraging human
     demonstrations collected in the real world.
-  topics: ["Learning from Demonstration", "Heterogeneous Demonstrators", "Robotics"]
+  topics: [ "Learning from Demonstration", "Heterogeneous Demonstrators", "Robotics" ]
   selected: true
   equal_contribution: false
 
@@ -87,7 +122,7 @@
     facilitate collaboration rather than individualized coordination, and 3)
     Mixed-initiative interfaces that enable users, who may vary in ability, to
     improve collaboration.
-  topics: ["Human-Machine Teaming", "Explainable AI"]
+  topics: [ "Human-Machine Teaming", "Explainable AI" ]
   selected: true
   equal_contribution: false # Assuming, adjust if needed
 
@@ -130,7 +165,7 @@
     specifications for human interpretability is still unsupported but point to
     other avenues of development which may enable improvements in system
     validation.
-  topics: ["System Validation"]
+  topics: [ "System Validation" ]
   selected: false
   equal_contribution: false
 
@@ -185,7 +220,7 @@
     multiagent teams by achieving an 5.84% to 707.65% performance improvement
     over the next-best baseline across multiple domains while simultaneously
     achieving a 200× reduction in the required communication bandwidth.
-  topics: ["Multi-Agent Reinforcement Learning", "Heterogeneous Teams"]
+  topics: [ "Multi-Agent Reinforcement Learning", "Heterogeneous Teams" ]
   selected: false
   equal_contribution: true # Based on * for first two authors
 
@@ -223,7 +258,7 @@
     framework that leverages the estimated adversary location from our learnable
     filtering model. We show that our MARL architecture can outperform all
     baselines and achieves a 46% increase in detection rate.
-  topics: ["Multi-Agent Reinforcement Learning"]
+  topics: [ "Multi-Agent Reinforcement Learning" ]
   selected: false
   equal_contribution: false
 
@@ -266,7 +301,7 @@
     domains and achieves 31.68% higher log-likelihood on average for future
     adversarial state predictions
     across both domains.
-  topics: ["Heterogeneous Agents", "Opponent Modeling"]
+  topics: [ "Heterogeneous Agents", "Opponent Modeling" ]
   selected: false
   equal_contribution: false
 
@@ -332,7 +367,7 @@
     singles play. Our paper contributes to the science of systems design and
     poses a set of key challenges for the robotics community to address in
     striving towards robots that can match human capabilities in sports.
-  topics: ["Robotics"]
+  topics: [ "Robotics" ]
   selected: true
   equal_contribution: true # Daniel Martin marked as '*'
 
@@ -380,7 +415,7 @@
     find that when the robot vocalizes its intention to perform a task, it
     results in a significant decrease in team performance (p=.037) and perceived
     safety of the system (p=.009).
-  topics: ["Human-Robot Interaction", "Robotics"]
+  topics: [ "Human-Robot Interaction", "Robotics" ]
   selected: false
   equal_contribution: false # Arjun Krishna marked as '*'
 
@@ -432,7 +467,7 @@
     demonstrate the success of FLAIR in a table tennis task and find users rate
     FLAIR as having higher task (p < .05) and personalization (p < .05)
     performance.
-  topics: ["Learning from Demonstration", "Lifelong Learning"]
+  topics: [ "Learning from Demonstration", "Lifelong Learning" ]
   selected: false
   equal_contribution: true # Letian Chen and Sravan Jayanthi marked as '*'
 
@@ -472,7 +507,7 @@
     safe execution of learned primitives on an agile mobile manipulator setup,
     and (2) proposing an online primitive refinement procedure that utilizes
     evaluative feedback from humans on the executed trajectories.
-  topics: ["Robotics"]
+  topics: [ "Robotics" ]
   selected: false
   equal_contribution: false
 
@@ -520,7 +555,7 @@
     parameters against deep learning baselines. Furthermore, we demonstrate the
     interpretability and utility of our ICCTs through a 14-car physical robot
     demonstration.
-  topics: ["Reinforcement Learning", "Explainable AI"]
+  topics: [ "Reinforcement Learning", "Explainable AI" ]
   selected: true
   equal_contribution: true # Based on * for first two authors
 
@@ -571,7 +606,7 @@
     of training time, compared to a policy trained from scratch. Moreover, our
     method enables learning in difficult target task settings where training
     from scratch fails.
-  topics: ["Multi-Agent Reinforcement Learning", "Transfer Learning"]
+  topics: [ "Multi-Agent Reinforcement Learning", "Transfer Learning" ]
   selected: false
   equal_contribution: true # Based on * for first two authors
 
@@ -621,7 +656,7 @@
     We also show MAGIC communicates $23.2\%$ more efficiently than the average
     baseline, is robust to stochasticity, and scales to larger state-action
     spaces. Finally, we demonstrate MAGIC on a physical, multi-robot testbed.
-  topics: ["Multi-Agent Reinforcement Learning",  "Heterogeneous Teams"]
+  topics: [ "Multi-Agent Reinforcement Learning",  "Heterogeneous Teams" ]
   selected: false
   equal_contribution: true # Based on * for first three authors
 
@@ -656,7 +691,7 @@
     identifying contexts in which xAI methods can help improve team mental model
     alignment, and enabling cobots to effectively communicate information that
     supports high-performance human-machine teaming.
-  topics: ["Human-Machine Teaming", "Explainable AI", "Robotics"]
+  topics: [ "Human-Machine Teaming", "Explainable AI", "Robotics" ]
   selected: false
   equal_contribution: true # From HTML <em>Rohan Paleja*</em>
 
@@ -702,7 +737,7 @@
     simulations. The findings from this study may inform future development of
     computerised clinical decision support tools to be embedded into the OR,
     improving patient safety and surgical outcomes.
-  topics: ["Healthcare AI", "Decision Support"]
+  topics: [ "Healthcare AI", "Decision Support" ]
   selected: false
   equal_contribution: false
 
@@ -755,7 +790,7 @@
     design and deploy the right xAI techniques in the right scenario by
     carefully considering human-machine team composition and how the xAI method
     augments SA.
-  topics: ["Explainable AI", "Human-Machine Teaming"]
+  topics: [ "Explainable AI", "Human-Machine Teaming" ]
   selected: false
   equal_contribution: false
 
@@ -793,7 +828,7 @@
     accurately represent the whole scope of suboptimality. We present Systematic
     Self-Supervised Reward Regression, S3RR, to investigate systematic
     alternatives for trajectory degradation.
-  topics: ["Learning from Demonstration", "Human-Robot Interaction"]
+  topics: [ "Learning from Demonstration", "Human-Robot Interaction" ]
   selected: false
   equal_contribution: false
 
@@ -844,7 +879,7 @@
     We also show MAGIC communicates $23.2\%$ more efficiently than the average
     baseline, is robust to stochasticity, and scales to larger state-action
     spaces. Finally, we demonstrate MAGIC on a physical, multi-robot testbed.
-  topics: ["Multi-Agent Reinforcement Learning"]
+  topics: [ "Multi-Agent Reinforcement Learning" ]
   selected: true
   equal_contribution: true # Based on * for first two authors
 
@@ -891,7 +926,7 @@
     perceived team fluency (p=0.045), rapport established between a participant
     and their co-worker (p=0.003), the gender of the participant being male
     (p=0.041), and a higher inherent trust in people (p=0.018).
-  topics: ["Human-Robot Interaction"]
+  topics: [ "Human-Robot Interaction" ]
   selected: false
   equal_contribution: true # Based on * for first three authors
 
@@ -941,7 +976,7 @@
     demonstration and ~90% improvement over prior work. We present a physical
     demonstration of teaching a robot a topspin strike in table tennis that
     achieves 32% faster returns and 40% more topspin than user demonstration.
-  topics: ["Learning from Demonstration", "Robotics"]
+  topics: [ "Learning from Demonstration", "Robotics" ]
   selected: true
   equal_contribution: false
 
@@ -984,7 +1019,7 @@
     real-world planning domain, outperforming baselines. Further, a user study
     conducted shows that our methodology produces both interpretable and highly
     usable models (p < 0.05).
-  topics: ["Explainable AI", "Learning from Demonstration", "Heterogeneous Demonstrators"]
+  topics: [ "Explainable AI", "Learning from Demonstration", "Heterogeneous Demonstrators" ]
   selected: true
   equal_contribution: false
 
@@ -1025,7 +1060,7 @@
     strategy’s objective (handling heterogeneity). We demonstrate our algorithm
     can better recover task reward and strategy rewards and imitate the
     strategies two simulated tasks and a real-world table tennis task.
-  topics: ["Learning from Demonstration", "Heterogeneous Demonstrators"]
+  topics: [ "Learning from Demonstration", "Heterogeneous Demonstrators" ]
   selected: false
   equal_contribution: false
 
@@ -1063,6 +1098,6 @@
     inference and evaluate a suite of approaches on a real-world dataset of
     gameplay from StarCraft II. This evaluation provides evidence that our
     Bayesian approach can outperform conventional methods by up to 12.8%.
-  topics: ["Learning from Demonstration", "Human-Robot Interaction"]
+  topics: [ "Learning from Demonstration", "Human-Robot Interaction" ]
   selected: false
   equal_contribution: false
