@@ -20,6 +20,15 @@
   venue_short: "THRI"
   venue_full: "ACM Transactions on Human-Robot Interaction."
   year: 2025
+  bibtex: |
+    @article{chang2025thri,
+      title = {Asynchronous Training of Mixed-Role Human Actors in a Partially Observable Environment},
+      author = {Kimberlee Chestnut Chang and Reed Jensen and Rohan Paleja and Sam L Polk and Rob Seater and Jackson Steilberg and Curran Schiefelbein and Melissa Scheldrup and Matthew Gombolay and Mabel D. Ramirez},
+      journal = {{ACM} Transactions on Human-Robot Interaction},
+      year = {2025},
+      url = {https://dl.acm.org/doi/pdf/10.1145/3766892},
+      doi = {10.1145/3766892}
+    }
   badge_class: "orange darken-1"
   badge_url: "https://dl.acm.org/journal/thri"
   links:
@@ -47,6 +56,14 @@
   venue_short: "ICLR"
   venue_full: "International Conference on Learning Representations (ICLR), 2025."
   year: 2025
+  bibtex: |
+    @inproceedings{sreeramdass2025iclr,
+      title = {Generalized Behavior Learning from Diverse Demonstrations},
+      author = {Varshith Sreeramdass and Rohan Paleja and Letian Chen and Sanne van Waveren and Matthew Gombolay},
+      booktitle = {International Conference on Learning Representations ({ICLR})},
+      year = {2025},
+      url = {https://openreview.net/pdf?id=Q7EjHroO1w}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://iclr.cc/" # Corrected from NeurIPS URL in original HTML if text was ICLR
   links:
@@ -89,6 +106,14 @@
   venue_short: "NeurIPS"
   venue_full: "Neural Information Processing Systems (NeurIPS), 2024"
   year: 2024
+  bibtex: |
+    @inproceedings{paleja2024neurips,
+      title = {Designs for Enabling Collaboration in Human-Machine Teaming via Interactive and Explainable Systems},
+      author = {Rohan Paleja and Michael Munje and Kimberlee Chang and Reed Jensen and Matthew Gombolay},
+      booktitle = {Neural Information Processing Systems ({NeurIPS})},
+      year = {2024},
+      url = {https://openreview.net/pdf?id=XrK4JK2jBr}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://neurips.cc/"
   links:
@@ -140,6 +165,14 @@
   venue_short: "NeurIPS"
   venue_full: "Conference on Neural Information Processing Systems (NeurIPS), 2024."
   year: 2024
+  bibtex: |
+    @inproceedings{hurley2024neurips,
+      title = {{STL}: Still Tricky Logic (for System Validation, Even When Showing Your Work)},
+      author = {Isabelle Hurley and Rohan Paleja and Ashley Suh and Jaime D. Pe{\~{n}}a and Ho Chit Siu},
+      booktitle = {Conference on Neural Information Processing Systems ({NeurIPS})},
+      year = {2024},
+      url = {https://openreview.net/pdf?id=LXz1xIEBkF}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://neurips.cc/"
   links:
@@ -190,6 +223,16 @@
   venue_short: "T-Ro"
   venue_full: "IEEE Transaction on Robotics, Volume 40, pages 3833 - 3849" # Year is implied as 2024 by section
   year: 2024
+  bibtex: |
+    @article{serarj2024tro,
+      title = {Heterogeneous Policy Networks for Composite Robot Team Communication and Coordination},
+      author = {Esmaeil Seraj and Rohan Paleja and Luis Pimentel and Kin Man Lee and Zheyuan Wang and Daniel Martin and Matthew Sklar and John Zhang and Zahi Kakish and Matthew Gombolay},
+      journal = {{IEEE} Transaction on Robotics},
+      volume = {40},
+      pages = {3833--3849},
+      year = {2024},
+      url = {https://ieeexplore.ieee.org/abstract/document/10606072/authors#authors}
+    }
   badge_class: "orange darken-1"
   badge_url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8860"
   links:
@@ -239,6 +282,14 @@
   venue_short: "MRS"
   venue_full: "International Symposium on Multi-Robot and Multi-Agent Systems (MRS), 2023"
   year: 2023
+  bibtex: |
+    @inproceedings{wu2023mrs,
+      title = {Adversarial Search and Tracking with Multiagent Reinforcement Learning in Sparsely Observable Environments},
+      author = {Zixuan Wu and Sean Ye and Manisha Natarajan and Letian Chen and Rohan Paleja and Matthew Gombolay},
+      booktitle = {International Symposium on Multi-Robot and Multi-Agent Systems ({MRS})},
+      year = {2023},
+      url = {https://arxiv.org/abs/2306.11301}
+    }
   badge_class: "pink darken-1"
   badge_url: "https://sites.bu.edu/mrs2023/"
   links:
@@ -277,6 +328,14 @@
   venue_short: "IROS"
   venue_full: "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023"
   year: 2023
+  bibtex: |
+    @inproceedings{ye2023iros,
+      title = {Learning Models of Adversarial Agent Behavior under Partial Observability},
+      author = {Sean Ye and Manisha Natarajan and Zixuan Wu and Rohan Paleja and Letian Chen and Matthew Gombolay},
+      booktitle = {{IEEE}/{RSJ} International Conference on Intelligent Robots and Systems ({IROS})},
+      year = {2023},
+      url = {https://arxiv.org/pdf/2306.11168.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://ieee-iros.org/"
   links:
@@ -341,6 +400,17 @@
   venue_short: "IEEE RA-L"
   venue_full: "IEEE Robotics and Automation Letters, Volume 8, Issue 4, pages 2245-2252, 2023"
   year: 2023
+  bibtex: |
+    @article{zaidi2023ral,
+      title = {Athletic Mobile Manipulator System for Robotic Wheelchair Tennis},
+      author = {Zulfiqar Zaidi and Daniel Martin and Nathaniel Belles and Viacheslav Zakharov and Arjun Krishna and Kin Man Lee and Peter Wagstaff and Sumedh Naik and Matthew Sklar and Sugju Choi and Yoshiki Kakehi and Ruturaj Patil and Divya Mallemadugula and Florian Pesce and Peter Wilson and Wendell Hom and Matan Diamond and Bryan Zhao and Nina Moorman and Rohan Paleja and Letian Chen and Esmaeil Seraj and Matthew Gombolay},
+      journal = {{IEEE} Robotics and Automation Letters},
+      volume = {8},
+      number = {4},
+      pages = {2245--2252},
+      year = {2023},
+      url = {https://sites.gatech.edu/core-robotics/files/2023/01/zaidi_wtr.pdf}
+    }
   badge_class: "orange darken-1"
   badge_url: "https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=7083369"
   links:
@@ -390,6 +460,14 @@
   venue_short: "HRI"
   venue_full: "ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2023"
   year: 2023
+  bibtex: |
+    @inproceedings{krishna2023hri,
+      title = {The Effect of Robot Skill Level and Communication in Rapid, Proximate Human-Robot Collaboration},
+      author = {Kin Man Lee and Arjun Krishna and Zulfiqar Zaidi and Rohan Paleja and Letian Chen and Erin Hedlund-Botti and Mariah Schrum and Matthew Gombolay},
+      booktitle = {{ACM}/{IEEE} International Conference on Human-Robot Interaction ({HRI})},
+      year = {2023},
+      url = {https://rohanpaleja.com/assets/pdf/krishna_VAIN.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://humanrobotinteraction.org/2023/"
   links:
@@ -436,6 +514,14 @@
   venue_short: "CoRL"
   venue_full: "Conference of Robot Learning, 2022" # HTML said 2022, year from header
   year: 2022
+  bibtex: |
+    @inproceedings{chen2022corl,
+      title = {Fast Lifelong Adaptive Inverse Reinforcement Learning from Demonstrations},
+      author = {Letian Chen and Sravan Jayanthi and Rohan Paleja and Daniel Martin and Viacheslav Zakharov and Matthew Gombolay},
+      booktitle = {Conference of Robot Learning},
+      year = {2022},
+      url = {https://rohanpaleja.com/assets/pdf/chen_flair.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://www.robot-learning.org/"
   links:
@@ -486,6 +572,14 @@
   venue_short: "CoRL W." # Workshop
   venue_full: "CoRL 2022 Learning for Agile Robotics Workshop"
   year: 2022
+  bibtex: |
+    @inproceedings{krishna2022corlworkshop,
+      title = {Utilizing Human Feedback for Primitive Optimization in Wheelchair Tennis},
+      author = {Arjun Krishna and Zulfiqar Zaidi and Letian Chen and Rohan Paleja and Esmaeil Seraj and Matthew Gombolay},
+      booktitle = {{CoRL} Learning for Agile Robotics Workshop},
+      year = {2022},
+      url = {https://sites.gatech.edu/core-robotics/files/2022/12/ProMP_WTR_final_draft.pdf}
+    }
   badge_class: "pink darken-1" # Workshop paper color
   badge_url: "https://www.agilerobotscorl2022.com/"
   links:
@@ -528,6 +622,14 @@
   venue_short: "RSS"
   venue_full: "Robotics: Science and Systems (RSS), 2022"
   year: 2022
+  bibtex: |
+    @inproceedings{paleja2022rss,
+      title = {Learning Interpretable, High-Performing Policies for Autonomous Driving},
+      author = {Rohan Paleja and Yaru Niu and Andrew Silva and Chace Ritchie and Sugju Choi and Matthew Gombolay},
+      booktitle = {Robotics: Science and Systems ({RSS})},
+      year = {2022},
+      url = {https://rohanpaleja.com/assets/pdf/ICCT/2202.02352.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://roboticsconference.org/"
   links:
@@ -576,6 +678,14 @@
   venue_short: "RSS W."
   venue_full: "RSS 2022 Workshop on Scaling Robot Learning (RSS22-SRL)"
   year: 2022
+  bibtex: |
+    @inproceedings{pimentel2022rssworkshop,
+      title = {Scaling Multi-Agent Reinforcement Learning via State Upsampling},
+      author = {Luis Pimentel and Rohan Paleja and Zheyuan Wang and Esmaeil Seraj and James Pagan and Matthew Gombolay},
+      booktitle = {{RSS} Workshop on Scaling Robot Learning ({RSS22-SRL})},
+      year = {2022},
+      url = {https://rohanpaleja.com/assets/pdf/RSS22_SRL_Workshop_Paper_final_accepted.pdf}
+    }
   badge_class: "pink darken-1"
   badge_url: "https://sites.google.com/view/rss22-srl/home"
   links:
@@ -629,6 +739,14 @@
   venue_short: "AAMAS"
   venue_full: "International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2022"
   year: 2022
+  bibtex: |
+    @inproceedings{paleja2022aamas,
+      title = {Learning Efficient Diverse Communication for Cooperative Heterogeneous Teaming},
+      author = {Esmaeil Seraj and Zheyuan Wang and Rohan Paleja and Daniel Martin and Matthew Sklar and Anirudh Patel and Matthew Gombolay},
+      booktitle = {International Conference on Autonomous Agents and Multiagent Systems ({AAMAS})},
+      year = {2022},
+      url = {https://rohanpaleja.com/assets/pdf/paleja_hetnet.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://aamas2022-conference.auckland.ac.nz/"
   links:
@@ -672,6 +790,14 @@
   venue_short: "AAAI DC"
   venue_full: "Association for the Advancement of Artificial Intelligence Conference (AAAI) Doctoral Consortium, 2022"
   year: 2022
+  bibtex: |
+    @inproceedings{paleja2022aaaidc,
+      title = {Mutual Understanding in Human-Machine Teaming},
+      author = {Rohan Paleja and Matthew Gombolay},
+      booktitle = {Association for the Advancement of Artificial Intelligence Conference ({AAAI}) Doctoral Consortium},
+      year = {2022},
+      url = {https://rohanpaleja.com/assets/pdf/AAAI_DC_Rohan_Paleja.pdf}
+    }
   badge_class: "pink darken-1" # Workshop/Other color
   badge_url: "https://aaai.org/Conferences/AAAI-22/" # General AAAI-22 link
   links:
@@ -715,6 +841,15 @@
   venue_short: "CMBBE"
   venue_full: "Computer Methods in Biomechanics and Biomedical Engineering, 2021"
   year: 2021
+  bibtex: |
+    @article{dias2021cmbbe,
+      title = {Using Machine Learning to Predict Perfusionists Critical Decision-Making during Cardiac Surgery},
+      author = {Roger Dias and Marco Zenati and Geoff Rance and Rithy Srey and David Arney and Letian Chen and Rohan Paleja and Lauren Kennedy-Metz and Matthew Gombolay},
+      journal = {Computer Methods in Biomechanics and Biomedical Engineering},
+      year = {2021},
+      url = {https://www.tandfonline.com/doi/abs/10.1080/21681163.2021.2002724?scroll=top&needAccess=true&journalCode=tciv20},
+      doi = {10.1080/21681163.2021.2002724}
+    }
   badge_class: "orange darken-1"
   badge_url: "https://www.tandfonline.com/journals/tciv20"
   links:
@@ -755,6 +890,14 @@
   venue_short: "NeurIPS"
   venue_full: "Conference on Neural Information Processing Systems (NeurIPS), 2021"
   year: 2021
+  bibtex: |
+    @inproceedings{paleja2021neurips,
+      title = {The Utility of Explainable {AI} in Ad Hoc Human-Machine Teaming},
+      author = {Rohan Paleja and Muyleng Ghuy and Nadun Ranawaka Arachchige and Reed Jensen and Matthew Gombolay},
+      booktitle = {Conference on Neural Information Processing Systems ({NeurIPS})},
+      year = {2021},
+      url = {https://rohanpaleja.com/assets/pdf/the_utility_of_explainable_ai_.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://neurips.cc/Conferences/2021/"
   links:
@@ -806,6 +949,14 @@
   venue_short: "AI-HRI"
   venue_full: "AAAI Artificial Intelligence for Human-Robot Interaction (AI-HRI) Fall Symposium, 2021"
   year: 2021
+  bibtex: |
+    @inproceedings{chen2021aihri,
+      title = {Towards Sample-efficient Apprenticeship Learning from Suboptimal Demonstration},
+      author = {Letian Chen and Rohan Paleja and Matthew Gombolay},
+      booktitle = {{AAAI} Artificial Intelligence for Human-Robot Interaction ({AI-HRI}) Fall Symposium},
+      year = {2021},
+      url = {https://rohanpaleja.com/assets/pdf/SSRR_Extension_AI_HRI-final.pdf}
+    }
   badge_class: "pink darken-1"
   badge_url: "https://ai-hri.github.io/2021/"
   links:
@@ -847,6 +998,15 @@
   venue_full: "International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2021"
   venue_note: "Best Workshop Paper Award Winner at ICCV MAIR2 Workshop"
   year: 2021
+  bibtex: |
+    @inproceedings{paleja2021aamas,
+      title = {Multi-Agent Graph-Attention Communication and Teaming},
+      author = {Niu, Yaru and Paleja, Rohan and Gombolay, Matthew},
+      booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
+      pages = {964--973},
+      year = {2021},
+      url = {https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p964.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://aamas2021.soton.ac.uk/"
   links:
@@ -902,6 +1062,14 @@
   venue_short: "HRI"
   venue_full: "ACM/IEEE International Conference on Human Robot Interaction (HRI), 2021"
   year: 2021
+  bibtex: |
+    @inproceedings{schrum2021hri,
+      title = {Effects of Social Factors and Team Dynamics on Adoption of Collaborative Robot Autonomy},
+      author = {Mariah Schrum and Glen Neville and Michael Johnson and Nina Moorman and Rohan Paleja and Karen Feigh and Matthew Gombolay},
+      booktitle = {{ACM}/{IEEE} International Conference on Human Robot Interaction ({HRI})},
+      year = {2021},
+      url = {https://core-robotics.gatech.edu/files/2021/03/HumanTrust-Roman19.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://humanrobotinteraction.org/2021/"
   links:
@@ -945,6 +1113,14 @@
   venue_full: "Conference on Robot Learning (CoRL), 2020"
   venue_note: "Best Paper Award Finalist"
   year: 2020
+  bibtex: |
+    @inproceedings{chen2020corl,
+      title = {Learning from Suboptimal Demonstration via Self-Supervised Reward Regression},
+      author = {Letian Chen and Rohan Paleja and Matthew Gombolay},
+      booktitle = {Conference on Robot Learning ({CoRL})},
+      year = {2020},
+      url = {https://rohanpaleja.com/assets/pdf/chen_self_supervised.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://www.robot-learning.org/"
   links:
@@ -993,6 +1169,14 @@
   venue_short: "NeurIPS"
   venue_full: "Conference on Neural Information Processing Systems (NeurIPS), 2020."
   year: 2020
+  bibtex: |
+    @inproceedings{paleja2020neurips,
+      title = {Interpretable and Personalized Apprenticeship Scheduling: Learning Interpretable Scheduling Policies from Heterogeneous User Demonstrations},
+      author = {Rohan Paleja and Andrew Silva and Letian Chen and Matthew Gombolay},
+      booktitle = {Conference on Neural Information Processing Systems ({NeurIPS})},
+      year = {2020},
+      url = {https://rohanpaleja.com/assets/pdf/paleja_pnts.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://neurips.cc"
   links:
@@ -1036,6 +1220,14 @@
   venue_short: "HRI"
   venue_full: "ACM/IEEE International Conference on Human Robot Interaction (HRI), 2020."
   year: 2020
+  bibtex: |
+    @inproceedings{chen2020hri,
+      title = {Joint Goal and Strategy Inference across Heterogeneous Demonstrators via Reward Network Distillation},
+      author = {Letian Chen and Rohan Paleja and Muyleng Ghuy and Matthew Gombolay},
+      booktitle = {{ACM}/{IEEE} International Conference on Human Robot Interaction ({HRI})},
+      year = {2020},
+      url = {https://rohanpaleja.com/assets/pdf/chen_msrd.pdf}
+    }
   badge_class: "light-blue darken-1"
   badge_url: "https://humanrobotinteraction.org/2020/"
   links:
@@ -1077,6 +1269,14 @@
   venue_short: "HRI W." # Pioneers is a workshop
   venue_full: "International Conference on Human Robot Interaction (HRI) Pioneers Workshop, 2019"
   year: 2019
+  bibtex: |
+    @inproceedings{paleja2019hripioneers,
+      title = {Heterogeneous Learning from Demonstration},
+      author = {Rohan Paleja and Matthew Gombolay},
+      booktitle = {International Conference on Human Robot Interaction ({HRI}) Pioneers Workshop},
+      year = {2019},
+      url = {https://core-robotics.gatech.edu/wp-content/uploads/sites/958/2019/01/Paleja-Heterogeneous-Learning-from-Demonstration.pdf}
+    }
   badge_class: "pink darken-1"
   badge_url: "https://hripioneers.org/" # General link, specific year might differ
   links:

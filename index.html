@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/assets/css/academicons.min.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/new-format.css">
+    <link rel="stylesheet" href="{{ '/assets/css/bibtex.css' | relative_url }}">
     <link rel="canonical" href="/">
     <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
     <script src="./main.js"></script>
@@ -393,6 +394,10 @@
                            target="_blank">{{ link.name }}</a>
                         {% endif %}
                         {% endfor %}
+                        <button type="button" class="badge grey waves-effect font-weight-light mr-1 bibtex-toggle"
+                                data-toggle="collapse" data-target="#{{ pub.id }}-bibtex"
+                                aria-expanded="false" aria-controls="{{ pub.id }}-bibtex"
+                                aria-label="Show BibTeX for {{ pub.title | escape }}">BibTeX</button>
                     </div>
 
                     {% comment %} START: Add GitHub iframe buttons if github_repo is defined {% endcomment %}
@@ -420,6 +425,22 @@
                         </div>
                     </div>
                     {% endif %}
+                    <div class="collapse publication-bibtex-collapse" id="{{ pub.id }}-bibtex">
+                        <div class="card card-body p-3 mb-2">
+                            <label class="sr-only" for="{{ pub.id }}-bibtex-source">BibTeX citation for {{ pub.title | escape }}</label>
+                            <textarea class="bibtex-source" id="{{ pub.id }}-bibtex-source"
+                                      rows="8" wrap="off" readonly spellcheck="false">{{ pub.bibtex | escape }}</textarea>
+                            <div class="bibtex-actions">
+                                <button type="button" class="btn btn-sm btn-outline-secondary bibtex-copy"
+                                        data-bibtex-copy data-bibtex-target="{{ pub.id }}-bibtex-source"
+                                        aria-controls="{{ pub.id }}-bibtex-source"
+                                        aria-describedby="{{ pub.id }}-bibtex-status"
+                                        aria-label="Copy BibTeX citation for {{ pub.title | escape }}">Copy BibTeX</button>
+                                <span class="bibtex-copy-status" id="{{ pub.id }}-bibtex-status"
+                                      role="status" aria-live="polite" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr class="w-100 d-md-none mb-4">
@@ -565,6 +586,7 @@
 <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
 <script src="/assets/js/common.js"></script>
+<script src="{{ '/assets/js/bibtex.js' | relative_url }}" defer></script>
 
 <script type="text/javascript">
     // This script should still work as intended.

@@ -1,0 +1,59 @@
+.publication-links > .badge {
+    vertical-align: middle;
+}
+
+.publication-bibtex-collapse .card {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+}
+
+.bibtex-toggle {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.bibtex-source {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10rem;
+    max-height: 28rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    background: #fff;
+    color: #212529;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    white-space: pre;
+    overflow: auto;
+    resize: vertical;
+}
+
+.bibtex-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.bibtex-copy {
+    margin: 0;
+    text-transform: none;
+}
+
+.bibtex-copy-status {
+    color: #4c5661;
+    font-size: 0.8125rem;
+}
+
+.bibtex-toggle:focus-visible,
+.bibtex-copy:focus-visible,
+.bibtex-source:focus-visible {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
