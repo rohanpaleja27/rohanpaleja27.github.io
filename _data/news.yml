@@ -1,3 +1,17 @@
+- date: "Sep 2026"
+  description: |
+    We had one paper accepted to CoRL 2026. Big congrats to the authors!
+    <ul class="news-paper-list">
+      <li>Mechanistic Interpretability for End-to-End Self-Driving</li>
+    </ul>
+- date: "Sep 2026"
+  description: |
+    We had three papers accepted to NeurIPS 2026. Big congrats to the authors!
+    <ul class="news-paper-list">
+      <li>Mitigating Retaliatory Algorithmic Collusion in Repeated Games</li>
+      <li>Differentiable Belief-based Opponent Shaping</li>
+      <li>Event-Grounded Sparse Autoencoders for Vision-Language-Action Policies</li>
+    </ul>
 - date: "Aug 2026"
   description: 'I received a DARPA Young Faculty Award (YFA) on my proposal: <em>Formal Methods for Preventing Emergent Failure in AI Teams</em>.'
 - date: "June 2026" # Item 1

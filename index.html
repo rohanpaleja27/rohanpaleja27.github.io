@@ -329,7 +329,7 @@
 
                 <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
                     {% if pub.image %}
-                    <img src="{{ pub.image | relative_url }}" alt="Teaser for {{ pub.title }}"
+                    <img src="{{ pub.image | relative_url }}" alt="{% unless pub.image_placeholder %}Teaser for {{ pub.title | escape }}{% endunless %}"
                          class="img-fluid publication-image rounded"
                          style="max-height: 180px; width: auto; border: 1px solid #ddd;">
                     {% else %}
@@ -386,10 +386,12 @@
                     <div class="publication-links mb-2">
                         {% for link in pub.links %}
                         {% if link.name == "Abstract" %}
+                        {% if pub.abstract and pub.abstract != empty %}
                         <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
                            href="#{{ pub.id }}-abstract" role="button" aria-expanded="false"
                            aria-controls="{{ pub.id }}-abstract">Abstract</a>
-                        {% else %}
+                        {% endif %}
+                        {% elsif link.url and link.url != empty %}
                         <a href="{{ link.url | relative_url }}" class="badge grey waves-effect font-weight-light mr-1"
                            target="_blank">{{ link.name }}</a>
                         {% endif %}
@@ -418,7 +420,7 @@
                     {% endif %}
                     {% comment %} END: GitHub iframe buttons {% endcomment %}
 
-                    {% if pub.abstract %}
+                    {% if pub.abstract and pub.abstract != empty %}
                     <div class="collapse publication-abstract-collapse" id="{{ pub.id }}-abstract">
                         <div class="card card-body p-3 mb-2" style="font-size: 0.85rem; background-color: #f9f9f9;">
                             {{ pub.abstract | markdownify | remove: "<p>" | remove: "</p>" }}
@@ -635,15 +637,6 @@
     });
 </script>
 
-<script type="text/javascript">
-    const allNewsData = {
-    {
-        site.data.news | jsonify
-    }
-    }
-    ;
-</script>
-
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 <script src="/assets/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
@@ -692,7 +685,7 @@
 // and if the necessary HTML elements are present.
         if (typeof allNewsData !== 'undefined' && newsListUL && loadMoreNewsButton) {
             let initiallyDisplayedNewsCount = 10; // This should match the `limit:10` in your Liquid loop
-            let currentlyDisplayedNewsCount = newsListUL.querySelectorAll('li').length; // More robust way to get initial count
+            let currentlyDisplayedNewsCount = newsListUL.children.length; // Count announcements, excluding nested paper titles.
             const newsIncrement = 5; // How many news items to load each time
 
             // Function to create a single news list item

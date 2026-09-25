@@ -1301,3 +1301,136 @@
   topics: [ "Learning from Demonstration", "Human-Robot Interaction" ]
   selected: false
   equal_contribution: false
+
+# Accepted conference papers, 2026
+- id: jin2026arxiv
+  image: /assets/img/publications/blank-publication.svg
+  image_placeholder: true
+  title: "Event-Grounded Sparse Autoencoders for Vision-Language-Action Policies"
+  authors:
+    - name: "Xinchen Jin"
+    - name: "Aditya Chatterjee"
+    - name: "Pranav Kumar"
+    - name: "Rohan Paleja"
+      me: true
+  venue_short: "NeurIPS"
+  venue_full: "Conference on Neural Information Processing Systems (NeurIPS), 2026."
+  year: 2026
+  bibtex: |
+    @inproceedings{jin2026arxiv,
+      title = {Event-Grounded Sparse Autoencoders for Vision-Language-Action Policies},
+      author = {Xinchen Jin and Aditya Chatterjee and Pranav Kumar and Rohan Paleja},
+      booktitle = {Conference on Neural Information Processing Systems ({NeurIPS})},
+      year = {2026}
+    }
+  badge_class: "light-blue darken-1"
+  badge_url: "https://neurips.cc/"
+  links:
+    - name: "Abstract"
+      url: ""
+    - name: "PDF"
+      url: ""
+    - name: "Code"
+      url: "https://github.com/xc-j/Event-SAE"
+  abstract: ""
+  topics: ["Explainable AI", "Robotics"]
+  selected: true
+  equal_contribution: false
+
+- id: sane2026a
+  image: /assets/img/publications/blank-publication.svg
+  image_placeholder: true
+  title: "Differentiable Belief-based Opponent Shaping"
+  authors:
+    - name: "Aarav Sane"
+    - name: "Karthik Sivachandran"
+    - name: "Rohan Paleja"
+      me: true
+  venue_short: "NeurIPS"
+  venue_full: "Conference on Neural Information Processing Systems (NeurIPS), 2026."
+  year: 2026
+  bibtex: |
+    @inproceedings{sane2026a,
+      title = {Differentiable Belief-based Opponent Shaping},
+      author = {Aarav Sane and Karthik Sivachandran and Rohan Paleja},
+      booktitle = {Conference on Neural Information Processing Systems ({NeurIPS})},
+      year = {2026}
+    }
+  badge_class: "light-blue darken-1"
+  badge_url: "https://neurips.cc/"
+  links:
+    - name: "Abstract"
+      url: ""
+    - name: "PDF"
+      url: ""
+  abstract: ""
+  topics: ["Multi-Agent Reinforcement Learning", "Human-Machine Teaming"]
+  selected: true
+  equal_contribution: false
+
+- id: sivachandran2026neurips
+  image: /assets/img/publications/blank-publication.svg
+  image_placeholder: true
+  title: "Mitigating Retaliatory Algorithmic Collusion in Repeated Games"
+  authors:
+    - name: "Karthik Sivachandran"
+    - name: "Rohan Paleja"
+      me: true
+  venue_short: "NeurIPS"
+  venue_full: "Conference on Neural Information Processing Systems (NeurIPS), 2026."
+  year: 2026
+  bibtex: |
+    @inproceedings{sivachandran2026neurips,
+      title = {Mitigating Retaliatory Algorithmic Collusion in Repeated Games},
+      author = {Karthik Sivachandran and Rohan Paleja},
+      booktitle = {Conference on Neural Information Processing Systems ({NeurIPS})},
+      year = {2026}
+    }
+  badge_class: "light-blue darken-1"
+  badge_url: "https://neurips.cc/"
+  links:
+    - name: "Abstract"
+      url: ""
+    - name: "PDF"
+      url: ""
+  abstract: ""
+  topics: ["Multi-Agent Reinforcement Learning"]
+  selected: true
+  equal_contribution: false
+
+- id: gagvani2026corl
+  image: /assets/img/publications/blank-publication.svg
+  image_placeholder: true
+  title: "Mechanistic Interpretability for End-to-End Self-Driving"
+  authors:
+    - name: "Manav Gagvani"
+    - name: "Benjamin Namikas"
+    - name: "Sivamurugan Velmurugan"
+    - name: "Nysa Kumar"
+    - name: "Shrey Sharma"
+    - name: "Thomas Peterson"
+    - name: "Pratyush Mathur"
+    - name: "Hyunseo Chang"
+    - name: "Rohan Paleja"
+      me: true
+  venue_short: "CoRL"
+  venue_full: "Conference on Robot Learning (CoRL), 2026."
+  year: 2026
+  bibtex: |
+    @inproceedings{gagvani2026corl,
+      title = {Mechanistic Interpretability for End-to-End Self-Driving},
+      author = {Manav Gagvani and Benjamin Namikas and Sivamurugan Velmurugan and Nysa Kumar and Shrey Sharma and Thomas Peterson and Pratyush Mathur and Hyunseo Chang and Rohan Paleja},
+      booktitle = {Conference on Robot Learning ({CoRL})},
+      year = {2026}
+    }
+  badge_class: "light-blue darken-1"
+  badge_url: "https://www.corl.org/"
+  links:
+    - name: "Abstract"
+      url: ""
+    - name: "PDF"
+      url: ""
+  abstract: ""
+  topics: ["Explainable AI", "Autonomous Driving"]
+  selected: true
+  equal_contribution: false
