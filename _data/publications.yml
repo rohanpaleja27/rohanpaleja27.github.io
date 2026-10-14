@@ -1304,8 +1304,7 @@
 
 # Accepted conference papers, 2026
 - id: gagvani2026corl
-  image: /assets/img/publications/blank-publication.svg
-  image_placeholder: true
+  image: /assets/img/publications/gagvani2026corl.png
   title: "Mechanistic Interpretability for End-to-End Self-Driving"
   authors:
     - name: "Manav Gagvani"
