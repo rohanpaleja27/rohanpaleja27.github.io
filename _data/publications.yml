@@ -1340,8 +1340,7 @@
   equal_contribution: false
 
 - id: jin2026arxiv
-  image: /assets/img/publications/blank-publication.svg
-  image_placeholder: true
+  image: /assets/img/publications/jin2026neurips.png
   title: "Event-Grounded Sparse Autoencoders for Vision-Language-Action Policies"
   authors:
     - name: "Xinchen Jin"
