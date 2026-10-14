@@ -1373,8 +1373,7 @@
   equal_contribution: false
 
 - id: sane2026a
-  image: /assets/img/publications/blank-publication.svg
-  image_placeholder: true
+  image: /assets/img/publications/sane2026neurips.png
   title: "Differentiable Belief-based Opponent Shaping"
   authors:
     - name: "Aarav Sane"
