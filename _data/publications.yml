@@ -1403,8 +1403,7 @@
   equal_contribution: false
 
 - id: sivachandran2026neurips
-  image: /assets/img/publications/blank-publication.svg
-  image_placeholder: true
+  image: /assets/img/publications/sivachandran2026neurips.png
   title: "Mitigating Retaliatory Algorithmic Collusion in Repeated Games"
   authors:
     - name: "Karthik Sivachandran"
