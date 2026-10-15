@@ -1,0 +1,109 @@
+.publication-image-link {
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 4px;
+    cursor: zoom-in;
+}
+
+.publication-image-link:hover,
+.publication-image-link:focus-visible {
+    outline: 3px solid #0056b3;
+    outline-offset: 3px;
+}
+
+body.publication-lightbox-open {
+    overflow: hidden;
+}
+
+.publication-lightbox {
+    position: fixed;
+    inset: 0;
+    box-sizing: border-box;
+    width: calc(100vw - 2rem);
+    max-width: 1440px;
+    max-height: calc(100vh - 2rem);
+    max-height: calc(100dvh - 2rem);
+    margin: auto;
+    padding: 1rem;
+    border: 0;
+    border-radius: 8px;
+    background: #fff;
+    color: #222;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.35);
+    overflow: auto;
+}
+
+.publication-lightbox:not([open]) {
+    display: none;
+}
+
+.publication-lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.publication-lightbox-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.publication-lightbox-title {
+    flex: 1;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.publication-lightbox-close {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    color: #222;
+    background: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.publication-lightbox-close:hover {
+    background: #eee;
+}
+
+.publication-lightbox-close:focus-visible,
+.publication-lightbox-original:focus-visible {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
+
+.publication-lightbox-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 11rem);
+    max-height: calc(100dvh - 11rem);
+    object-fit: contain;
+    background: #fff;
+}
+
+.publication-lightbox-original {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@media (max-width: 575px) {
+    .publication-lightbox {
+        width: calc(100vw - 1rem);
+        padding: 0.75rem;
+    }
+
+    .publication-lightbox-title {
+        font-size: 1rem;
+    }
+}

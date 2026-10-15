@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/new-format.css">
     <link rel="stylesheet" href="{{ '/assets/css/bibtex.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/publication-lightbox.css' | relative_url }}">
+    <script src="{{ '/assets/js/publication-lightbox.js' | relative_url }}" defer></script>
     <link rel="canonical" href="/">
     <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
     <script src="./main.js"></script>
@@ -329,9 +331,16 @@
 
                 <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
                     {% if pub.image %}
+                    {% unless pub.image_placeholder %}
+                    <a href="{{ pub.image | relative_url }}" class="publication-image-link"
+                       data-publication-title="{{ pub.title | escape }}"
+                       aria-label="Enlarge image for {{ pub.title | escape }}"
+                       aria-haspopup="dialog" aria-controls="publicationImageDialog" title="Enlarge image">
+                    {% endunless %}
                     <img src="{{ pub.image | relative_url }}" alt="{% unless pub.image_placeholder %}Teaser for {{ pub.title | escape }}{% endunless %}"
                          class="img-fluid publication-image rounded"
                          style="max-height: 180px; width: auto; border: 1px solid #ddd;">
+                    {% unless pub.image_placeholder %}</a>{% endunless %}
                     {% else %}
                     <img src="{{ '/assets/img/publications/default_thumbnail.png' | relative_url }}"
                          alt="Default thumbnail" class="img-fluid publication-image rounded"
@@ -1016,6 +1025,17 @@
     //     });
 
 </script>
+<dialog id="publicationImageDialog" class="publication-lightbox" aria-labelledby="publicationImageTitle">
+    <div class="publication-lightbox-header">
+        <h2 id="publicationImageTitle" class="publication-lightbox-title"></h2>
+        <button type="button" class="publication-lightbox-close" aria-label="Close enlarged image" autofocus>
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <img class="publication-lightbox-image" alt="">
+    <a class="publication-lightbox-original" target="_blank" rel="noopener">Open original image</a>
+</dialog>
+
 </body>
 </html>
 
